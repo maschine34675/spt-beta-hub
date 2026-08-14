@@ -1,0 +1,36 @@
+{
+  "_hinweis": "Optionale Overrides pro Mod. Schluessel: enabled (false = nicht listen), description (Kurztext Tabelle), notes (Zusatzhinweis fuer Tester, Markdown), screenshots (Pfade relativ zum Mod-Ordner; ersetzt die automatische Auswahl).",
+
+  "AiStoryQuests": {
+    "description": "Experiment: KI-generierte Story-Quests (Anbieter: OpenAI/Anthropic/Ollama, eigener API-Key nötig)."
+  },
+  "CombatSlide": {
+    "description": "Aus dem Sprint die Crouch-Taste drücken und in der Hocke weitergleiten – „Slide“ wie in anderen Ego-Shootern."
+  },
+  "CorpseRun": {
+    "description": "Nach dem Tod im Raid optional (nackt) respawnen, die eigene Leiche looten und den Raid fortsetzen; bei Aufgeben normaler Raid-Abschluss."
+  },
+  "CraftQueue": {
+    "screenshots": ["assets/thumbnails/craftqueue-variations-preview.png"]
+  },
+  "Killcam": {
+    "description": "„Killcam light“: Beim Tod wechselt die Kamera für ca. 6 Sekunden in die Ego-Perspektive des Killers; das Death-Panel zeigt Killer-Name und Rest-HP.",
+    "notes": "Vorstufe von **KillcamReplay** – nicht beide gleichzeitig installieren."
+  },
+  "KillcamReplay": {
+    "description": "Echte Killcam: Beim Tod wird die letzte Aktion aus Sicht des Killers als Replay der aufgezeichneten letzten Sekunden abgespielt.",
+    "notes": "Nachfolger von **Killcam** – nicht beide gleichzeitig installieren."
+  },
+  "ModSourceDebugger": {
+    "description": "Debug-Werkzeug: verfolgt Item-Templates und UI-Elemente zurück zu der Mod, die sie hinzugefügt hat (Tooltips + UI-Inspektor)."
+  },
+  "RaidInfoPanels": {
+    "screenshots": ["Icons/preview.png", "Icons/puppet_preview.png"]
+  },
+  "ReceiveAllChats": {
+    "description": "Der Messenger-Button „Receive All“ sammelt Anhänge aus allen Chats ein, nicht nur aus dem aktuell ausgewählten."
+  },
+  "WebOverlay": {
+    "screenshots": ["assets/demo.gif"]
+  }
+}
