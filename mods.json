@@ -1,34 +1,41 @@
 {
-  "_hinweis": "Optionale Overrides pro Mod. Schluessel: enabled (false = nicht listen), description (Kurztext Tabelle), notes (Zusatzhinweis fuer Tester, Markdown), screenshots (Pfade relativ zum Mod-Ordner; ersetzt die automatische Auswahl).",
+  "_note": "Optional per-mod overrides. Keys: enabled (false = do not list), description (short text for the table), notes (extra hint for testers, Markdown), screenshots (paths relative to the mod folder; replaces the automatic selection).",
 
   "AiStoryQuests": {
-    "description": "Experiment: KI-generierte Story-Quests (Anbieter: OpenAI/Anthropic/Ollama, eigener API-Key nötig)."
+    "description": "Experiment: AI-generated story quests (providers: OpenAI/Anthropic/Ollama, own API key required)."
+  },
+  "ClusterGrenade": {
+    "description": "Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets (frag or flash, weighted mix). Also adds a 40x46mm cluster round for grenade launchers (MSGL, M203, FN40GL)."
   },
   "CombatSlide": {
-    "description": "Aus dem Sprint die Crouch-Taste drücken und in der Hocke weitergleiten – „Slide“ wie in anderen Ego-Shootern."
+    "description": "Press crouch while sprinting to keep sliding at decreasing speed – a \"combat slide\" like in other shooters."
   },
   "CorpseRun": {
-    "description": "Nach dem Tod im Raid optional (nackt) respawnen, die eigene Leiche looten und den Raid fortsetzen; bei Aufgeben normaler Raid-Abschluss."
+    "description": "After dying in a raid, optionally respawn (naked), loot your own corpse and continue the raid; giving up ends the raid normally."
   },
   "CraftQueue": {
     "screenshots": ["assets/thumbnails/craftqueue-variations-preview.png"]
   },
   "Killcam": {
-    "description": "„Killcam light“: Beim Tod wechselt die Kamera für ca. 6 Sekunden in die Ego-Perspektive des Killers; das Death-Panel zeigt Killer-Name und Rest-HP.",
-    "notes": "Vorstufe von **KillcamReplay** – nicht beide gleichzeitig installieren."
+    "description": "\"Killcam light\": on death the camera switches to the killer's first-person view for about 6 seconds; the death panel shows the killer's name and remaining HP.",
+    "notes": "Predecessor of **KillcamReplay** – do not install both at the same time."
   },
   "KillcamReplay": {
-    "description": "Echte Killcam: Beim Tod wird die letzte Aktion aus Sicht des Killers als Replay der aufgezeichneten letzten Sekunden abgespielt.",
-    "notes": "Nachfolger von **Killcam** – nicht beide gleichzeitig installieren."
+    "description": "True killcam: on death, the killer's final moments are replayed from their point of view, based on the recorded movement of the last seconds before the kill.",
+    "notes": "Successor of **Killcam** – do not install both at the same time."
+  },
+  "ModProfiler": {
+    "description": "In-game profiler modeled after Dubs Performance Analyzer (RimWorld): shows live how much CPU time each installed client mod costs per frame – find the cause of performance drops without disabling mods one by one."
   },
   "ModSourceDebugger": {
-    "description": "Debug-Werkzeug: verfolgt Item-Templates und UI-Elemente zurück zu der Mod, die sie hinzugefügt hat (Tooltips + UI-Inspektor)."
+    "description": "Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector)."
   },
   "RaidInfoPanels": {
+    "description": "Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x.",
     "screenshots": ["Icons/preview.png", "Icons/puppet_preview.png"]
   },
   "ReceiveAllChats": {
-    "description": "Der Messenger-Button „Receive All“ sammelt Anhänge aus allen Chats ein, nicht nur aus dem aktuell ausgewählten."
+    "description": "The messenger's \"Receive All\" button collects attachments from all chats, not just the currently selected one."
   },
   "WebOverlay": {
     "screenshots": ["assets/demo.gif"]

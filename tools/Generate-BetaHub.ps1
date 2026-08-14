@@ -364,36 +364,36 @@ function DownloadUrl([string]$zipName) {
 
 $md = [System.Collections.Generic.List[string]]::new()
 $now = Get-Date -Format 'yyyy-MM-dd HH:mm'
-$md.Add('# SPT 4.1 – Beta-Mods')
+$md.Add('# SPT 4.1 – Beta Mods')
 $md.Add('')
-$md.Add("Übersicht aller Mods im Beta-Test · Stand: **$now** · $($built.Count) Mods mit Download, $($unbuilt.Count) in Entwicklung.")
+$md.Add("Overview of all mods in beta testing · Last updated: **$now** · $($built.Count) mods with download, $($unbuilt.Count) in development.")
 $md.Add('')
-$md.Add('**Installation:** ZIP über den Download-Link laden und in den SPT-Stammordner entpacken')
-$md.Add('(der Ordner, in dem `EscapeFromTarkov.exe` liegt), vorhandene Dateien überschreiben.')
-$md.Add('Die ZIPs bringen die richtige Ordnerstruktur mit: Client-Mods landen in `BepInEx\plugins\`,')
-$md.Add('Server-Mods in `SPT_Runtime\user\mods\`. Bei **Client + Server** stecken beide Teile im ZIP')
-$md.Add('und beide müssen installiert sein.')
+$md.Add('**Installation:** Grab the ZIP via the download link and extract it into the SPT root folder')
+$md.Add('(the folder containing `EscapeFromTarkov.exe`), overwriting existing files.')
+$md.Add('The ZIPs contain the correct folder structure: client mods go to `BepInEx\plugins\`,')
+$md.Add('server mods to `SPT_Runtime\user\mods\`. For **Client + Server** mods both parts are in the ZIP')
+$md.Add('and both must be installed.')
 $md.Add('')
-$md.Add('**Build-Kennung:** Dev-Builds bekommen nicht immer eine neue Versionsnummer – eindeutig ist')
-$md.Add('die Kennung hinter dem `+` (Commit-ID bzw. Datei-Hash), z. B. `1.2.0+7b65898`.')
-$md.Add('Bitte bei Fehlermeldungen immer mit angeben.')
+$md.Add('**Build ID:** Dev builds do not always get a new version number – the unique identifier is')
+$md.Add('the part after the `+` (commit ID or file hash), e.g. `1.2.0+7b65898`.')
+$md.Add('Please always include it when reporting issues.')
 $md.Add('')
-$md.Add('| Mod | Version | Stand | Typ | Beschreibung | Vorschau | Download |')
+$md.Add('| Mod | Version | Updated | Type | Description | Preview | Download |')
 $md.Add('|---|---|---|---|---|---|---|')
 foreach ($m in $built) {
     $anchor = $m.Name.ToLower()
     $ver = "``$($m.Version)+$($m.Id)``" + $(if ($m.IsDebug) { ' ⚠️Debug' } else { '' })
     $preview = if ($m.Images.Count) { "<a href=`"#$anchor`"><img src=`"$($m.Images[0])`" height=`"60`"></a>" } else { '–' }
     $descCell = TableCell (Trunc $m.Desc 170)
-    if ($descCell -eq '–') { $descCell = '_(Beschreibung folgt)_' }
+    if ($descCell -eq '–') { $descCell = '_(description to follow)_' }
     $md.Add("| [**$($m.Name)**](#$anchor) | $ver | $($m.Stamp.ToString('yyyy-MM-dd')) | $($m.Typ) | $descCell | $preview | [⬇ ZIP]($(DownloadUrl $m.Zip)) |")
 }
 $md.Add('')
 
 if ($unbuilt.Count) {
-    $md.Add('## 🚧 In Entwicklung – noch kein Build')
+    $md.Add('## 🚧 In development – no build yet')
     $md.Add('')
-    $md.Add('| Mod | Typ | Beschreibung |')
+    $md.Add('| Mod | Type | Description |')
     $md.Add('|---|---|---|')
     foreach ($u in $unbuilt) {
         $d = TableCell (Trunc $u.Desc 170)
@@ -407,18 +407,18 @@ $md.Add('')
 foreach ($m in $built) {
     $md.Add("## $($m.Name)")
     $md.Add('')
-    $dbg = if ($m.IsDebug) { ' · ⚠️ Debug-Build' } else { '' }
-    $md.Add("**Typ:** $($m.Typ) · **Version:** ``$($m.Version)+$($m.Id)`` · **Stand:** $($m.Stamp.ToString('yyyy-MM-dd HH:mm'))$dbg · [⬇ Download]($(DownloadUrl $m.Zip))")
+    $dbg = if ($m.IsDebug) { ' · ⚠️ Debug build' } else { '' }
+    $md.Add("**Type:** $($m.Typ) · **Version:** ``$($m.Version)+$($m.Id)`` · **Updated:** $($m.Stamp.ToString('yyyy-MM-dd HH:mm'))$dbg · [⬇ Download]($(DownloadUrl $m.Zip))")
     $md.Add('')
     if ($m.Parts.Count -gt 1) {
         $partLine = ($m.Parts | ForEach-Object {
             "$(if ($_.Kind -eq 'client') { 'Client' } else { 'Server' }) ``$($_.Dll.Version)+$($_.Dll.Id)``"
         }) -join ' · '
-        $md.Add("**Bestandteile:** $partLine")
+        $md.Add("**Components:** $partLine")
         $md.Add('')
     }
     if ($m.Notes) {
-        $md.Add("> **Hinweis für Tester:** $($m.Notes)")
+        $md.Add("> **Tester note:** $($m.Notes)")
         $md.Add('')
     }
     if ($m.Images.Count) {
@@ -427,24 +427,24 @@ foreach ($m in $built) {
         $md.Add('')
     }
     foreach ($v in $m.Videos) {
-        $md.Add("🎬 [Demo-Video]($v)")
+        $md.Add("🎬 [Demo video]($v)")
         $md.Add('')
     }
     if ($m.Body) {
-        $md.Add('<details><summary><b>Nutzungshinweise anzeigen</b></summary>')
+        $md.Add('<details><summary><b>Show usage notes</b></summary>')
         $md.Add('')
         $md.Add($m.Body)
         $md.Add('')
         $md.Add('</details>')
     }
     else {
-        $md.Add('_Noch keine ausführliche Beschreibung._')
+        $md.Add('_No detailed description yet._')
     }
     $md.Add('')
     $md.Add('---')
     $md.Add('')
 }
-$md.Add('_Diese Seite wird automatisch generiert (`tools/Generate-BetaHub.ps1`) – Änderungen bitte dort bzw. in `mods.json`, nicht hier._')
+$md.Add('_This page is generated automatically (`tools/Generate-BetaHub.ps1`) – make changes there or in `mods.json`, not here._')
 
 Set-Content -Path (Join-Path $HubRoot 'README.md') -Value ($md -join "`n") -Encoding utf8NoBOM
 

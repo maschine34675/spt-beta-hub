@@ -1,42 +1,42 @@
-# SPT 4.1 – Beta-Mods
+# SPT 4.1 – Beta Mods
 
-Übersicht aller Mods im Beta-Test · Stand: **2026-08-14 18:15** · 30 Mods mit Download, 5 in Entwicklung.
+Overview of all mods in beta testing · Last updated: **2026-08-14 19:14** · 30 mods with download, 5 in development.
 
-**Installation:** ZIP über den Download-Link laden und in den SPT-Stammordner entpacken
-(der Ordner, in dem `EscapeFromTarkov.exe` liegt), vorhandene Dateien überschreiben.
-Die ZIPs bringen die richtige Ordnerstruktur mit: Client-Mods landen in `BepInEx\plugins\`,
-Server-Mods in `SPT_Runtime\user\mods\`. Bei **Client + Server** stecken beide Teile im ZIP
-und beide müssen installiert sein.
+**Installation:** Grab the ZIP via the download link and extract it into the SPT root folder
+(the folder containing `EscapeFromTarkov.exe`), overwriting existing files.
+The ZIPs contain the correct folder structure: client mods go to `BepInEx\plugins\`,
+server mods to `SPT_Runtime\user\mods\`. For **Client + Server** mods both parts are in the ZIP
+and both must be installed.
 
-**Build-Kennung:** Dev-Builds bekommen nicht immer eine neue Versionsnummer – eindeutig ist
-die Kennung hinter dem `+` (Commit-ID bzw. Datei-Hash), z. B. `1.2.0+7b65898`.
-Bitte bei Fehlermeldungen immer mit angeben.
+**Build ID:** Dev builds do not always get a new version number – the unique identifier is
+the part after the `+` (commit ID or file hash), e.g. `1.2.0+7b65898`.
+Please always include it when reporting issues.
 
-| Mod | Version | Stand | Typ | Beschreibung | Vorschau | Download |
+| Mod | Version | Updated | Type | Description | Preview | Download |
 |---|---|---|---|---|---|---|
 | [**AutoCorpseSearch**](#autocorpsesearch) | `1.1.0+12b8cc0` | 2026-08-04 | Client | Automatically starts searching a corpse's equipment slots when you open the loot screen — no more clicking "Search" on each slot individually. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/AutoCorpseSearch-1.1.0-12b8cc0.zip) |
 | [**AutoIFF**](#autoiff) | `1.2.0+4baecec` | 2026-08-04 | Client | Automatically identifies the target you are currently aiming at as **Friendly** or **Hostile**, and alerts you when you are marked as a **Scav traitor**. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/AutoIFF-1.2.0-4baecec.zip) |
 | [**BangAndClear**](#bangandclear) | `0.9.0+3111b16` | 2026-08-11 | Client | An SPT 4.0 client mod for tactical door work: crack a door open a few degrees, put a grenade through the gap, close the door, wait for the bang. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.0-3111b16.zip) |
 | [**BtrTurretControl**](#btrturretcontrol) | `1.0.0+37e08ef` | 2026-08-14 | Client | Client-only SPT mod that lets a seated BTR passenger take direct control of the gun turret. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BtrTurretControl-1.0.0-37e08ef.zip) |
-| [**ClusterGrenade**](#clustergrenade) | `2.2.1+5fe2678` | 2026-08-13 | Client + Server | Clustergranate für SPT: Bei der Explosion werden keine Schrapnelle erzeugt, sondern mehrere Aufschlag-Bomblets (Splitter oder Blend, gewichteter Mix). Zusätzlich gibt es… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.2.1-5fe2678.zip) |
-| [**CombatSlide**](#combatslide) | `2.0.0+c57f2f8` | 2026-08-09 | Client | Aus dem Sprint die Crouch-Taste drücken und in der Hocke weitergleiten – „Slide“ wie in anderen Ego-Shootern. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatSlide-2.0.0-c57f2f8.zip) |
-| [**CorpseRun**](#corpserun) | `0.9.0+0a62fa2` | 2026-08-14 | Client + Server | Nach dem Tod im Raid optional (nackt) respawnen, die eigene Leiche looten und den Raid fortsetzen; bei Aufgeben normaler Raid-Abschluss. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CorpseRun-0.9.0-0a62fa2.zip) |
+| [**ClusterGrenade**](#clustergrenade) | `2.2.1+5fe2678` | 2026-08-13 | Client + Server | Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets (frag or flash, weighted mix). Also adds a 40x46mm cluster round for grenade… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.2.1-5fe2678.zip) |
+| [**CombatSlide**](#combatslide) | `2.0.0+c57f2f8` | 2026-08-09 | Client | Press crouch while sprinting to keep sliding at decreasing speed – a "combat slide" like in other shooters. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatSlide-2.0.0-c57f2f8.zip) |
+| [**CorpseRun**](#corpserun) | `0.9.0+0a62fa2` | 2026-08-14 | Client + Server | After dying in a raid, optionally respawn (naked), loot your own corpse and continue the raid; giving up ends the raid normally. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CorpseRun-0.9.0-0a62fa2.zip) |
 | [**CraftQueue**](#craftqueue) | `2.0.0+44fce17` | 2026-08-09 | Client + Server | CraftQueue moves normal SPT hideout crafting into a central, local web interface. Crafts can be queued across stations, monitored, retried and cancelled without opening… | <a href="#craftqueue"><img src="assets/CraftQueue/craftqueue-variations-preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CraftQueue-2.0.0-44fce17.zip) |
 | [**DefaultAutoFireMode**](#defaultautofiremode) | `2.0.0+d91bbc4` | 2026-08-08 | Client | Inspired by Default Fire Mode Fixer by acidphantasm but using a different approach. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/DefaultAutoFireMode-2.0.0-d91bbc4.zip) |
 | [**DualSideDoorBreach**](#dualsidedoorbreach) | `2.0.0+7523eb5` | 2026-08-08 | Client | Tushonka doors have opinions. Hinge side only. Swing into your face. Locked for no reason. This mod disagrees. | <a href="#dualsidedoorbreach"><img src="assets/DualSideDoorBreach/example.gif" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/DualSideDoorBreach-2.0.0-7523eb5.zip) |
 | [**EasyMounting**](#easymounting) | `2.0.0+7e1450e` | 2026-08-08 | Client + Server | An SPT mod bundle that makes bipod deployment and weapon mounting (ledges, windowsills, railings, etc.) far less picky about the surface. Two parts, shipped together: | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/EasyMounting-2.0.0-7e1450e.zip) |
 | [**KillAndDamageInfo**](#killanddamageinfo) | `0.9.0+dd0e920` ⚠️Debug | 2026-08-14 | Client | KillAndDamageInfo shows the combat information the game keeps to itself: what your kills died to, who killed you and in what state they were, what each hit actually did… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-0.9.0-dd0e920.zip) |
-| [**Killcam**](#killcam) | `1.0.0+aec3dc4` | 2026-08-09 | Client | „Killcam light“: Beim Tod wechselt die Kamera für ca. 6 Sekunden in die Ego-Perspektive des Killers; das Death-Panel zeigt Killer-Name und Rest-HP. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Killcam-1.0.0-aec3dc4.zip) |
-| [**KillcamReplay**](#killcamreplay) | `0.9.2+8dd53d0` ⚠️Debug | 2026-08-14 | Client | Echte Killcam: Beim Tod wird die letzte Aktion aus Sicht des Killers als Replay der aufgezeichneten letzten Sekunden abgespielt. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.2-8dd53d0.zip) |
+| [**Killcam**](#killcam) | `1.0.0+aec3dc4` | 2026-08-09 | Client | "Killcam light": on death the camera switches to the killer's first-person view for about 6 seconds; the death panel shows the killer's name and remaining HP. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Killcam-1.0.0-aec3dc4.zip) |
+| [**KillcamReplay**](#killcamreplay) | `0.9.2+8dd53d0` ⚠️Debug | 2026-08-14 | Client | True killcam: on death, the killer's final moments are replayed from their point of view, based on the recorded movement of the last seconds before the kill. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.2-8dd53d0.zip) |
 | [**LinkedSearchInStash**](#linkedsearchinstash) | `2.0.0+89b5564` | 2026-08-08 | Client | Extends Tushonka’s Linked Search to your own stash. Adds a separate context-menu action that opens the stash search window filtered to items that are actually compatible… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/LinkedSearchInStash-2.0.0-89b5564.zip) |
-| [**ModProfiler**](#modprofiler) | `2.0.0+17b90f4` | 2026-08-14 | Client | In-Game-Profiler für SPT nach dem Vorbild von **Dubs Performance Analyzer** (RimWorld): zeigt live, wie viel CPU-Zeit jede installierte Client-Mod pro Frame kostet — um… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-2.0.0-17b90f4.zip) |
-| [**ModSourceDebugger**](#modsourcedebugger) | `1.2.1+19c0f81` | 2026-08-04 | Client + Server | Debug-Werkzeug: verfolgt Item-Templates und UI-Elemente zurück zu der Mod, die sie hinzugefügt hat (Tooltips + UI-Inspektor). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-1.2.1-19c0f81.zip) |
+| [**ModProfiler**](#modprofiler) | `2.0.0+17b90f4` | 2026-08-14 | Client | In-game profiler modeled after Dubs Performance Analyzer (RimWorld): shows live how much CPU time each installed client mod costs per frame – find the cause of… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-2.0.0-17b90f4.zip) |
+| [**ModSourceDebugger**](#modsourcedebugger) | `1.2.1+19c0f81` | 2026-08-04 | Client + Server | Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-1.2.1-19c0f81.zip) |
 | [**MoreQuickSlots**](#morequickslots) | `2.0.0+93f6d8a` | 2026-08-08 | Client | Increases the number of freely assignable quick slots (7 by default: keys 4–0) by up to 6 additional slots. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/MoreQuickSlots-2.0.0-93f6d8a.zip) |
 | [**NotificationFilter**](#notificationfilter) | `2.0.0+b46354e` | 2026-08-08 | Client | NotificationFilter gives you full control over the notification popups that appear during raids. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/NotificationFilter-2.0.0-b46354e.zip) |
 | [**QuestMarkers**](#questmarkers) | `0.1.0+7af46a3` | 2026-08-14 | Client | World-anchored HUD markers for your unfinished quest objectives: zones to visit, spots to place items or beacons at, and quest items lying in the raid. No more running… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-0.1.0-7af46a3.zip) |
-| [**RaidInfoPanels**](#raidinfopanels) | `1.0.0+e1f83d9` | 2026-08-13 | Client | Stabile Ersatz-Mod für die GamePanelHUD Weapon/Health-Panels auf SPT 4.x. | <a href="#raidinfopanels"><img src="assets/RaidInfoPanels/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-e1f83d9.zip) |
+| [**RaidInfoPanels**](#raidinfopanels) | `1.0.0+e1f83d9` | 2026-08-13 | Client | Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x. | <a href="#raidinfopanels"><img src="assets/RaidInfoPanels/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-e1f83d9.zip) |
 | [**RaidMenuCleanupFix**](#raidmenucleanupfix) | `2.0.0+72189da` | 2026-08-08 | Client | Removes the brief freeze when opening the escape menu during a raid in SPT (Single Player Tushonka). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidMenuCleanupFix-2.0.0-72189da.zip) |
-| [**ReceiveAllChats**](#receiveallchats) | `2.0.0+8ebaa2e` | 2026-08-09 | Client + Server | Der Messenger-Button „Receive All“ sammelt Anhänge aus allen Chats ein, nicht nur aus dem aktuell ausgewählten. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ReceiveAllChats-2.0.0-8ebaa2e.zip) |
+| [**ReceiveAllChats**](#receiveallchats) | `2.0.0+8ebaa2e` | 2026-08-09 | Client + Server | The messenger's "Receive All" button collects attachments from all chats, not just the currently selected one. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ReceiveAllChats-2.0.0-8ebaa2e.zip) |
 | [**ScopeRangefinder**](#scoperangefinder) | `3.0.0+f5345e8` | 2026-08-07 | Client | Adds a compact rangefinder readout to magnified optic scopes in SPT. The display is rendered inside the scope view, follows the optic while aiming, and can be adjusted… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ScopeRangefinder-3.0.0-f5345e8.zip) |
 | [**StashFilter**](#stashfilter) | `1.0.0+f287253` | 2026-08-13 | Client | StashFilter adds a filter and sort panel to the stash search window, so you can find the right weapon, armor piece, magazine, round, med or attachment without scrolling… | <a href="#stashfilter"><img src="assets/StashFilter/demo.gif" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/StashFilter-1.0.0-f287253.zip) |
 | [**SurroundAudio**](#surroundaudio) | `1.0.0+a29569c` | 2026-08-14 | Client | Experimental proof of concept: plays SPT on a real surround speaker setup (5.1/7.1) instead of binaural headphone audio. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-a29569c.zip) |
@@ -45,12 +45,12 @@ Bitte bei Fehlermeldungen immer mit angeben.
 | [**WeaponBuilderSearch**](#weaponbuildersearch) | `1.1.0+712c667` | 2026-08-04 | Client | Adds a live search field to the attachment dropdown in the **Weapon Builder** (Edit Build) and **Weapon Modding** screens. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/WeaponBuilderSearch-1.1.0-712c667.zip) |
 | [**WebOverlay**](#weboverlay) | `1.3.0+199576a` | 2026-08-11 | Client | Show web pages in windows over Escape From Tushonka, so a mod can build its user interface in HTML instead of an immediate-mode toolkit. | <a href="#weboverlay"><img src="assets/WebOverlay/demo.gif" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/WebOverlay-1.3.0-199576a.zip) |
 
-## 🚧 In Entwicklung – noch kein Build
+## 🚧 In development – no build yet
 
-| Mod | Typ | Beschreibung |
+| Mod | Type | Description |
 |---|---|---|
 | **AdaptiveArsenal** | Server | Adaptive Arsenal is an SPT 4.0 C# server mod prototype that tracks equipment usage after raids. |
-| **AiStoryQuests** | Client + Server | Experiment: KI-generierte Story-Quests (Anbieter: OpenAI/Anthropic/Ollama, eigener API-Key nötig). |
+| **AiStoryQuests** | Client + Server | Experiment: AI-generated story quests (providers: OpenAI/Anthropic/Ollama, own API key required). |
 | **AutoWishlist** | Client + Server | – |
 | **StashSort** | Client | – |
 | **UnloadAllMagazinesInventory** | Client | Adds an unload all magazines button that can be used in raid to each inventory slot. |
@@ -59,9 +59,9 @@ Bitte bei Fehlermeldungen immer mit angeben.
 
 ## AutoCorpseSearch
 
-**Typ:** Client · **Version:** `1.1.0+12b8cc0` · **Stand:** 2026-08-04 06:36 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/AutoCorpseSearch-1.1.0-12b8cc0.zip)
+**Type:** Client · **Version:** `1.1.0+12b8cc0` · **Updated:** 2026-08-04 06:36 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/AutoCorpseSearch-1.1.0-12b8cc0.zip)
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 Automatically starts searching a corpse's equipment slots when you open the loot screen — no more clicking "Search" on each slot individually.
 
@@ -85,9 +85,9 @@ Skills Extended compatible — works correctly with the double-search elite skil
 
 ## AutoIFF
 
-**Typ:** Client · **Version:** `1.2.0+4baecec` · **Stand:** 2026-08-04 20:04 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/AutoIFF-1.2.0-4baecec.zip)
+**Type:** Client · **Version:** `1.2.0+4baecec` · **Updated:** 2026-08-04 20:04 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/AutoIFF-1.2.0-4baecec.zip)
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 ### AutoIFF — Automatic Identify Friend or Foe
 
@@ -165,9 +165,9 @@ Original concept and implementation by **Light** — [LightsAutomaticIdentifier]
 
 ## BangAndClear
 
-**Typ:** Client · **Version:** `0.9.0+3111b16` · **Stand:** 2026-08-11 12:08 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.0-3111b16.zip)
+**Type:** Client · **Version:** `0.9.0+3111b16` · **Updated:** 2026-08-11 12:08 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.0-3111b16.zip)
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 An SPT 4.0 client mod for tactical door work: crack a door open a few degrees, put a grenade
 through the gap, close the door, wait for the bang.
@@ -229,9 +229,9 @@ Drop `maschine-BangAndClear.dll` into `BepInEx/plugins/`.
 
 ## BtrTurretControl
 
-**Typ:** Client · **Version:** `1.0.0+37e08ef` · **Stand:** 2026-08-14 17:24 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BtrTurretControl-1.0.0-37e08ef.zip)
+**Type:** Client · **Version:** `1.0.0+37e08ef` · **Updated:** 2026-08-14 17:24 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BtrTurretControl-1.0.0-37e08ef.zip)
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 Client-only SPT mod that lets a seated BTR passenger take direct control of the gun turret.
 
@@ -287,11 +287,11 @@ The DLL is copied to `BepInEx\plugins\` automatically.
 
 ## ClusterGrenade
 
-**Typ:** Client + Server · **Version:** `2.2.1+5fe2678` · **Stand:** 2026-08-13 19:00 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.2.1-5fe2678.zip)
+**Type:** Client + Server · **Version:** `2.2.1+5fe2678` · **Updated:** 2026-08-13 19:00 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.2.1-5fe2678.zip)
 
-**Bestandteile:** Client `2.2.1+5fe2678` · Server `2.2.1+5fe2678`
+**Components:** Client `2.2.1+5fe2678` · Server `2.2.1+5fe2678`
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 ### ClusterGrenade Mod
 
@@ -414,31 +414,31 @@ Beides ist rein serverseitig (keine Client-Logik) und funktioniert in jeder Waff
 
 ## CombatSlide
 
-**Typ:** Client · **Version:** `2.0.0+c57f2f8` · **Stand:** 2026-08-09 12:53 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatSlide-2.0.0-c57f2f8.zip)
+**Type:** Client · **Version:** `2.0.0+c57f2f8` · **Updated:** 2026-08-09 12:53 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatSlide-2.0.0-c57f2f8.zip)
 
-_Noch keine ausführliche Beschreibung._
+_No detailed description yet._
 
 ---
 
 ## CorpseRun
 
-**Typ:** Client + Server · **Version:** `0.9.0+0a62fa2` · **Stand:** 2026-08-14 10:03 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CorpseRun-0.9.0-0a62fa2.zip)
+**Type:** Client + Server · **Version:** `0.9.0+0a62fa2` · **Updated:** 2026-08-14 10:03 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CorpseRun-0.9.0-0a62fa2.zip)
 
-**Bestandteile:** Client `0.9.0+0a62fa2` · Server `0.9.0+119da90`
+**Components:** Client `0.9.0+0a62fa2` · Server `0.9.0+119da90`
 
-_Noch keine ausführliche Beschreibung._
+_No detailed description yet._
 
 ---
 
 ## CraftQueue
 
-**Typ:** Client + Server · **Version:** `2.0.0+44fce17` · **Stand:** 2026-08-09 11:00 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CraftQueue-2.0.0-44fce17.zip)
+**Type:** Client + Server · **Version:** `2.0.0+44fce17` · **Updated:** 2026-08-09 11:00 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CraftQueue-2.0.0-44fce17.zip)
 
-**Bestandteile:** Client `2.0.0+44fce17` · Server `2.0.0+cc25610`
+**Components:** Client `2.0.0+44fce17` · Server `2.0.0+cc25610`
 
 <img src="assets/CraftQueue/craftqueue-variations-preview.png" width="440">
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 CraftQueue moves normal SPT hideout crafting into a central, local web interface. Crafts can be queued across stations, monitored, retried and cancelled without opening each hideout area.
 
@@ -570,9 +570,9 @@ MIT. See [LICENSE](LICENSE).
 
 ## DefaultAutoFireMode
 
-**Typ:** Client · **Version:** `2.0.0+d91bbc4` · **Stand:** 2026-08-08 18:41 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/DefaultAutoFireMode-2.0.0-d91bbc4.zip)
+**Type:** Client · **Version:** `2.0.0+d91bbc4` · **Updated:** 2026-08-08 18:41 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/DefaultAutoFireMode-2.0.0-d91bbc4.zip)
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 Overview
 
@@ -600,11 +600,11 @@ As usual, unzip to your SPT folder
 
 ## DualSideDoorBreach
 
-**Typ:** Client · **Version:** `2.0.0+7523eb5` · **Stand:** 2026-08-08 18:41 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/DualSideDoorBreach-2.0.0-7523eb5.zip)
+**Type:** Client · **Version:** `2.0.0+7523eb5` · **Updated:** 2026-08-08 18:41 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/DualSideDoorBreach-2.0.0-7523eb5.zip)
 
 <img src="assets/DualSideDoorBreach/example.gif" width="440">
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 Tushonka doors have opinions. Hinge side only. Swing into your face. Locked for no reason. This mod disagrees.
 
@@ -703,11 +703,11 @@ Negligible impact. Patches only run when you interact with or breach a door. Doo
 
 ## EasyMounting
 
-**Typ:** Client + Server · **Version:** `2.0.0+7e1450e` · **Stand:** 2026-08-08 16:56 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/EasyMounting-2.0.0-7e1450e.zip)
+**Type:** Client + Server · **Version:** `2.0.0+7e1450e` · **Updated:** 2026-08-08 16:56 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/EasyMounting-2.0.0-7e1450e.zip)
 
-**Bestandteile:** Client `2.0.0+7e1450e` · Server `2.0.0+7e1450e`
+**Components:** Client `2.0.0+7e1450e` · Server `2.0.0+7e1450e`
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 An SPT mod bundle that makes bipod deployment and weapon mounting (ledges, windowsills,
 railings, etc.) far less picky about the surface. Two parts, shipped together:
@@ -970,9 +970,9 @@ MIT
 
 ## KillAndDamageInfo
 
-**Typ:** Client · **Version:** `0.9.0+dd0e920` · **Stand:** 2026-08-14 17:35 · ⚠️ Debug-Build · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-0.9.0-dd0e920.zip)
+**Type:** Client · **Version:** `0.9.0+dd0e920` · **Updated:** 2026-08-14 17:35 · ⚠️ Debug build · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-0.9.0-dd0e920.zip)
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 KillAndDamageInfo shows the combat information the game keeps to itself: what
 your kills died to, who killed you and in what state they were, what each hit
@@ -1085,21 +1085,21 @@ MIT — see [LICENSE](LICENSE).
 
 ## Killcam
 
-**Typ:** Client · **Version:** `1.0.0+aec3dc4` · **Stand:** 2026-08-09 12:56 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Killcam-1.0.0-aec3dc4.zip)
+**Type:** Client · **Version:** `1.0.0+aec3dc4` · **Updated:** 2026-08-09 12:56 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Killcam-1.0.0-aec3dc4.zip)
 
-> **Hinweis für Tester:** Vorstufe von **KillcamReplay** – nicht beide gleichzeitig installieren.
+> **Tester note:** Predecessor of **KillcamReplay** – do not install both at the same time.
 
-_Noch keine ausführliche Beschreibung._
+_No detailed description yet._
 
 ---
 
 ## KillcamReplay
 
-**Typ:** Client · **Version:** `0.9.2+8dd53d0` · **Stand:** 2026-08-14 09:14 · ⚠️ Debug-Build · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.2-8dd53d0.zip)
+**Type:** Client · **Version:** `0.9.2+8dd53d0` · **Updated:** 2026-08-14 09:14 · ⚠️ Debug build · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.2-8dd53d0.zip)
 
-> **Hinweis für Tester:** Nachfolger von **Killcam** – nicht beide gleichzeitig installieren.
+> **Tester note:** Successor of **Killcam** – do not install both at the same time.
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 GUID `com.maschine.KillcamReplay`, Assembly `maschine-KillcamReplay` — Namensschema wie
 [EasyMounting](https://github.com/maschine34675/EasyMounting).
@@ -1286,11 +1286,11 @@ Kopiert DLL + PDB automatisch nach `C:\SPT\BepInEx\plugins\`.
 
 ## LinkedSearchInStash
 
-**Typ:** Client · **Version:** `2.0.0+89b5564` · **Stand:** 2026-08-08 19:10 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/LinkedSearchInStash-2.0.0-89b5564.zip)
+**Type:** Client · **Version:** `2.0.0+89b5564` · **Updated:** 2026-08-08 19:10 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/LinkedSearchInStash-2.0.0-89b5564.zip)
 
-🎬 [Demo-Video](assets/LinkedSearchInStash/example.mp4)
+🎬 [Demo video](assets/LinkedSearchInStash/example.mp4)
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 Extends Tushonka’s Linked Search to your own stash. Adds a separate context-menu action that opens the stash search window filtered to items that are actually compatible with the selected piece of equipment.
 
@@ -1356,9 +1356,9 @@ Filters to items in your stash — even if hundreds of templates are theoretical
 
 ## ModProfiler
 
-**Typ:** Client · **Version:** `2.0.0+17b90f4` · **Stand:** 2026-08-14 16:20 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-2.0.0-17b90f4.zip)
+**Type:** Client · **Version:** `2.0.0+17b90f4` · **Updated:** 2026-08-14 16:20 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-2.0.0-17b90f4.zip)
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 In-Game-Profiler für SPT nach dem Vorbild von **Dubs Performance Analyzer** (RimWorld):
 zeigt live, wie viel CPU-Zeit jede installierte Client-Mod pro Frame kostet — um den
@@ -1452,19 +1452,19 @@ das Release-Zip neben der Projektdatei.
 
 ## ModSourceDebugger
 
-**Typ:** Client + Server · **Version:** `1.2.1+19c0f81` · **Stand:** 2026-08-04 20:02 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-1.2.1-19c0f81.zip)
+**Type:** Client + Server · **Version:** `1.2.1+19c0f81` · **Updated:** 2026-08-04 20:02 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-1.2.1-19c0f81.zip)
 
-**Bestandteile:** Client `1.2.1+19c0f81` · Server `1.2.1+d481132`
+**Components:** Client `1.2.1+19c0f81` · Server `1.2.1+d481132`
 
-_Noch keine ausführliche Beschreibung._
+_No detailed description yet._
 
 ---
 
 ## MoreQuickSlots
 
-**Typ:** Client · **Version:** `2.0.0+93f6d8a` · **Stand:** 2026-08-08 19:02 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/MoreQuickSlots-2.0.0-93f6d8a.zip)
+**Type:** Client · **Version:** `2.0.0+93f6d8a` · **Updated:** 2026-08-08 19:02 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/MoreQuickSlots-2.0.0-93f6d8a.zip)
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 Increases the number of freely assignable quick slots (7 by default: keys 4–0) by up to 6 additional slots.
 
@@ -1551,9 +1551,9 @@ Compatible with Fika (verified against Fika 2.3.4):
 
 ## NotificationFilter
 
-**Typ:** Client · **Version:** `2.0.0+b46354e` · **Stand:** 2026-08-08 18:56 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/NotificationFilter-2.0.0-b46354e.zip)
+**Type:** Client · **Version:** `2.0.0+b46354e` · **Updated:** 2026-08-08 18:56 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/NotificationFilter-2.0.0-b46354e.zip)
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 NotificationFilter gives you full control over the notification popups that appear during raids.
 
@@ -1585,9 +1585,9 @@ Note: Sound suppression and notification hiding only applies during active raids
 
 ## QuestMarkers
 
-**Typ:** Client · **Version:** `0.1.0+7af46a3` · **Stand:** 2026-08-14 09:51 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-0.1.0-7af46a3.zip)
+**Type:** Client · **Version:** `0.1.0+7af46a3` · **Updated:** 2026-08-14 09:51 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-0.1.0-7af46a3.zip)
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 World-anchored HUD markers for your unfinished quest objectives: zones to
 visit, spots to place items or beacons at, and quest items lying in the raid.
@@ -1674,11 +1674,11 @@ copied.
 
 ## RaidInfoPanels
 
-**Typ:** Client · **Version:** `1.0.0+e1f83d9` · **Stand:** 2026-08-13 12:23 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-e1f83d9.zip)
+**Type:** Client · **Version:** `1.0.0+e1f83d9` · **Updated:** 2026-08-13 12:23 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-e1f83d9.zip)
 
 <img src="assets/RaidInfoPanels/preview.png" width="440"> <img src="assets/RaidInfoPanels/puppet_preview.png" width="440">
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 Stabile Ersatz-Mod für die GamePanelHUD Weapon/Health-Panels auf SPT 4.x.
 
@@ -1719,9 +1719,9 @@ Die DLL landet automatisch in `BepInEx/plugins/maschine-RaidInfoPanels.dll`.
 
 ## RaidMenuCleanupFix
 
-**Typ:** Client · **Version:** `2.0.0+72189da` · **Stand:** 2026-08-08 11:12 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidMenuCleanupFix-2.0.0-72189da.zip)
+**Type:** Client · **Version:** `2.0.0+72189da` · **Updated:** 2026-08-08 11:12 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidMenuCleanupFix-2.0.0-72189da.zip)
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 Summary
 
@@ -1749,19 +1749,19 @@ A lightweight BepInEx patch intercepts the menu cleanup callback and skips it wh
 
 ## ReceiveAllChats
 
-**Typ:** Client + Server · **Version:** `2.0.0+8ebaa2e` · **Stand:** 2026-08-09 10:43 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ReceiveAllChats-2.0.0-8ebaa2e.zip)
+**Type:** Client + Server · **Version:** `2.0.0+8ebaa2e` · **Updated:** 2026-08-09 10:43 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ReceiveAllChats-2.0.0-8ebaa2e.zip)
 
-**Bestandteile:** Client `2.0.0+8ebaa2e` · Server `2.0.0+8ebaa2e`
+**Components:** Client `2.0.0+8ebaa2e` · Server `2.0.0+8ebaa2e`
 
-_Noch keine ausführliche Beschreibung._
+_No detailed description yet._
 
 ---
 
 ## ScopeRangefinder
 
-**Typ:** Client · **Version:** `3.0.0+f5345e8` · **Stand:** 2026-08-07 10:40 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ScopeRangefinder-3.0.0-f5345e8.zip)
+**Type:** Client · **Version:** `3.0.0+f5345e8` · **Updated:** 2026-08-07 10:40 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ScopeRangefinder-3.0.0-f5345e8.zip)
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 #### Overview
 
@@ -2059,11 +2059,11 @@ Built for SPT using BepInEx and Harmony.
 
 ## StashFilter
 
-**Typ:** Client · **Version:** `1.0.0+f287253` · **Stand:** 2026-08-13 16:32 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/StashFilter-1.0.0-f287253.zip)
+**Type:** Client · **Version:** `1.0.0+f287253` · **Updated:** 2026-08-13 16:32 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/StashFilter-1.0.0-f287253.zip)
 
 <img src="assets/StashFilter/demo.gif" width="440">
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 StashFilter adds a filter and sort panel to the stash search window, so you can
 find the right weapon, armor piece, magazine, round, med or attachment without
@@ -2177,9 +2177,9 @@ MIT — see [LICENSE](LICENSE).
 
 ## SurroundAudio
 
-**Typ:** Client · **Version:** `1.0.0+a29569c` · **Stand:** 2026-08-14 15:46 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-a29569c.zip)
+**Type:** Client · **Version:** `1.0.0+a29569c` · **Updated:** 2026-08-14 15:46 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-a29569c.zip)
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 Overview
 
@@ -2238,9 +2238,9 @@ As usual, unzip to your SPT folder
 
 ## TraderSearch
 
-**Typ:** Client · **Version:** `1.0.0+76e4ad8` · **Stand:** 2026-08-04 06:41 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/TraderSearch-1.0.0-76e4ad8.zip)
+**Type:** Client · **Version:** `1.0.0+76e4ad8` · **Updated:** 2026-08-04 06:41 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/TraderSearch-1.0.0-76e4ad8.zip)
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 Adds the search bar the trader window has always been missing. The stash and the flea market let you search for items by name — the trader buy screen does not. This mod puts a native-looking search field into the trader window header, between the assortment update button and the loyalty-level filter tabs.
 
@@ -2286,11 +2286,11 @@ MIT
 
 ## UnloadAllMagazines
 
-**Typ:** Client · **Version:** `2.0.0+18eee2a` · **Stand:** 2026-08-08 18:41 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/UnloadAllMagazines-2.0.0-18eee2a.zip)
+**Type:** Client · **Version:** `2.0.0+18eee2a` · **Updated:** 2026-08-08 18:41 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/UnloadAllMagazines-2.0.0-18eee2a.zip)
 
 <img src="assets/UnloadAllMagazines/button.png" width="440">
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 Overview
 
@@ -2316,9 +2316,9 @@ As usual, unzip to your SPT folder
 
 ## WeaponBuilderSearch
 
-**Typ:** Client · **Version:** `1.1.0+712c667` · **Stand:** 2026-08-04 09:04 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/WeaponBuilderSearch-1.1.0-712c667.zip)
+**Type:** Client · **Version:** `1.1.0+712c667` · **Updated:** 2026-08-04 09:04 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/WeaponBuilderSearch-1.1.0-712c667.zip)
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 Adds a live search field to the attachment dropdown in the **Weapon Builder** (Edit Build) and **Weapon Modding** screens.
 
@@ -2363,11 +2363,11 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 ## WebOverlay
 
-**Typ:** Client · **Version:** `1.3.0+199576a` · **Stand:** 2026-08-11 20:15 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/WebOverlay-1.3.0-199576a.zip)
+**Type:** Client · **Version:** `1.3.0+199576a` · **Updated:** 2026-08-11 20:15 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/WebOverlay-1.3.0-199576a.zip)
 
 <img src="assets/WebOverlay/demo.gif" width="440">
 
-<details><summary><b>Nutzungshinweise anzeigen</b></summary>
+<details><summary><b>Show usage notes</b></summary>
 
 Show web pages in windows over Escape From Tushonka, so a mod can build its user
 interface in HTML instead of an immediate-mode toolkit.
@@ -2655,4 +2655,4 @@ MIT.
 
 ---
 
-_Diese Seite wird automatisch generiert (`tools/Generate-BetaHub.ps1`) – Änderungen bitte dort bzw. in `mods.json`, nicht hier._
+_This page is generated automatically (`tools/Generate-BetaHub.ps1`) – make changes there or in `mods.json`, not here._
