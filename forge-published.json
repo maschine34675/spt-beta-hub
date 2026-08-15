@@ -1,5 +1,4 @@
 {
-  "fetchedAt": "2026-08-15T20:42:19.3496771+02:00",
   "publishedGuids": [
     "com.anvil.weboverlay",
     "com.maschine.autocorpsesearch",
@@ -18,5 +17,6 @@
     "com.maschine.tradersearch",
     "com.maschine.unloadallmagazines",
     "com.maschine.weaponbuildersearch"
-  ]
+  ],
+  "fetchedAt": "2026-08-15T22:03:09.2388447+02:00"
 }

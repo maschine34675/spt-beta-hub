@@ -1,6 +1,6 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-08-15 20:42** · 13 mods with download, 5 in development.
+Overview of all mods in beta testing · Last updated: **2026-08-15 22:03** · 13 mods with download, 5 in development.
 
 This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
@@ -24,7 +24,7 @@ Please always include it when reporting issues.
 | [**KillAndDamageInfo**](#killanddamageinfo) | `0.9.0+6554e72` ⚠️Debug | 2026-08-15 | Client | KillAndDamageInfo shows the combat information the game keeps to itself: what your kills died to, who killed you and in what state they were, what each hit actually did… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-0.9.0-6554e72.zip) |
 | [**Killcam**](#killcam) | `1.0.0+aec3dc4` | 2026-08-09 | Client | "Killcam light": on death the camera switches to the killer's first-person view for about 6 seconds; the death panel shows the killer's name and remaining HP. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Killcam-1.0.0-aec3dc4.zip) |
 | [**KillcamReplay**](#killcamreplay) | `0.9.2+8dd53d0` ⚠️Debug | 2026-08-14 | Client | True killcam: on death, the killer's final moments are replayed from their point of view, based on the recorded movement of the last seconds before the kill. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.2-8dd53d0.zip) |
-| [**ModProfiler**](#modprofiler) | `2.0.0+429976d` | 2026-08-15 | Client | In-game profiler modeled after Dubs Performance Analyzer (RimWorld): shows live how much CPU time each installed client mod costs per frame – find the cause of… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-2.0.0-429976d.zip) |
+| [**ModProfiler**](#modprofiler) | `2.0.0+e12e624` | 2026-08-15 | Client | In-game profiler modeled after Dubs Performance Analyzer (RimWorld): shows live how much CPU time each installed client mod costs per frame – find the cause of… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-2.0.0-e12e624.zip) |
 | [**ModSourceDebugger**](#modsourcedebugger) | `1.2.1+19c0f81` | 2026-08-04 | Client + Server | Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-1.2.1-19c0f81.zip) |
 | [**QuestMarkers**](#questmarkers) | `0.1.0+393f10d` | 2026-08-15 | Client | World-anchored HUD markers for your unfinished quest objectives: zones to visit, spots to place items or beacons at, and quest items lying in the raid. No more running… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-0.1.0-393f10d.zip) |
 | [**RaidInfoPanels**](#raidinfopanels) | `1.0.0+c7ec48b` | 2026-08-15 | Client | Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x. | <a href="#raidinfopanels"><img src="assets/RaidInfoPanels/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-c7ec48b.zip) |
@@ -621,7 +621,7 @@ Automatically copies DLL + PDB to `C:\SPT\BepInEx\plugins\`.
 
 ## ModProfiler
 
-**Type:** Client · **Version:** `2.0.0+429976d` · **Updated:** 2026-08-15 20:30 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-2.0.0-429976d.zip)
+**Type:** Client · **Version:** `2.0.0+e12e624` · **Updated:** 2026-08-15 20:45 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-2.0.0-e12e624.zip)
 
 <details><summary><b>Show usage notes</b></summary>
 
