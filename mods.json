@@ -1,5 +1,5 @@
 {
-  "_note": "Optional per-mod overrides. Keys: enabled (false = do not list), description (short text for the table), notes (extra hint for testers, Markdown), screenshots (paths relative to the mod folder; replaces the automatic selection).",
+  "_note": "Optional per-mod overrides. Keys: enabled (false = never list; true = list even when auto-detected as released on Forge via git tag v* or dated CHANGELOG entry), description (short text for the table), notes (extra hint for testers, Markdown), screenshots (paths relative to the mod folder; replaces the automatic selection).",
 
   "AiStoryQuests": {
     "description": "Experiment: AI-generated story quests (providers: OpenAI/Anthropic/Ollama, own API key required)."

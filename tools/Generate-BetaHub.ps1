@@ -8,9 +8,15 @@
     pwsh tools/Generate-BetaHub.ps1          # nur generieren
     pwsh tools/Generate-BetaHub.ps1 -Push    # generieren + commit + push
 
+  Forge-Filter: Mods, die bereits auf Forge veroeffentlicht sind, werden automatisch
+  NICHT gelistet. Erkennung: Git-Version-Tag (v1.2.3) im Mod-Repo ODER datierter
+  Release-Eintrag im CHANGELOG.md ("## [1.1.0] - 2026-07-30" oder "## 2.0.0 (2026-08-14)").
+  Ein CHANGELOG mit nur "[Unreleased]"/undatierten Eintraegen zaehlt nicht als Release.
+
   Optionale Overrides pro Mod in mods.json (alle Schluessel optional):
     "ModName": {
-      "enabled":     false,                  # Mod nicht listen
+      "enabled":     false,                  # false = nie listen; true = listen, auch
+                                             # wenn als veroeffentlicht erkannt
       "description": "Kurztext fuer die Tabelle",
       "notes":       "Zusatzhinweis fuer Tester (Markdown)",
       "screenshots": ["rel/pfad/im/mod-ordner.png"]
@@ -143,6 +149,19 @@ function Find-ReleaseZip([string]$modDir, [string]$version, [string[]]$preferred
     return ($zips | Sort-Object LastWriteTime -Descending | Select-Object -First 1)
 }
 
+# Auf Forge veroeffentlicht? Git-Version-Tag oder datierter CHANGELOG-Release-Eintrag.
+function Test-ForgePublished([string]$modDir) {
+    $tags = @(git -C $modDir tag --list 'v[0-9]*' 2>$null)
+    if ($LASTEXITCODE -eq 0 -and $tags.Count) { return "Git-Tag $($tags[-1])" }
+    $cl = Join-Path $modDir 'CHANGELOG.md'
+    if (Test-Path $cl) {
+        $hit = Select-String -Path $cl -Pattern '^##\s*\[?v?\d+(\.\d+)+\]?\s*[-–—(]+\s*\d{4}-\d{2}-\d{2}' |
+            Select-Object -First 1
+        if ($hit) { return "CHANGELOG-Release '$($hit.Line.Trim())'" }
+    }
+    return $null
+}
+
 # ---------------------------------------------------------------- Vorbereitung
 $downloadsDir = Join-Path $HubRoot 'downloads'
 $assetsRoot   = Join-Path $HubRoot 'assets'
@@ -161,8 +180,9 @@ if ($LASTEXITCODE -eq 0 -and $originUrl -match 'github\.com[:/](?<o>[^/]+)/(?<r>
 $SkipProjectPattern = '(?i)(\.|^)(Tests?|DevTool|DebugServer|WebViewProbe|Demo)$'
 
 # ---------------------------------------------------------------- Mods einsammeln
-$built   = [System.Collections.Generic.List[object]]::new()
-$unbuilt = [System.Collections.Generic.List[object]]::new()
+$built     = [System.Collections.Generic.List[object]]::new()
+$unbuilt   = [System.Collections.Generic.List[object]]::new()
+$published = [System.Collections.Generic.List[string]]::new()
 
 $modDirs = Get-ChildItem $DevRoot -Directory | Where-Object { $_.Name -notmatch '^[_.]' } | Sort-Object Name
 foreach ($dir in $modDirs) {
@@ -174,6 +194,10 @@ foreach ($dir in $modDirs) {
 
     $enabledCfg = Cfg $modName 'enabled'
     if ($enabledCfg -eq $false) { Write-Host "  $modName : per mods.json deaktiviert"; continue }
+    if ($enabledCfg -ne $true) {
+        $pub = Test-ForgePublished $modDir
+        if ($pub) { $published.Add("$modName ($pub)"); continue }
+    }
 
     # ---- Projekte klassifizieren
     $parts = [System.Collections.Generic.List[object]]::new()
@@ -368,6 +392,8 @@ $md.Add('# SPT 4.1 – Beta Mods')
 $md.Add('')
 $md.Add("Overview of all mods in beta testing · Last updated: **$now** · $($built.Count) mods with download, $($unbuilt.Count) in development.")
 $md.Add('')
+$md.Add('This page only lists mods that are **not (yet) released on [Forge](https://forge.sp-tarkov.com)** — released mods get their updates there.')
+$md.Add('')
 $md.Add('**Installation:** Grab the ZIP via the download link and extract it into the SPT root folder')
 $md.Add('(the folder containing `EscapeFromTarkov.exe`), overwriting existing files.')
 $md.Add('The ZIPs contain the correct folder structure: client mods go to `BepInEx\plugins\`,')
@@ -448,9 +474,18 @@ $md.Add('_This page is generated automatically (`tools/Generate-BetaHub.ps1`) �
 
 Set-Content -Path (Join-Path $HubRoot 'README.md') -Value ($md -join "`n") -Encoding utf8NoBOM
 
+# Pakete entfernen, die zu keiner (mehr) gelisteten Mod gehoeren
+$validZips = @($built | ForEach-Object Zip)
+Get-ChildItem $downloadsDir -Filter *.zip -File | Where-Object { $_.Name -notin $validZips } |
+    ForEach-Object { Write-Host "  entferne nicht mehr gelistetes Paket: $($_.Name)"; Remove-Item $_.FullName -Force }
+
 # ---------------------------------------------------------------- Abschluss
 Write-Host ''
 Write-Host "Fertig: $($built.Count) Mods paketiert, $($unbuilt.Count) ohne Build." -ForegroundColor Green
+if ($published.Count) {
+    Write-Host "Auf Forge veroeffentlicht, daher nicht gelistet ($($published.Count)):" -ForegroundColor Cyan
+    $published | ForEach-Object { Write-Host "  - $_" }
+}
 if ($warnings.Count) {
     Write-Host "$($warnings.Count) Warnung(en) – siehe oben." -ForegroundColor Yellow
 }
