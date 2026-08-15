@@ -21,6 +21,8 @@
     "ModName": {
       "enabled":     false,                  # false = nie listen; true = listen, auch
                                              # wenn als veroeffentlicht erkannt
+      "dependencies": ["com.anvil.weboverlay"]  # Forge-GUIDs (Name+Link werden per API
+                                             # aufgeloest) oder {name,url}-Objekte
       "description": "Kurztext fuer die Tabelle",
       "notes":       "Zusatzhinweis fuer Tester (Markdown)",
       "screenshots": ["rel/pfad/im/mod-ordner.png"]
@@ -179,30 +181,35 @@ function Get-ModGuidCandidates([string]$modDir, [string]$modName) {
     return $guids
 }
 
-# Fragt die Forge-API, welche der Kandidaten-GUIDs veroeffentlicht sind.
+# Fragt die Forge-API ab, welche der GUIDs dort existieren, und liefert eine
+# Map guid -> @{ name; url } (fuer Veroeffentlicht-Check UND Dependency-Links).
 # Erfolg -> Cache aktualisieren; Fehler -> Cache verwenden; sonst Abbruch.
-function Get-ForgePublishedGuids([string[]]$candidates, [string]$cachePath) {
-    $found = [System.Collections.Generic.List[string]]::new()
+function Get-ForgeMods([string[]]$guids, [string]$cachePath) {
+    $map = @{}
     $ua = 'BetaHubGenerator/1.0 (+https://github.com/maschine34675/spt-beta-hub)'
     try {
-        $url = 'https://sp-mod.com/api/v0/mods?per_page=100&fields=guid&filter[guid]=' +
-            [uri]::EscapeDataString(($candidates -join ','))
+        $url = 'https://sp-mod.com/api/v0/mods?per_page=100&fields=guid,name,detail_url&filter[guid]=' +
+            [uri]::EscapeDataString(($guids -join ','))
         while ($url) {
             $resp = Invoke-RestMethod -Uri $url -UserAgent $ua -TimeoutSec 60
-            foreach ($m in $resp.data) { $found.Add(([string]$m.guid).ToLower()) }
+            foreach ($m in $resp.data) {
+                $map[([string]$m.guid).ToLower()] = @{ name = [string]$m.name; url = [string]$m.detail_url }
+            }
             $url = $resp.links.next
         }
-        @{ fetchedAt = (Get-Date).ToString('o'); publishedGuids = @($found) } |
-            ConvertTo-Json | Set-Content $cachePath -Encoding utf8NoBOM
-        return @{ Guids = @($found); Source = 'Forge-API (live)' }
+        @{ fetchedAt = (Get-Date).ToString('o'); mods = $map } |
+            ConvertTo-Json -Depth 4 | Set-Content $cachePath -Encoding utf8NoBOM
+        return @{ Mods = $map; Source = 'Forge-API (live)' }
     }
     catch {
         if (Test-Path $cachePath) {
-            $cache = Get-Content $cachePath -Raw | ConvertFrom-Json
-            Warn "Forge-API nicht erreichbar ($($_.Exception.Message)) – verwende Cache vom $($cache.fetchedAt)"
-            return @{ Guids = @($cache.publishedGuids); Source = "Cache vom $($cache.fetchedAt)" }
+            $cache = Get-Content $cachePath -Raw | ConvertFrom-Json -AsHashtable
+            if ($cache -and $cache.mods) {
+                Warn "Forge-API nicht erreichbar ($($_.Exception.Message)) – verwende Cache vom $($cache.fetchedAt)"
+                return @{ Mods = $cache.mods; Source = "Cache vom $($cache.fetchedAt)" }
+            }
         }
-        throw "Forge-API nicht erreichbar und kein Cache (forge-published.json) vorhanden – Abbruch, damit keine veroeffentlichten Mods gelistet werden. ($($_.Exception.Message))"
+        throw "Forge-API nicht erreichbar und kein (lesbarer) Cache (forge-published.json) vorhanden – Abbruch, damit keine veroeffentlichten Mods gelistet werden. ($($_.Exception.Message))"
     }
 }
 
@@ -231,6 +238,7 @@ $published = [System.Collections.Generic.List[string]]::new()
 $modDirs = Get-ChildItem $DevRoot -Directory | Where-Object { $_.Name -notmatch '^[_.]' } | Sort-Object Name
 
 # ---- Forge-Abgleich: welche Mods sind bereits veroeffentlicht?
+# (Dependency-GUIDs aus mods.json werden mit abgefragt, um Name+Link aufzuloesen.)
 $modGuids = @{}
 $allCandidates = [System.Collections.Generic.HashSet[string]]::new()
 foreach ($dir in $modDirs) {
@@ -238,8 +246,15 @@ foreach ($dir in $modDirs) {
     $modGuids[$dir.Name] = $g
     foreach ($x in $g) { [void]$allCandidates.Add($x) }
 }
-$forge = Get-ForgePublishedGuids @($allCandidates) (Join-Path $HubRoot 'forge-published.json')
-Write-Host "Forge-Abgleich ($($forge.Source)): $($forge.Guids.Count) GUIDs als veroeffentlicht erkannt"
+foreach ($entry in $config.Values) {
+    if ($entry -is [hashtable] -and $entry.ContainsKey('dependencies')) {
+        foreach ($d in $entry['dependencies']) {
+            if ($d -is [string]) { [void]$allCandidates.Add($d.ToLower()) }
+        }
+    }
+}
+$forge = Get-ForgeMods @($allCandidates) (Join-Path $HubRoot 'forge-published.json')
+Write-Host "Forge-Abgleich ($($forge.Source)): $($forge.Mods.Count) der abgefragten GUIDs sind auf Forge"
 
 foreach ($dir in $modDirs) {
     $modName = $dir.Name
@@ -251,7 +266,7 @@ foreach ($dir in $modDirs) {
     $enabledCfg = Cfg $modName 'enabled'
     if ($enabledCfg -eq $false) { Write-Host "  $modName : per mods.json deaktiviert"; continue }
     if ($enabledCfg -ne $true) {
-        $pubHit = @($modGuids[$modName] | Where-Object { $_ -in $forge.Guids })
+        $pubHit = @($modGuids[$modName] | Where-Object { $forge.Mods.ContainsKey($_) })
         if ($pubHit.Count) { $published.Add("$modName ($($pubHit[0]))"); continue }
     }
 
@@ -319,7 +334,18 @@ foreach ($dir in $modDirs) {
     $version = $primary.Version
     $allDlls = @($clientParts + $serverParts | ForEach-Object Dll)
     $stamp   = ($allDlls | Sort-Object Stamp -Descending | Select-Object -First 1).Stamp
-    $isDebug = [bool]($allDlls | Where-Object IsDebug)
+
+    # Abhaengigkeiten aufloesen (GUID -> Forge-Name/-Link, Objekte 1:1)
+    $deps = @()
+    foreach ($d in @((Cfg $modName 'dependencies'))) {
+        if ($null -eq $d) { continue }
+        if ($d -is [string]) {
+            $k = $d.ToLower()
+            if ($forge.Mods.ContainsKey($k)) { $deps += @{ Name = $forge.Mods[$k].name; Url = $forge.Mods[$k].url } }
+            else { $deps += @{ Name = $d; Url = $null }; Warn "$modName : Abhaengigkeit '$d' nicht auf Forge gefunden" }
+        }
+        elseif ($d -is [hashtable]) { $deps += @{ Name = $d['name']; Url = $d['url'] } }
+    }
 
     # ---- Paket bauen (Regel 1: vorhandenes Release-Zip; Regel 2: selbst packen)
     $prefixes = @()
@@ -334,7 +360,6 @@ foreach ($dir in $modDirs) {
         $zipPath = Join-Path $downloadsDir $zipName
         if (-not (Test-Path $zipPath)) { Copy-Item $relZip.FullName $zipPath }
         $stamp = $relZip.LastWriteTime
-        $isDebug = $false
         $pkgNote = "vorhandenes Release-Zip '$($relZip.Name)' uebernommen"
         $newest = ($allDlls | Sort-Object Stamp -Descending | Select-Object -First 1)
         if ($newest.Stamp -gt $relZip.LastWriteTime.AddMinutes(5)) {
@@ -423,7 +448,7 @@ foreach ($dir in $modDirs) {
         Version = $version
         Id      = $id
         Stamp   = $stamp
-        IsDebug = $isDebug
+        Deps    = $deps
         Desc    = $desc
         Notes   = (Cfg $modName 'notes')
         Body    = $body
@@ -464,10 +489,14 @@ $md.Add('| Mod | Version | Updated | Type | Description | Preview | Download |')
 $md.Add('|---|---|---|---|---|---|---|')
 foreach ($m in $built) {
     $anchor = $m.Name.ToLower()
-    $ver = "``$($m.Version)+$($m.Id)``" + $(if ($m.IsDebug) { ' ⚠️Debug' } else { '' })
+    $ver = "``$($m.Version)+$($m.Id)``"
     $preview = if ($m.Images.Count) { "<a href=`"#$anchor`"><img src=`"$($m.Images[0])`" height=`"60`"></a>" } else { '–' }
     $descCell = TableCell (Trunc $m.Desc 170)
     if ($descCell -eq '–') { $descCell = '_(description to follow)_' }
+    if ($m.Deps.Count) {
+        $depLinks = ($m.Deps | ForEach-Object { if ($_.Url) { "<a href=`"$($_.Url)`">$($_.Name)</a>" } else { $_.Name } }) -join ', '
+        $descCell += "<br><sub>🔌 requires $depLinks</sub>"
+    }
     $md.Add("| [**$($m.Name)**](#$anchor) | $ver | $($m.Stamp.ToString('yyyy-MM-dd')) | $($m.Typ) | $descCell | $preview | [⬇ ZIP]($(DownloadUrl $m.Zip)) |")
 }
 $md.Add('')
@@ -489,9 +518,13 @@ $md.Add('')
 foreach ($m in $built) {
     $md.Add("## $($m.Name)")
     $md.Add('')
-    $dbg = if ($m.IsDebug) { ' · ⚠️ Debug build' } else { '' }
-    $md.Add("**Type:** $($m.Typ) · **Version:** ``$($m.Version)+$($m.Id)`` · **Updated:** $($m.Stamp.ToString('yyyy-MM-dd HH:mm'))$dbg · [⬇ Download]($(DownloadUrl $m.Zip))")
+    $md.Add("**Type:** $($m.Typ) · **Version:** ``$($m.Version)+$($m.Id)`` · **Updated:** $($m.Stamp.ToString('yyyy-MM-dd HH:mm')) · [⬇ Download]($(DownloadUrl $m.Zip))")
     $md.Add('')
+    if ($m.Deps.Count) {
+        $depLinks = ($m.Deps | ForEach-Object { if ($_.Url) { "[$($_.Name)]($($_.Url))" } else { $_.Name } }) -join ' · '
+        $md.Add("> 🔌 **Requires:** $depLinks — install separately, not included in the ZIP.")
+        $md.Add('')
+    }
     if ($m.Parts.Count -gt 1) {
         $partLine = ($m.Parts | ForEach-Object {
             "$(if ($_.Kind -eq 'client') { 'Client' } else { 'Server' }) ``$($_.Dll.Version)+$($_.Dll.Id)``"

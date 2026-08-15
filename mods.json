@@ -1,20 +1,18 @@
 {
-  "_note": "Optional per-mod overrides. Keys: enabled (false = never list; true = list even when the Forge API reports the mod as published), description (short text for the table), notes (extra hint for testers, Markdown), screenshots (paths relative to the mod folder; replaces the automatic selection). Published detection: one query against https://sp-mod.com/api/v0/mods?filter[guid]=... using each mod's BepInPlugin GUID; result cached in forge-published.json.",
+  "_note": "Optional per-mod overrides. Keys: enabled (false = never list; true = list even when the Forge API reports the mod as published), description (short text for the table), notes (extra hint for testers, Markdown), screenshots (paths relative to the mod folder; replaces the automatic selection), dependencies (array; either a Forge GUID string like 'com.anvil.weboverlay' - name and link are resolved via the Forge API - or an object {\"name\": ..., \"url\": ...} for dependencies not on Forge). Published detection: one query against https://sp-mod.com/api/v0/mods?filter[guid]=... using each mod's BepInPlugin GUID; result cached in forge-published.json.",
 
   "AiStoryQuests": {
     "description": "Experiment: AI-generated story quests (providers: OpenAI/Anthropic/Ollama, own API key required)."
   },
   "ClusterGrenade": {
-    "description": "Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets (frag or flash, weighted mix). Also adds a 40x46mm cluster round for grenade launchers (MSGL, M203, FN40GL)."
+    "description": "Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets (frag or flash, weighted mix). Also adds a 40x46mm cluster round for grenade launchers (MSGL, M203, FN40GL).",
+    "dependencies": ["com.wtt.commonlib"]
   },
   "CombatSlide": {
     "description": "Press crouch while sprinting to keep sliding at decreasing speed – a \"combat slide\" like in other shooters."
   },
   "CorpseRun": {
     "description": "After dying in a raid, optionally respawn (naked), loot your own corpse and continue the raid; giving up ends the raid normally."
-  },
-  "CraftQueue": {
-    "screenshots": ["assets/thumbnails/craftqueue-variations-preview.png"]
   },
   "Killcam": {
     "description": "\"Killcam light\": on death the camera switches to the killer's first-person view for about 6 seconds; the death panel shows the killer's name and remaining HP.",
@@ -25,19 +23,19 @@
     "notes": "Successor of **Killcam** – do not install both at the same time."
   },
   "ModProfiler": {
-    "description": "In-game profiler modeled after Dubs Performance Analyzer (RimWorld): shows live how much CPU time each installed client mod costs per frame – find the cause of performance drops without disabling mods one by one."
+    "description": "In-game profiler modeled after Dubs Performance Analyzer (RimWorld): shows live how much CPU time each installed client mod costs per frame – find the cause of performance drops without disabling mods one by one.",
+    "screenshots": ["preview.png"],
+    "dependencies": ["com.anvil.weboverlay"]
   },
   "ModSourceDebugger": {
     "description": "Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector)."
   },
   "RaidInfoPanels": {
     "description": "Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x.",
-    "screenshots": ["Icons/preview.png", "Icons/puppet_preview.png"]
+    "screenshots": ["preview.png"]
   },
-  "ReceiveAllChats": {
-    "description": "The messenger's \"Receive All\" button collects attachments from all chats, not just the currently selected one."
-  },
-  "WebOverlay": {
-    "screenshots": ["assets/demo.gif"]
+  "QuestMarkers": {
+    "screenshots": ["preview.png"],
+    "dependencies": ["com.anvil.weboverlay"]
   }
 }
