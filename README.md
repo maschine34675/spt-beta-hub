@@ -1,8 +1,8 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-08-15 20:22** · 14 mods with download, 4 in development.
+Overview of all mods in beta testing · Last updated: **2026-08-15 20:32** · 14 mods with download, 4 in development.
 
-This page only lists mods that are **not (yet) released on [Forge](https://forge.sp-tarkov.com)** — released mods get their updates there.
+This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
 **Installation:** Grab the ZIP via the download link and extract it into the SPT root folder
 (the folder containing `EscapeFromTarkov.exe`), overwriting existing files.
