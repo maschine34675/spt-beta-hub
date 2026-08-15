@@ -1,0 +1,22 @@
+{
+  "fetchedAt": "2026-08-15T20:42:19.3496771+02:00",
+  "publishedGuids": [
+    "com.anvil.weboverlay",
+    "com.maschine.autocorpsesearch",
+    "com.maschine.autoiff",
+    "com.maschine.craftqueue",
+    "com.maschine.defaultautofiremode",
+    "com.maschine.dualsidedoorbreach",
+    "com.maschine.easymounting",
+    "com.maschine.linkedsearchinstash",
+    "com.maschine.morequickslots",
+    "com.maschine.notificationfilter",
+    "com.maschine.raidmenucleanupfix",
+    "com.maschine.receiveallchats",
+    "com.maschine.scoperangefinder",
+    "com.maschine.stashfilter",
+    "com.maschine.tradersearch",
+    "com.maschine.unloadallmagazines",
+    "com.maschine.weaponbuildersearch"
+  ]
+}

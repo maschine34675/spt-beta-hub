@@ -1,5 +1,5 @@
 {
-  "_note": "Optional per-mod overrides. Keys: enabled (false = never list; true = list even when auto-detected as released on Forge via git tag v* or dated CHANGELOG entry), description (short text for the table), notes (extra hint for testers, Markdown), screenshots (paths relative to the mod folder; replaces the automatic selection).",
+  "_note": "Optional per-mod overrides. Keys: enabled (false = never list; true = list even when the Forge API reports the mod as published), description (short text for the table), notes (extra hint for testers, Markdown), screenshots (paths relative to the mod folder; replaces the automatic selection). Published detection: one query against https://sp-mod.com/api/v0/mods?filter[guid]=... using each mod's BepInPlugin GUID; result cached in forge-published.json.",
 
   "AiStoryQuests": {
     "description": "Experiment: AI-generated story quests (providers: OpenAI/Anthropic/Ollama, own API key required)."

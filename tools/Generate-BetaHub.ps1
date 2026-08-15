@@ -8,10 +8,14 @@
     pwsh tools/Generate-BetaHub.ps1          # nur generieren
     pwsh tools/Generate-BetaHub.ps1 -Push    # generieren + commit + push
 
-  Forge-Filter: Mods, die bereits auf Forge veroeffentlicht sind, werden automatisch
-  NICHT gelistet. Erkennung: Git-Version-Tag (v1.2.3) im Mod-Repo ODER datierter
-  Release-Eintrag im CHANGELOG.md ("## [1.1.0] - 2026-07-30" oder "## 2.0.0 (2026-08-14)").
-  Ein CHANGELOG mit nur "[Unreleased]"/undatierten Eintraegen zaehlt nicht als Release.
+  Forge-Filter: Mods, die bereits auf Forge (https://sp-mod.com) veroeffentlicht sind,
+  werden automatisch NICHT gelistet. Erkennung per Forge-API: pro Mod werden die
+  Plugin-GUIDs aus dem Quellcode gezogen ([BepInPlugin("com.maschine....")], Fallback
+  com.maschine.<ordnername>) und in EINER Abfrage gegen
+  GET /api/v0/mods?filter[guid]=... geprueft. Das Ergebnis wird in
+  forge-published.json gecacht; ist die API nicht erreichbar, gilt der Cache.
+  Ohne API UND ohne Cache bricht das Skript ab (lieber kein Update als
+  veroeffentlichte Mods zu listen).
 
   Optionale Overrides pro Mod in mods.json (alle Schluessel optional):
     "ModName": {
@@ -149,17 +153,57 @@ function Find-ReleaseZip([string]$modDir, [string]$version, [string[]]$preferred
     return ($zips | Sort-Object LastWriteTime -Descending | Select-Object -First 1)
 }
 
-# Auf Forge veroeffentlicht? Git-Version-Tag oder datierter CHANGELOG-Release-Eintrag.
-function Test-ForgePublished([string]$modDir) {
-    $tags = @(git -C $modDir tag --list 'v[0-9]*' 2>$null)
-    if ($LASTEXITCODE -eq 0 -and $tags.Count) { return "Git-Tag $($tags[-1])" }
-    $cl = Join-Path $modDir 'CHANGELOG.md'
-    if (Test-Path $cl) {
-        $hit = Select-String -Path $cl -Pattern '^##\s*\[?v?\d+(\.\d+)+\]?\s*[-–—(]+\s*\d{4}-\d{2}-\d{2}' |
-            Select-Object -First 1
-        if ($hit) { return "CHANGELOG-Release '$($hit.Line.Trim())'" }
+# Plugin-GUID-Kandidaten eines Mods: BepInPlugin-Literale aus dem Quellcode
+# plus konstruierte Fallbacks (com.maschine.<ordnername>, com.<prefix>.<name>
+# fuer Assemblies wie "Anvil-WebOverlay").
+function Get-ModGuidCandidates([string]$modDir, [string]$modName) {
+    $guids = [System.Collections.Generic.HashSet[string]]::new()
+    $csFiles = @(Get-ChildItem $modDir -Recurse -Filter *.cs -File -ErrorAction SilentlyContinue |
+        Where-Object { $_.FullName -notmatch '\\(bin|obj|artifacts|dist|packages|node_modules|\.git)\\' })
+    if ($csFiles) {
+        foreach ($hit in ($csFiles | Select-String -Pattern '\[BepInPlugin\(\s*"(com\.[^"]+)"' -AllMatches)) {
+            foreach ($mm in $hit.Matches) { [void]$guids.Add($mm.Groups[1].Value.ToLower()) }
+        }
     }
-    return $null
+    [void]$guids.Add("com.maschine.$($modName.ToLower())")
+    foreach ($proj in @(Get-ChildItem $modDir -Recurse -Depth 3 -Filter *.csproj -File -ErrorAction SilentlyContinue |
+        Where-Object { $_.FullName -notmatch '\\(bin|obj|artifacts|dist|packages|node_modules|\.git)\\' })) {
+        $praw = Get-Content $proj.FullName -Raw
+        if ($praw -match '<AssemblyName>([^<]+)</AssemblyName>') {
+            $an = $Matches[1].Trim()
+            if ($an -match '^([A-Za-z0-9]+)-(.+)$' -and $Matches[1].ToLower() -ne 'maschine') {
+                [void]$guids.Add(("com.{0}.{1}" -f $Matches[1], ($Matches[2] -replace '[^A-Za-z0-9]', '')).ToLower())
+            }
+        }
+    }
+    return $guids
+}
+
+# Fragt die Forge-API, welche der Kandidaten-GUIDs veroeffentlicht sind.
+# Erfolg -> Cache aktualisieren; Fehler -> Cache verwenden; sonst Abbruch.
+function Get-ForgePublishedGuids([string[]]$candidates, [string]$cachePath) {
+    $found = [System.Collections.Generic.List[string]]::new()
+    $ua = 'BetaHubGenerator/1.0 (+https://github.com/maschine34675/spt-beta-hub)'
+    try {
+        $url = 'https://sp-mod.com/api/v0/mods?per_page=100&fields=guid&filter[guid]=' +
+            [uri]::EscapeDataString(($candidates -join ','))
+        while ($url) {
+            $resp = Invoke-RestMethod -Uri $url -UserAgent $ua -TimeoutSec 60
+            foreach ($m in $resp.data) { $found.Add(([string]$m.guid).ToLower()) }
+            $url = $resp.links.next
+        }
+        @{ fetchedAt = (Get-Date).ToString('o'); publishedGuids = @($found) } |
+            ConvertTo-Json | Set-Content $cachePath -Encoding utf8NoBOM
+        return @{ Guids = @($found); Source = 'Forge-API (live)' }
+    }
+    catch {
+        if (Test-Path $cachePath) {
+            $cache = Get-Content $cachePath -Raw | ConvertFrom-Json
+            Warn "Forge-API nicht erreichbar ($($_.Exception.Message)) – verwende Cache vom $($cache.fetchedAt)"
+            return @{ Guids = @($cache.publishedGuids); Source = "Cache vom $($cache.fetchedAt)" }
+        }
+        throw "Forge-API nicht erreichbar und kein Cache (forge-published.json) vorhanden – Abbruch, damit keine veroeffentlichten Mods gelistet werden. ($($_.Exception.Message))"
+    }
 }
 
 # ---------------------------------------------------------------- Vorbereitung
@@ -185,6 +229,18 @@ $unbuilt   = [System.Collections.Generic.List[object]]::new()
 $published = [System.Collections.Generic.List[string]]::new()
 
 $modDirs = Get-ChildItem $DevRoot -Directory | Where-Object { $_.Name -notmatch '^[_.]' } | Sort-Object Name
+
+# ---- Forge-Abgleich: welche Mods sind bereits veroeffentlicht?
+$modGuids = @{}
+$allCandidates = [System.Collections.Generic.HashSet[string]]::new()
+foreach ($dir in $modDirs) {
+    $g = Get-ModGuidCandidates $dir.FullName $dir.Name
+    $modGuids[$dir.Name] = $g
+    foreach ($x in $g) { [void]$allCandidates.Add($x) }
+}
+$forge = Get-ForgePublishedGuids @($allCandidates) (Join-Path $HubRoot 'forge-published.json')
+Write-Host "Forge-Abgleich ($($forge.Source)): $($forge.Guids.Count) GUIDs als veroeffentlicht erkannt"
+
 foreach ($dir in $modDirs) {
     $modName = $dir.Name
     $modDir  = $dir.FullName
@@ -195,8 +251,8 @@ foreach ($dir in $modDirs) {
     $enabledCfg = Cfg $modName 'enabled'
     if ($enabledCfg -eq $false) { Write-Host "  $modName : per mods.json deaktiviert"; continue }
     if ($enabledCfg -ne $true) {
-        $pub = Test-ForgePublished $modDir
-        if ($pub) { $published.Add("$modName ($pub)"); continue }
+        $pubHit = @($modGuids[$modName] | Where-Object { $_ -in $forge.Guids })
+        if ($pubHit.Count) { $published.Add("$modName ($($pubHit[0]))"); continue }
     }
 
     # ---- Projekte klassifizieren

@@ -1,6 +1,6 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-08-15 20:32** · 14 mods with download, 4 in development.
+Overview of all mods in beta testing · Last updated: **2026-08-15 20:42** · 13 mods with download, 5 in development.
 
 This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
@@ -16,7 +16,6 @@ Please always include it when reporting issues.
 
 | Mod | Version | Updated | Type | Description | Preview | Download |
 |---|---|---|---|---|---|---|
-| [**AutoIFF**](#autoiff) | `2.0.0+8ad12c6` | 2026-08-15 | Client | Automatically identifies the target you are currently aiming at as **Friendly** or **Hostile**, and alerts you when you are marked as a **Scav traitor**. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/AutoIFF-2.0.0-8ad12c6.zip) |
 | [**BangAndClear**](#bangandclear) | `0.9.0+3111b16` | 2026-08-11 | Client | An SPT 4.0 client mod for tactical door work: crack a door open a few degrees, put a grenade through the gap, close the door, wait for the bang. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.0-3111b16.zip) |
 | [**BtrTurretControl**](#btrturretcontrol) | `1.0.0+37e08ef` | 2026-08-14 | Client | Client-only SPT mod that lets a seated BTR passenger take direct control of the gun turret. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BtrTurretControl-1.0.0-37e08ef.zip) |
 | [**ClusterGrenade**](#clustergrenade) | `2.2.1+5fe2678` | 2026-08-13 | Client + Server | Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets (frag or flash, weighted mix). Also adds a 40x46mm cluster round for grenade… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.2.1-5fe2678.zip) |
@@ -25,10 +24,10 @@ Please always include it when reporting issues.
 | [**KillAndDamageInfo**](#killanddamageinfo) | `0.9.0+6554e72` ⚠️Debug | 2026-08-15 | Client | KillAndDamageInfo shows the combat information the game keeps to itself: what your kills died to, who killed you and in what state they were, what each hit actually did… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-0.9.0-6554e72.zip) |
 | [**Killcam**](#killcam) | `1.0.0+aec3dc4` | 2026-08-09 | Client | "Killcam light": on death the camera switches to the killer's first-person view for about 6 seconds; the death panel shows the killer's name and remaining HP. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Killcam-1.0.0-aec3dc4.zip) |
 | [**KillcamReplay**](#killcamreplay) | `0.9.2+8dd53d0` ⚠️Debug | 2026-08-14 | Client | True killcam: on death, the killer's final moments are replayed from their point of view, based on the recorded movement of the last seconds before the kill. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.2-8dd53d0.zip) |
+| [**ModProfiler**](#modprofiler) | `2.0.0+429976d` | 2026-08-15 | Client | In-game profiler modeled after Dubs Performance Analyzer (RimWorld): shows live how much CPU time each installed client mod costs per frame – find the cause of… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-2.0.0-429976d.zip) |
 | [**ModSourceDebugger**](#modsourcedebugger) | `1.2.1+19c0f81` | 2026-08-04 | Client + Server | Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-1.2.1-19c0f81.zip) |
 | [**QuestMarkers**](#questmarkers) | `0.1.0+393f10d` | 2026-08-15 | Client | World-anchored HUD markers for your unfinished quest objectives: zones to visit, spots to place items or beacons at, and quest items lying in the raid. No more running… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-0.1.0-393f10d.zip) |
 | [**RaidInfoPanels**](#raidinfopanels) | `1.0.0+c7ec48b` | 2026-08-15 | Client | Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x. | <a href="#raidinfopanels"><img src="assets/RaidInfoPanels/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-c7ec48b.zip) |
-| [**StashFilter**](#stashfilter) | `1.0.0+f287253` | 2026-08-13 | Client | StashFilter adds a filter and sort panel to the stash search window, so you can find the right weapon, armor piece, magazine, round, med or attachment without scrolling… | <a href="#stashfilter"><img src="assets/StashFilter/demo.gif" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/StashFilter-1.0.0-f287253.zip) |
 | [**SurroundAudio**](#surroundaudio) | `1.0.0+a29569c` | 2026-08-14 | Client | Experimental proof of concept: plays SPT on a real surround speaker setup (5.1/7.1) instead of binaural headphone audio. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-a29569c.zip) |
 
 ## 🚧 In development – no build yet
@@ -39,86 +38,7 @@ Please always include it when reporting issues.
 | **AiStoryQuests** | Client + Server | Experiment: AI-generated story quests (providers: OpenAI/Anthropic/Ollama, own API key required). |
 | **AutoWishlist** | Client + Server | – |
 | **StashSort** | Client | – |
-
----
-
-## AutoIFF
-
-**Type:** Client · **Version:** `2.0.0+8ad12c6` · **Updated:** 2026-08-15 12:04 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/AutoIFF-2.0.0-8ad12c6.zip)
-
-<details><summary><b>Show usage notes</b></summary>
-
-### AutoIFF — Automatic Identify Friend or Foe
-
-Automatically identifies the target you are currently aiming at as **Friendly** or **Hostile**, and alerts you when you are marked as a **Scav traitor**.
-
-Based on [LightsAutomaticIdentifier](https://hub.sp-tarkov.com/files/file/2669-lightsautomaticidentifier/) by **Light** (MIT License).
-
----
-
-#### Features
-
-- **Target identification** — aim at any bot to identify it as Friendly or Hostile after a short delay
-- **Bot role display** — shows the target's role: PMC (USEC/BEAR), Scav, Sniper Scav, Raider, Boss (Killa, Reshala, Gluhar, Sanitar, Tagilla, Knight, Zryachiy, Shturman, Kaban, Kolontay, Partisan), Boss Follower, Cultist, Infected, and more
-- **Skill scaling** — identification time and range are affected by your Attention, Perception, and Search skill levels, including Elite bonuses
-- **Identification memory** — previously identified targets are remembered for 60 seconds (configurable), so you don't have to re-identify them
-- **Scav traitor detection** — detects the exact moment a Scav group marks you as hostile and shows a flash alert in the bottom-right corner. The counter increments each time an additional group finds out, giving you a sense of how far the information has spread across the map
-- **Activation mode** — set to *Automatic* (Scav raids only), *AlwaysOn*, *AlwaysOff*, or *Hotkey* (toggle on/off via a configurable keybind)
-- **Friendly-only mode** — instantly highlights friendly targets only, with no identification delay; hostile targets show no label — useful for preventing friendly fire in any raid type
-- **Fika support** — works in coop raids, including headless-hosted ones (see below)
-- **Conflict detection** — if the original LightsAutomaticIdentifier is also installed, AutoIFF disables itself and shows a warning in-game
-
----
-
-#### How It Works
-
-While aiming down sights, a raycast is fired from the player camera. When it hits a bot within range, a short identification timer begins. Once complete, the target is labeled Friendly or Hostile based on whether it has registered the player as an enemy.
-
-Scav traitor detection hooks directly into `BotsGroup.AddEnemy` — the single point through which all enemy-registration paths converge (direct hit response, group propagation, and zone-wide spread). This means the alert fires at the earliest possible moment, with no polling.
-
----
-
-#### Fika Support
-
-AutoIFF works with [Fika](https://project-fika.gitbook.io/) coop raids (requires Fika 2.4.x or newer; AutoIFF only needs to be installed on your own client):
-
-- **When you are the raid host** (or playing regular SPT), bots run locally and identification uses the exact hostility data, just like in singleplayer.
-- **When you join a raid hosted by someone else — including a headless host** — bot AI only exists on the host, so exact hostility data is not available on your machine. AutoIFF then derives friend-or-foe from the bot's role and your faction:
-  - Human coop players are always shown as **Friendly** with their nickname
-  - Bots that are hostile by default (e.g. everything vs. PMCs; cultists, Killa, Shturman, the Goons vs. player Scavs) are shown as **Hostile**
-  - Bots that are *not* hostile at spawn but escalate when approached or provoked (e.g. bosses, Raiders, and Rogues vs. player Scavs) are shown as **Wary** in orange
-  - If you damage an innocent Scav as a player Scav, AutoIFF assumes traitor status: the traitor warning fires and Scavs are labeled Hostile for the rest of the raid
-
-The `Wary` label and the traitor assumption only exist in these client-joined coop raids — everywhere else the mod shows the bot AI's real state.
-
----
-
-#### Configuration
-
-All settings are available via BepInEx's configuration system (e.g. with [BepInEx Configuration Manager](https://hub.sp-tarkov.com/files/file/1304-bepinex-configuration-manager/)).
-
-| Section | Setting | Default | Description |
-|---|---|---|---|
-| General | ActivationMode | Automatic | Automatic / AlwaysOn / AlwaysOff / Hotkey |
-| General | ActivationHotkey | *(unbound)* | Keybind to toggle the mod when using Hotkey mode |
-| General | FriendlyOnly | false | Only show friendly targets (no delay, hostile targets show nothing) |
-| Identification | BaseIdentificationTime | 0.7s | Base time to identify a target |
-| Identification | IdentificationRange | 100m | Maximum identification range |
-| Identification | DistanceMultiplier | 0.1 | How much distance slows identification |
-| Identification | MemoryDuration | 60s | How long identified targets are remembered |
-| Skills | UseSkillScaling | true | Scale values based on Attention, Perception, Search |
-| Display | ShowDistance | false | Show distance to target |
-| Display | ShowBotRole | true | Show bot role below the Friendly/Hostile label |
-| Display | ShowTraitorWarning | true | Show Scav traitor alert |
-| Display | TraitorAlertDuration | 5s | How long each traitor alert stays on screen |
-
----
-
-#### Credits
-
-Original concept and implementation by **Light** — [LightsAutomaticIdentifier](https://hub.sp-tarkov.com/files/file/2669-lightsautomaticidentifier/).
-
-</details>
+| **UnloadAllMagazinesInventory** | Client | Adds an unload all magazines button that can be used in raid to each inventory slot. |
 
 ---
 
@@ -699,6 +619,111 @@ Automatically copies DLL + PDB to `C:\SPT\BepInEx\plugins\`.
 
 ---
 
+## ModProfiler
+
+**Type:** Client · **Version:** `2.0.0+429976d` · **Updated:** 2026-08-15 20:30 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-2.0.0-429976d.zip)
+
+<details><summary><b>Show usage notes</b></summary>
+
+In-game profiler for SPT modeled after **Dubs Performance Analyzer** (RimWorld):
+shows live how much CPU time each installed client mod costs per frame — to find the
+culprit behind performance drops without having to disable mods one by one.
+
+#### Usage
+
+- **F10** (configurable): open/close the profiler. The first activation instruments
+  all mod code and can freeze the game for a few seconds — that is normal.
+- If the [Anvil-WebOverlay](https://github.com/maschine34675/WebOverlay) library is
+  installed, the profiler opens as **its own window on top of the game** (HTML UI):
+  draggable with remembered position/size, sorting via column headers, filter field,
+  per-mod trend sparklines and a frame history in the header. **Esc** or the toggle key
+  closes it. A mouse mode is unnecessary here: while the window has focus it captures
+  mouse and keyboard itself; one click into the game returns both.
+- Without the library — or with `UI/PreferWebOverlay = false` — the previous
+  **IMGUI overlay** appears. There, the mouse cursor is left untouched on opening and you
+  can keep playing normally. **F11** (configurable) or the "Mouse" button activates
+  mouse mode: cursor free, all game controls blocked (shooting, movement, mouse look),
+  so you can safely click inside the window. F11 again → back to the game.
+  In menus (cursor already free), hovering over the window is enough: clicks then no
+  longer reach the game UI underneath.
+- Table: one row per mod with **avg ms/frame**, **max ms**, **calls/frame**, **% frame**
+  and **Σ ms** (accumulated since activation). Clicking a column header sorts.
+  The web window additionally shows **µs/call** (average cost of a single call):
+  values close to 1 µs consist mostly of the measurement overhead of the instrumentation
+  itself — such rows are grayed out, and their ranking is not reliable either.
+  All column headers, metrics and buttons explain themselves via tooltips.
+- Clicking a mod name expands the mod's most expensive methods
+  (`[H]` Harmony patch, `[U]` Unity frame method, `[C]` coroutine/async).
+- The web window's header also shows the **GC rate** (collections per second; amber
+  ticks on the frame graph mark intervals in which a collection ran), and a **spike
+  log** records frames slower than `UI/SpikeThresholdMs` (default 30 ms, and at least
+  1.5× the current average) together with the top measured contributors of that exact
+  frame — a spike without contributors points at the engine or the GC.
+- **Pause/Resume**: stop measuring, window stays open. **Rescan**: picks up patches
+  created later (e.g. at raid start — press it once during the raid!).
+  **Reset**: zero the counters. **CSV**: export to
+  `BepInEx/plugins/maschine-ModProfiler/modprofiler-<time>.csv`.
+
+#### What is measured
+
+1. **Harmony patches**: every prefix/postfix/finalizer method a mod has patched onto the
+   game is itself wrapped with a stopwatch via Harmony and attributed to the assembly
+   (= mod).
+2. **MonoBehaviours**: `Update`/`FixedUpdate`/`LateUpdate`/`OnGUI` of all components
+   defined in mod assemblies.
+3. **Coroutines & async**: `MoveNext` of the compiler-generated state machines from
+   mod assemblies.
+
+#### Limits (important for interpretation)
+
+- **Transpilers** run only once, at patch time; their runtime cost lives inside the
+  original method and cannot be attributed.
+- **Indirect costs** are not captured: a mod that spawns more bots or generates more loot
+  causes load in the game engine (AI, rendering, GC), not in its own code.
+  If everything is green here but FPS still drop, it is caused by such mods or by the
+  base game — then compare with the mod on/off, or use the SimpleMonoProfiler from
+  [BepInEx.Debug](https://github.com/BepInEx/BepInEx.Debug).
+- **GC runs** are not reported separately. A blocking GC in the middle of a measured
+  method lengthens its sample — occasional max outliers can therefore be the GC,
+  not the method. The web window's GC rate and the amber ticks on the frame graph
+  make this case visible.
+- Times are **inclusive**: if measured code calls other measured code, the time counts
+  twice; the sum can therefore exceed 100% of a frame. This also applies across mods —
+  a measured prefix of mod B on a measured method of mod A counts in both rows.
+- **Off-thread work** (async continuations, worker threads) is attributed to the next
+  rendered frame — max and % frame can then look high without that frame actually
+  having been blocked.
+- **One-time lifecycle methods** (Awake/Start/OnEnable/OnDestroy) are not captured —
+  a mod's loading and raid-start spikes stay invisible.
+- The **instrumentation persists until the game is restarted**: even with the window
+  closed or paused, all captured methods keep their (small) Harmony detour;
+  only the timing itself is skipped. For before/after measurements of other mods,
+  restart once without opening the profiler.
+- Very small patch methods may have been inlined by the Mono JIT and then show up
+  with 0 ms — but they are not the problem anyway.
+- The instrumentation itself costs something (~1 µs per measured call); values are
+  slightly inflated, the ranking is correct.
+
+#### Installation
+
+Extract the zip over the SPT game directory (contains `BepInEx/plugins/maschine-ModProfiler/`).
+No server component. Requires only BepInEx 5.x, no dependency on the EFT version.
+Optional: install **Anvil-WebOverlay** to get the web window instead of the IMGUI overlay —
+the wiring happens automatically at startup.
+
+#### Build
+
+```
+dotnet build -c Release
+```
+
+Automatically copies the DLL to `..\..\BepInEx\plugins\maschine-ModProfiler\` and creates
+the release zip next to the project file.
+
+</details>
+
+---
+
 ## ModSourceDebugger
 
 **Type:** Client + Server · **Version:** `1.2.1+19c0f81` · **Updated:** 2026-08-04 20:02 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-1.2.1-19c0f81.zip)
@@ -843,124 +868,6 @@ The DLL is automatically copied to `BepInEx/plugins/maschine-RaidInfoPanels.dll`
 
 - Hit, kill, grenade and compass panels as separate modules
 - Configuration via ConfigurationManager
-
-</details>
-
----
-
-## StashFilter
-
-**Type:** Client · **Version:** `1.0.0+f287253` · **Updated:** 2026-08-13 16:32 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/StashFilter-1.0.0-f287253.zip)
-
-<img src="assets/StashFilter/demo.gif" width="440">
-
-<details><summary><b>Show usage notes</b></summary>
-
-StashFilter adds a filter and sort panel to the stash search window, so you can
-find the right weapon, armor piece, magazine, round, med or attachment without
-scrolling through the whole search result.
-
-#### Features
-
-The panel opens automatically next to the stash search window and offers six
-tabs. Every tab starts with no filter set — filters apply as soon as you click
-a button, and each tab has its own Reset.
-
-- **Weapons** — filter by caliber, fire mode and weapon class; sort by fire
-  rate, ergonomics, recoil sum, accuracy, muzzle velocity, caliber or type.
-- **Armor** — filter by item type (vest/plate), armor class 1–6 and armor type
-  (light/heavy); sort by class, durability, effective durability, speed
-  penalty or ergonomics penalty. Every armor item and plate also gets a live
-  **Effective Durability** attribute in its inspect window — a button on the
-  Armor tab turns this on or off at any time.
-- **Mags** — filter by caliber, capacity, fill state (empty/loaded) and
-  failure-to-feed category (matching the game's own None…Very High display);
-  sort by capacity, load speed, check speed, ergonomics, malfunction chance or
-  caliber. Magazines that accept several calibers (for example 7.62x39 AK mags
-  that also take .366 TKM) match every caliber they accept.
-- **Ammo** — filter by caliber, penetration threshold (20+/30+/40+/50+),
-  tracer and subsonic; sort by damage (total, including pellet count for
-  buckshot), penetration, armor damage, fragmentation chance, velocity, recoil
-  or caliber. Loose rounds and ammo boxes are both matched — boxes are
-  classified by the rounds they contain.
-- **Meds** — filter by type (medkit/drug/medical/stim) and by the effect an
-  item cures (heavy/light bleed, fracture, pain, contusion, toxication,
-  radiation, surgery); sort by remaining HP pool, maximum HP, use time or
-  number of cured effects.
-- **Mods** — filter weapon attachments by type (sights, magnifying optics, red
-  dots, suppressors, muzzle devices, foregrips, pistol grips, stocks, barrels,
-  handguards, receivers, mounts, tactical devices, other) and by magnification
-  (1x / 2x+ / 4x+ / 6x+); sort by ergonomics, recoil %, accuracy %, velocity,
-  zoom, sighting range or weight.
-
-The panel drives the game's own type tabs where possible (for example
-selecting a magazine filter also narrows the vanilla view to magazines), works
-together with the search text field, is draggable, and blocks clicks from
-falling through to the inventory behind it.
-
-#### Requirements and compatibility
-
-- SPT 4.1.x (developed and tested on 4.1.1).
-- Client-only BepInEx plugin — no server component, no profile changes.
-- No dependencies beyond a standard SPT install.
-- Fika: the mod only touches the local stash-search UI and is expected to
-  work, but it has not been specifically tested in Fika sessions.
-
-#### Installation
-
-Extract the release ZIP into your SPT installation directory. The plugin ends
-up at:
-
-`BepInEx/plugins/maschine-StashFilter.dll`
-
-To remove the mod, delete that file.
-
-#### Usage
-
-1. Open the stash search window as usual.
-2. The StashFilter panel appears beside it. Pick a tab, click filter buttons
-   to narrow the result, and pick a sort mode — clicking the active sort mode
-   again flips between ascending and descending (shown as an arrow on the
-   button).
-3. **Reset** clears the current tab; closing and reopening the search window
-   clears all filters. The panel remembers the last selected tab, and tabs
-   with an active filter or sort are marked with a dot.
-
-The only option — whether armor items carry the Effective Durability
-attribute — is toggled directly on the Armor tab and remembered in
-`BepInEx/config/com.maschine.StashFilter.cfg`. The panel itself is positioned
-by dragging its title bar.
-
-#### Known limitations
-
-- Only items that the vanilla stash search itself lists can be filtered.
-  Attachments installed on a weapon are not part of the search result, so
-  they do not appear in the Mods tab either.
-- A few magnified vanilla scopes carry incorrect zoom values in the game data
-  (for example the ELCAN Specter OS4x, the Nightforce NXS 2.5-10x and the NPZ
-  PAG-17). These land in the 1x magnification bucket and sort low on zoom —
-  the filter faithfully reflects what the game data says.
-- Stimulators remove bleeds through a separate buff system; the Meds "Cures"
-  filter only sees regular heal effects, so stims are best found via the type
-  filter.
-- The "Reflex" mod category deliberately lists collimators only; iron sights
-  (mostly stripped weapon halves) are reachable via "Sights" or the 1x
-  magnification bucket instead.
-- Revolver cylinders report no accepted caliber, so they only match the
-  "All" caliber filter on the Mags tab.
-
-#### Support
-
-Please report problems with:
-
-- exact StashFilter and SPT versions;
-- what you expected and what happened instead;
-- short reproduction steps (which tab, which filters);
-- your `BepInEx/LogOutput.log` from the session.
-
-#### License
-
-MIT — see [LICENSE](LICENSE).
 
 </details>
 
