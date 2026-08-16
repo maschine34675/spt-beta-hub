@@ -1,6 +1,6 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-08-15 22:24** · 13 mods with download, 5 in development.
+Overview of all mods in beta testing · Last updated: **2026-08-16 13:30** · 12 mods with download, 4 in development.
 
 This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
@@ -16,13 +16,12 @@ Please always include it when reporting issues.
 
 | Mod | Version | Updated | Type | Description | Preview | Download |
 |---|---|---|---|---|---|---|
-| [**BangAndClear**](#bangandclear) | `0.9.0+3111b16` | 2026-08-11 | Client | An SPT 4.0 client mod for tactical door work: crack a door open a few degrees, put a grenade through the gap, close the door, wait for the bang. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.0-3111b16.zip) |
+| [**BangAndClear**](#bangandclear) | `0.9.1+c44dad7` | 2026-08-15 | Client | An SPT 4.0 client mod for tactical door work: crack a door open a few degrees, put a grenade through the gap, close the door, wait for the bang. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.1-c44dad7.zip) |
 | [**BtrTurretControl**](#btrturretcontrol) | `1.0.0+37e08ef` | 2026-08-14 | Client | Client-only SPT mod that lets a seated BTR passenger take direct control of the gun turret. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BtrTurretControl-1.0.0-37e08ef.zip) |
-| [**ClusterGrenade**](#clustergrenade) | `2.2.1+5fe2678` | 2026-08-13 | Client + Server | Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets (frag or flash, weighted mix). Also adds a 40x46mm cluster round for grenade…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2310/wtt-commonlib">WTT - CommonLib</a></sub> | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.2.1-5fe2678.zip) |
+| [**ClusterGrenade**](#clustergrenade) | `2.2.1+5fe2678` | 2026-08-13 | Client + Server | Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets. Also adds a 40mm cluster round and HE ammunition<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2310/wtt-commonlib">WTT - CommonLib</a></sub> | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.2.1-5fe2678.zip) |
 | [**CombatSlide**](#combatslide) | `2.0.0+c57f2f8` | 2026-08-09 | Client | Press crouch while sprinting to keep sliding at decreasing speed – a "combat slide" like in other shooters. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatSlide-2.0.0-c57f2f8.zip) |
 | [**CorpseRun**](#corpserun) | `0.9.0+0a62fa2` | 2026-08-14 | Client + Server | After dying in a raid, optionally respawn (naked), loot your own corpse and continue the raid; giving up ends the raid normally. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CorpseRun-0.9.0-0a62fa2.zip) |
 | [**KillAndDamageInfo**](#killanddamageinfo) | `0.9.0+6554e72` | 2026-08-15 | Client | KillAndDamageInfo shows the combat information the game keeps to itself: what your kills died to, who killed you and in what state they were, what each hit actually did… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-0.9.0-6554e72.zip) |
-| [**Killcam**](#killcam) | `1.0.0+aec3dc4` | 2026-08-09 | Client | "Killcam light": on death the camera switches to the killer's first-person view for about 6 seconds; the death panel shows the killer's name and remaining HP. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Killcam-1.0.0-aec3dc4.zip) |
 | [**KillcamReplay**](#killcamreplay) | `0.9.2+8dd53d0` | 2026-08-14 | Client | True killcam: on death, the killer's final moments are replayed from their point of view, based on the recorded movement of the last seconds before the kill. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.2-8dd53d0.zip) |
 | [**ModProfiler**](#modprofiler) | `2.0.0+e12e624` | 2026-08-15 | Client | In-game profiler modeled after Dubs Performance Analyzer (RimWorld): shows live how much CPU time each installed client mod costs per frame – find the cause of…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2879/weboverlay">WebOverlay</a></sub> | <a href="#modprofiler"><img src="assets/ModProfiler/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-2.0.0-e12e624.zip) |
 | [**ModSourceDebugger**](#modsourcedebugger) | `2.0.0+7371199` | 2026-08-15 | Client + Server | Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-2.0.0-7371199.zip) |
@@ -38,13 +37,12 @@ Please always include it when reporting issues.
 | **AiStoryQuests** | Client + Server | Experiment: AI-generated story quests (providers: OpenAI/Anthropic/Ollama, own API key required). |
 | **AutoWishlist** | Client + Server | – |
 | **StashSort** | Client | – |
-| **UnloadAllMagazinesInventory** | Client | Adds an unload all magazines button that can be used in raid to each inventory slot. |
 
 ---
 
 ## BangAndClear
 
-**Type:** Client · **Version:** `0.9.0+3111b16` · **Updated:** 2026-08-11 12:08 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.0-3111b16.zip)
+**Type:** Client · **Version:** `0.9.1+c44dad7` · **Updated:** 2026-08-15 23:29 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.1-c44dad7.zip)
 
 <details><summary><b>Show usage notes</b></summary>
 
@@ -426,16 +424,6 @@ MIT — see [LICENSE](LICENSE).
 
 ---
 
-## Killcam
-
-**Type:** Client · **Version:** `1.0.0+aec3dc4` · **Updated:** 2026-08-09 12:56 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Killcam-1.0.0-aec3dc4.zip)
-
-> **Tester note:** Predecessor of **KillcamReplay** – do not install both at the same time.
-
-_No detailed description yet._
-
----
-
 ## KillcamReplay
 
 **Type:** Client · **Version:** `0.9.2+8dd53d0` · **Updated:** 2026-08-14 09:14 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.2-8dd53d0.zip)
@@ -736,7 +724,69 @@ the release zip next to the project file.
 
 **Components:** Client `2.0.0+7371199` · Server `2.0.0+7371199`
 
-_No detailed description yet._
+<details><summary><b>Show usage notes</b></summary>
+
+### ModSourceDebugger — Technical Summary
+
+A two-part SPT debugging tool that traces **item template origins** and **UI element ownership** back to the mod that added them.
+
+#### Architecture
+
+| Component | Type | Role |
+|---|---|---|
+| `maschine-ModSourceDebugger.Client.dll` | BepInEx client mod | Tooltips, UI inspector, reads manifest |
+| `maschine-ModSourceDebugger.Server.dll` | SPT 4.x server mod | Builds authoritative item manifest after all mods load |
+
+Both share the same SPT install root (`Application.dataPath` on client, server working directory on server).
+
+---
+
+#### Item Source Tracking
+
+##### Server (authoritative)
+
+Runs at `PostSptModLoader + 100`, after all DB mods finish:
+
+1. Loads vanilla template IDs from `SPT_Data/database/templates/items.json`
+2. Recursively scans `user/mods/**/*.json` for item IDs (`newId`, `_id`, `_tpl`, top-level keys, etc.)
+3. Diff against live DB via `DatabaseService.GetItems()` — anything non-vanilla not found in JSON → `source: database`
+4. Writes `SPT/user/sptappdata/mod-source-manifest.json`
+
+##### Client (display + fallback)
+
+1. Loads server manifest if present
+2. Falls back to local JSON scan for entries not in manifest
+3. All IDs normalized to lowercase (fixes Massivesoft-style mixed-case hex IDs)
+4. Harmony postfix on `SimpleTooltip.Show` appends mod/file/source when hovering items
+5. `ItemView.OnPointerEnter/Exit` tracks the currently hovered item
+
+---
+
+#### UI Source Tracking
+
+UI mods often clone vanilla elements (`GameObject.Instantiate`) without mod-specific names — so name matching alone fails.
+
+##### Three detection layers, scored by priority
+
+1. **Instantiate tagging** — Harmony postfix on `Object.Instantiate`; stack trace identifies calling plugin assembly; adds `ModUiSourceMarker` to UI `RectTransform`s
+2. **Scored resolution** (`UiPluginResolver`) — collects candidates from:
+   - `ModUiSourceMarker` on self/ancestors
+   - GameObject name hints (`UnloadAllMagazinesButton` → `UnloadAllMagazines`)
+   - `Button.onClick` listener delegate assembly (via reflection on `UnityEventBase.m_Calls`)
+   - `MonoBehaviour` component assembly (walk up hierarchy)
+   - Infrastructure components (e.g. `DrawMultiSelect` from Tyfon.UIFixes) are deprioritized
+3. **Alt + hover** — raycasts UI under cursor, shows path + best-scoring plugin match in tooltip
+
+---
+
+#### Limitations
+
+- Items added purely via C# with no JSON definition → `Unknown server mod` (DB-only)
+- Vanilla item overrides (same template ID, changed stats) → not distinguishable from vanilla
+- UI patched via Harmony only (no `Instantiate`, no custom components) → hard to attribute
+- Instantiate tags only apply to objects created after the mod loads (stash must be reopened)
+
+</details>
 
 ---
 

@@ -5,7 +5,7 @@
     "description": "Experiment: AI-generated story quests (providers: OpenAI/Anthropic/Ollama, own API key required)."
   },
   "ClusterGrenade": {
-    "description": "Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets (frag or flash, weighted mix). Also adds a 40x46mm cluster round for grenade launchers (MSGL, M203, FN40GL).",
+    "description": "Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets. Also adds a 40mm cluster round and HE ammunition",
     "dependencies": ["com.wtt.commonlib"]
   },
   "CombatSlide": {
@@ -16,7 +16,8 @@
   },
   "Killcam": {
     "description": "\"Killcam light\": on death the camera switches to the killer's first-person view for about 6 seconds; the death panel shows the killer's name and remaining HP.",
-    "notes": "Predecessor of **KillcamReplay** – do not install both at the same time."
+    "notes": "Predecessor of **KillcamReplay** – do not install both at the same time.",
+    "enabled": "false"
   },
   "KillcamReplay": {
     "description": "True killcam: on death, the killer's final moments are replayed from their point of view, based on the recorded movement of the last seconds before the kill.",
@@ -37,5 +38,8 @@
   "QuestMarkers": {
     "screenshots": ["preview.png"],
     "dependencies": ["com.anvil.weboverlay"]
+  },
+  "UnloadAllMagazinesInventory": {
+    "enabled": "false"
   }
 }
