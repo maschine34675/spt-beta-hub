@@ -1,6 +1,6 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-08-16 13:30** · 12 mods with download, 4 in development.
+Overview of all mods in beta testing · Last updated: **2026-08-18 10:00** · 12 mods with download, 4 in development.
 
 This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
@@ -18,7 +18,7 @@ Please always include it when reporting issues.
 |---|---|---|---|---|---|---|
 | [**BangAndClear**](#bangandclear) | `0.9.1+c44dad7` | 2026-08-15 | Client | An SPT 4.0 client mod for tactical door work: crack a door open a few degrees, put a grenade through the gap, close the door, wait for the bang. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.1-c44dad7.zip) |
 | [**BtrTurretControl**](#btrturretcontrol) | `1.0.0+37e08ef` | 2026-08-14 | Client | Client-only SPT mod that lets a seated BTR passenger take direct control of the gun turret. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BtrTurretControl-1.0.0-37e08ef.zip) |
-| [**ClusterGrenade**](#clustergrenade) | `2.2.1+5fe2678` | 2026-08-13 | Client + Server | Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets. Also adds a 40mm cluster round and HE ammunition<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2310/wtt-commonlib">WTT - CommonLib</a></sub> | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.2.1-5fe2678.zip) |
+| [**ClusterGrenade**](#clustergrenade) | `2.3.1+8fc81ed` | 2026-08-18 | Client + Server | Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets. Also adds a 40mm cluster round and HE ammunition<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2310/wtt-commonlib">WTT - CommonLib</a></sub> | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.3.1-8fc81ed.zip) |
 | [**CombatSlide**](#combatslide) | `2.0.0+c57f2f8` | 2026-08-09 | Client | Press crouch while sprinting to keep sliding at decreasing speed – a "combat slide" like in other shooters. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatSlide-2.0.0-c57f2f8.zip) |
 | [**CorpseRun**](#corpserun) | `0.9.0+0a62fa2` | 2026-08-14 | Client + Server | After dying in a raid, optionally respawn (naked), loot your own corpse and continue the raid; giving up ends the raid normally. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CorpseRun-0.9.0-0a62fa2.zip) |
 | [**KillAndDamageInfo**](#killanddamageinfo) | `0.9.0+6554e72` | 2026-08-15 | Client | KillAndDamageInfo shows the combat information the game keeps to itself: what your kills died to, who killed you and in what state they were, what each hit actually did… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-0.9.0-6554e72.zip) |
@@ -26,7 +26,7 @@ Please always include it when reporting issues.
 | [**ModProfiler**](#modprofiler) | `2.0.0+e12e624` | 2026-08-15 | Client | In-game profiler modeled after Dubs Performance Analyzer (RimWorld): shows live how much CPU time each installed client mod costs per frame – find the cause of…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2879/weboverlay">WebOverlay</a></sub> | <a href="#modprofiler"><img src="assets/ModProfiler/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-2.0.0-e12e624.zip) |
 | [**ModSourceDebugger**](#modsourcedebugger) | `2.0.0+7371199` | 2026-08-15 | Client + Server | Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-2.0.0-7371199.zip) |
 | [**QuestMarkers**](#questmarkers) | `0.1.0+393f10d` | 2026-08-15 | Client | World-anchored HUD markers for your unfinished quest objectives: zones to visit, spots to place items or beacons at, and quest items lying in the raid. No more running…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2879/weboverlay">WebOverlay</a></sub> | <a href="#questmarkers"><img src="assets/QuestMarkers/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-0.1.0-393f10d.zip) |
-| [**RaidInfoPanels**](#raidinfopanels) | `1.0.0+c7ec48b` | 2026-08-15 | Client | Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x. | <a href="#raidinfopanels"><img src="assets/RaidInfoPanels/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-c7ec48b.zip) |
+| [**RaidInfoPanels**](#raidinfopanels) | `1.0.0+76aab7b` | 2026-08-18 | Client | Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x. | <a href="#raidinfopanels"><img src="assets/RaidInfoPanels/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-76aab7b.zip) |
 | [**SurroundAudio**](#surroundaudio) | `1.0.0+a29569c` | 2026-08-14 | Client | Experimental proof of concept: plays SPT on a real surround speaker setup (5.1/7.1) instead of binaural headphone audio. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-a29569c.zip) |
 
 ## 🚧 In development – no build yet
@@ -164,11 +164,11 @@ The DLL is copied to `BepInEx\plugins\` automatically.
 
 ## ClusterGrenade
 
-**Type:** Client + Server · **Version:** `2.2.1+5fe2678` · **Updated:** 2026-08-13 19:00 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.2.1-5fe2678.zip)
+**Type:** Client + Server · **Version:** `2.3.1+8fc81ed` · **Updated:** 2026-08-18 09:23 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.3.1-8fc81ed.zip)
 
 > 🔌 **Requires:** [WTT - CommonLib](https://sp-mod.com/mod/2310/wtt-commonlib) — install separately, not included in the ZIP.
 
-**Components:** Client `2.2.1+5fe2678` · Server `2.2.1+5fe2678`
+**Components:** Client `2.3.1+8fc81ed` · Server `2.3.1+8fc81ed`
 
 <details><summary><b>Show usage notes</b></summary>
 
@@ -272,6 +272,24 @@ The 40x46mm cluster round (M381 clone, at Skier LL2, ~8,500 ₽) spreads bomblet
 |-------------|----------|--------------|
 | `ClusterShellTemplateId` | `67d4f0c8a1b2e3012345678e` | Must match the server item ID |
 | `ShellSubGrenadeCount` | `5` | Number of sub-grenades per 40mm impact (1–24) |
+
+##### Airburst round (40mm)
+
+The **M381 Airburst** round (Skier LL2, ~9,500 ₽, red tracer) is a full M381 HE round that additionally detonates mid-flight at the **distance set on the launcher's sight zeroing** — the MSGL reflex sight zeroes in 50 m steps (50–400 m). The mid-air detonation is instant (XM25 style), so targets behind cover have no time to react. On a direct hit it explodes like a regular M381.
+
+Practical notes:
+
+- A fresh sight defaults to **50 m** zeroing — raise the zeroing (scope zeroing controls, Alt+Mouse wheel by default) for longer bursts.
+- On a flat direct shot the burst point practically coincides with the impact. The round shines when **lobbed over cover**: aim high, set the zeroing to the cover's distance, and the shell bursts above whatever hides behind it.
+- Without a mounted sight, `AirburstDefaultDistance` applies (default 100 m).
+- `AirburstPayload` can be switched to `Bomblets` to eject impact-fuse bomblets downward at the burst point instead of detonating — slower, but rains over a wider area.
+
+| Setting | Default | Description |
+|-------------|----------|--------------|
+| `AirburstShellTemplateId` | `67d4f0c8a1b2e30123457041` | Must match the server item ID |
+| `AirburstPayload` | `Explosion` | Mid-air payload: instant `Explosion` or downward `Bomblets` |
+| `AirburstSubGrenadeCount` | `5` | Number of bomblets in `Bomblets` payload mode (1–24) |
+| `AirburstDefaultDistance` | `100` | Detonation distance in meters without a mounted sight (25–400) |
 
 ##### Explosive and flash ammunition
 
@@ -890,7 +908,7 @@ copied.
 
 ## RaidInfoPanels
 
-**Type:** Client · **Version:** `1.0.0+c7ec48b` · **Updated:** 2026-08-15 19:57 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-c7ec48b.zip)
+**Type:** Client · **Version:** `1.0.0+76aab7b` · **Updated:** 2026-08-18 09:52 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-76aab7b.zip)
 
 <img src="assets/RaidInfoPanels/preview.png" width="440">
 

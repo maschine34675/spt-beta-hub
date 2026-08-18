@@ -1,49 +1,21 @@
 {
-  "fetchedAt": "2026-08-16T13:30:14.4117867+02:00",
+  "fetchedAt": "2026-08-18T10:00:48.2950573+02:00",
   "mods": {
-    "com.maschine.autocorpsesearch": {
-      "url": "https://sp-mod.com/mod/2730/autocorpsesearch",
-      "name": "AutoCorpseSearch"
+    "com.maschine.easymounting": {
+      "url": "https://sp-mod.com/mod/2790/easymounting",
+      "name": "EasyMounting"
     },
-    "com.maschine.defaultautofiremode": {
-      "url": "https://sp-mod.com/mod/2740/defaultautofiremode",
-      "name": "DefaultAutoFireMode"
-    },
-    "com.maschine.weaponbuildersearch": {
-      "url": "https://sp-mod.com/mod/2743/weaponbuildersearch",
-      "name": "WeaponBuilderSearch"
-    },
-    "com.maschine.craftqueue": {
-      "url": "https://sp-mod.com/mod/2860/craftqueue",
-      "name": "CraftQueue"
-    },
-    "com.maschine.morequickslots": {
-      "url": "https://sp-mod.com/mod/2812/morequickslots",
-      "name": "MoreQuickSlots"
-    },
-    "com.maschine.dualsidedoorbreach": {
-      "url": "https://sp-mod.com/mod/2752/dualsidedoorbreach",
-      "name": "DualSideDoorBreach"
-    },
-    "com.maschine.unloadallmagazines": {
-      "url": "https://sp-mod.com/mod/2739/unloadallmagazines",
-      "name": "UnloadAllMagazines"
-    },
-    "com.maschine.stashfilter": {
-      "url": "https://sp-mod.com/mod/2907/stashfilter",
-      "name": "StashFilter"
+    "com.maschine.tradersearch": {
+      "url": "https://sp-mod.com/mod/2824/tradersearch",
+      "name": "TraderSearch"
     },
     "com.anvil.weboverlay": {
       "url": "https://sp-mod.com/mod/2879/weboverlay",
       "name": "WebOverlay"
     },
-    "com.maschine.linkedsearchinstash": {
-      "url": "https://sp-mod.com/mod/2731/linkedsearchinstash",
-      "name": "LinkedSearchInStash"
-    },
-    "com.maschine.scoperangefinder": {
-      "url": "https://sp-mod.com/mod/2735/scoperangefinder",
-      "name": "ScopeRangefinder"
+    "com.maschine.defaultautofiremode": {
+      "url": "https://sp-mod.com/mod/2740/defaultautofiremode",
+      "name": "DefaultAutoFireMode"
     },
     "com.maschine.raidmenucleanupfix": {
       "url": "https://sp-mod.com/mod/2733/raidmenucleanupfix",
@@ -53,25 +25,53 @@
       "url": "https://sp-mod.com/mod/2784/autoiff",
       "name": "AutoIFF"
     },
-    "com.maschine.notificationfilter": {
-      "url": "https://sp-mod.com/mod/2729/notificationfilter",
-      "name": "NotificationFilter"
+    "com.maschine.dualsidedoorbreach": {
+      "url": "https://sp-mod.com/mod/2752/dualsidedoorbreach",
+      "name": "DualSideDoorBreach"
     },
-    "com.maschine.easymounting": {
-      "url": "https://sp-mod.com/mod/2790/easymounting",
-      "name": "EasyMounting"
+    "com.maschine.stashfilter": {
+      "url": "https://sp-mod.com/mod/2907/stashfilter",
+      "name": "StashFilter"
+    },
+    "com.maschine.autocorpsesearch": {
+      "url": "https://sp-mod.com/mod/2730/autocorpsesearch",
+      "name": "AutoCorpseSearch"
+    },
+    "com.maschine.scoperangefinder": {
+      "url": "https://sp-mod.com/mod/2735/scoperangefinder",
+      "name": "ScopeRangefinder"
+    },
+    "com.maschine.craftqueue": {
+      "url": "https://sp-mod.com/mod/2860/craftqueue",
+      "name": "CraftQueue"
+    },
+    "com.maschine.linkedsearchinstash": {
+      "url": "https://sp-mod.com/mod/2731/linkedsearchinstash",
+      "name": "LinkedSearchInStash"
     },
     "com.maschine.receiveallchats": {
       "url": "https://sp-mod.com/mod/2785/receiveallchats",
       "name": "ReceiveAllChats"
     },
-    "com.maschine.tradersearch": {
-      "url": "https://sp-mod.com/mod/2824/tradersearch",
-      "name": "TraderSearch"
+    "com.maschine.weaponbuildersearch": {
+      "url": "https://sp-mod.com/mod/2743/weaponbuildersearch",
+      "name": "WeaponBuilderSearch"
     },
     "com.wtt.commonlib": {
       "url": "https://sp-mod.com/mod/2310/wtt-commonlib",
       "name": "WTT - CommonLib"
+    },
+    "com.maschine.unloadallmagazines": {
+      "url": "https://sp-mod.com/mod/2739/unloadallmagazines",
+      "name": "UnloadAllMagazines"
+    },
+    "com.maschine.morequickslots": {
+      "url": "https://sp-mod.com/mod/2812/morequickslots",
+      "name": "MoreQuickSlots"
+    },
+    "com.maschine.notificationfilter": {
+      "url": "https://sp-mod.com/mod/2729/notificationfilter",
+      "name": "NotificationFilter"
     }
   }
 }
