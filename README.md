@@ -1,6 +1,6 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-08-18 10:00** · 12 mods with download, 4 in development.
+Overview of all mods in beta testing · Last updated: **2026-08-19 22:59** · 12 mods with download, 4 in development.
 
 This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
@@ -18,10 +18,10 @@ Please always include it when reporting issues.
 |---|---|---|---|---|---|---|
 | [**BangAndClear**](#bangandclear) | `0.9.1+c44dad7` | 2026-08-15 | Client | An SPT 4.0 client mod for tactical door work: crack a door open a few degrees, put a grenade through the gap, close the door, wait for the bang. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.1-c44dad7.zip) |
 | [**BtrTurretControl**](#btrturretcontrol) | `1.0.0+37e08ef` | 2026-08-14 | Client | Client-only SPT mod that lets a seated BTR passenger take direct control of the gun turret. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BtrTurretControl-1.0.0-37e08ef.zip) |
-| [**ClusterGrenade**](#clustergrenade) | `2.3.1+8fc81ed` | 2026-08-18 | Client + Server | Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets. Also adds a 40mm cluster round and HE ammunition<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2310/wtt-commonlib">WTT - CommonLib</a></sub> | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.3.1-8fc81ed.zip) |
+| [**ClusterGrenade**](#clustergrenade) | `2.5.0+115c771` | 2026-08-19 | Client + Server | Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets. Also adds a 40mm cluster round and HE ammunition<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2310/wtt-commonlib">WTT - CommonLib</a></sub> | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.5.0-115c771.zip) |
 | [**CombatSlide**](#combatslide) | `2.0.0+c57f2f8` | 2026-08-09 | Client | Press crouch while sprinting to keep sliding at decreasing speed – a "combat slide" like in other shooters. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatSlide-2.0.0-c57f2f8.zip) |
 | [**CorpseRun**](#corpserun) | `0.9.0+0a62fa2` | 2026-08-14 | Client + Server | After dying in a raid, optionally respawn (naked), loot your own corpse and continue the raid; giving up ends the raid normally. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CorpseRun-0.9.0-0a62fa2.zip) |
-| [**KillAndDamageInfo**](#killanddamageinfo) | `0.9.0+6554e72` | 2026-08-15 | Client | KillAndDamageInfo shows the combat information the game keeps to itself: what your kills died to, who killed you and in what state they were, what each hit actually did… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-0.9.0-6554e72.zip) |
+| [**KillAndDamageInfo**](#killanddamageinfo) | `1.0.0+55bc2b4` | 2026-08-19 | Client | KillAndDamageInfo shows the combat information the game keeps to itself: what your kills died to, who killed you and in what state they were, what each hit actually did… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-1.0.0-55bc2b4.zip) |
 | [**KillcamReplay**](#killcamreplay) | `0.9.2+8dd53d0` | 2026-08-14 | Client | True killcam: on death, the killer's final moments are replayed from their point of view, based on the recorded movement of the last seconds before the kill. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.2-8dd53d0.zip) |
 | [**ModProfiler**](#modprofiler) | `2.0.0+e12e624` | 2026-08-15 | Client | In-game profiler modeled after Dubs Performance Analyzer (RimWorld): shows live how much CPU time each installed client mod costs per frame – find the cause of…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2879/weboverlay">WebOverlay</a></sub> | <a href="#modprofiler"><img src="assets/ModProfiler/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-2.0.0-e12e624.zip) |
 | [**ModSourceDebugger**](#modsourcedebugger) | `2.0.0+7371199` | 2026-08-15 | Client + Server | Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-2.0.0-7371199.zip) |
@@ -164,11 +164,11 @@ The DLL is copied to `BepInEx\plugins\` automatically.
 
 ## ClusterGrenade
 
-**Type:** Client + Server · **Version:** `2.3.1+8fc81ed` · **Updated:** 2026-08-18 09:23 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.3.1-8fc81ed.zip)
+**Type:** Client + Server · **Version:** `2.5.0+115c771` · **Updated:** 2026-08-19 21:17 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.5.0-115c771.zip)
 
 > 🔌 **Requires:** [WTT - CommonLib](https://sp-mod.com/mod/2310/wtt-commonlib) — install separately, not included in the ZIP.
 
-**Components:** Client `2.3.1+8fc81ed` · Server `2.3.1+8fc81ed`
+**Components:** Client `2.5.0+115c771` · Server `2.5.0+115c771`
 
 <details><summary><b>Show usage notes</b></summary>
 
@@ -275,14 +275,18 @@ The 40x46mm cluster round (M381 clone, at Skier LL2, ~8,500 ₽) spreads bomblet
 
 ##### Airburst round (40mm)
 
-The **M381 Airburst** round (Skier LL2, ~9,500 ₽, red tracer) is a full M381 HE round that additionally detonates mid-flight at the **distance set on the launcher's sight zeroing** — the MSGL reflex sight zeroes in 50 m steps (50–400 m). The mid-air detonation is instant (XM25 style), so targets behind cover have no time to react. On a direct hit it explodes like a regular M381.
+The **M381 Airburst** round (Skier LL2, ~9,500 ₽, red tracer) is a full M381 HE round that additionally detonates mid-flight at a set distance, raining fragments down on whatever hides behind cover. The mid-air detonation is instant (XM25 style), so targets have no time to react; on a direct hit it simply explodes like a regular M381.
 
-Practical notes:
+The intended workflow is the same as the real thing: **range the cover, then lob the round over it.**
 
-- A fresh sight defaults to **50 m** zeroing — raise the zeroing (scope zeroing controls, Alt+Mouse wheel by default) for longer bursts.
-- On a flat direct shot the burst point practically coincides with the impact. The round shines when **lobbed over cover**: aim high, set the zeroing to the cover's distance, and the shell bursts above whatever hides behind it.
-- Without a mounted sight, `AirburstDefaultDistance` applies (default 100 m).
-- `AirburstPayload` can be switched to `Bomblets` to eject impact-fuse bomblets downward at the burst point instead of detonating — slower, but rains over a wider area.
+- **Range lock (the important part):** aim down sights at the cover, press the lock hotkey (`J` by default), then lob and fire. Measuring and firing are separate moments, which is the whole point: when you fire you are aiming at the burst point in the air, not at the cover any more. The lock stays until you re-lock or the raid ends, so you can put several rounds onto the same position — **press the hotkey from the hip to clear it**.
+- The lock belongs to the weapon it was set with, so zeroing a rifle later cannot hijack the launcher's range, and it is refused below a 20 m safety minimum (the round is a full M381 with a 7 m blast radius).
+- The lock hotkey defaults to the same key as **[ScopeRangefinder](https://github.com/maschine34675/ScopeRangefinder)**'s zeroing hotkey, so a single press can do both — note that SR only zeroes if its own Auto Zero is switched on (it ships disabled).
+- A locked or measured range gets `AirburstBurstOffset` (default 2 m) added so the shell bursts *past* the cover rather than level with it — real fire control does the same, and it keeps the wall from shielding whoever is behind it.
+- **ScopeRangefinder integration:** with the mod installed, both the lock and (without a lock) the shot itself use its **meter-exact measurement** instead of the 50 m zeroing steps. Without it, the lock falls back to the mod's own raycast, and unlocked shots use the sight zeroing. The distance source is logged per shot in the BepInEx log.
+- Ranges are measured as line of sight but the fuze counts **ground distance**, so shooting down from a rooftop bursts where you aimed rather than long. Fire it like the sight tells you: a wild mortar lob crosses the set distance far above the target, and rather than pop uselessly up there the round simply flies on and impacts.
+- **Without a lock** the round falls back to the sight zeroing at the moment of the shot (MSGL reflex sight: 50 m steps from 50 to 400 m, a fresh sight sits at 50 m), and without any sight to `AirburstDefaultDistance`.
+- `AirburstPayload` can be switched to `Bomblets` to eject impact-fuze bomblets downward at the burst point instead of detonating — slower, but rains over a wider area.
 
 | Setting | Default | Description |
 |-------------|----------|--------------|
@@ -290,6 +294,9 @@ Practical notes:
 | `AirburstPayload` | `Explosion` | Mid-air payload: instant `Explosion` or downward `Bomblets` |
 | `AirburstSubGrenadeCount` | `5` | Number of bomblets in `Bomblets` payload mode (1–24) |
 | `AirburstDefaultDistance` | `100` | Detonation distance in meters without a mounted sight (25–400) |
+| `UseScopeRangefinderDistance` | `true` | Prefer ScopeRangefinder's live measured distance when available |
+| `AirburstLockHotkey` | `J` | Lock the measured range (same key as ScopeRangefinder's zeroing by default) |
+| `AirburstBurstOffset` | `2` | Meters added to a measured range so the burst clears the cover (0–10) |
 
 ##### Explosive and flash ammunition
 
@@ -329,7 +336,7 @@ _No detailed description yet._
 
 ## KillAndDamageInfo
 
-**Type:** Client · **Version:** `0.9.0+6554e72` · **Updated:** 2026-08-15 13:40 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-0.9.0-6554e72.zip)
+**Type:** Client · **Version:** `1.0.0+55bc2b4` · **Updated:** 2026-08-19 22:42 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-1.0.0-55bc2b4.zip)
 
 <details><summary><b>Show usage notes</b></summary>
 
@@ -372,7 +379,8 @@ actually did — and a full per-raid statistics window on a hotkey.
 - **Overview** — totals for both directions, damage your armor absorbed,
   bullets that ricocheted off you (including helmet ricochets — in the vanilla
   game those are nearly indistinguishable from a near miss), accuracy,
-  headshot rate and penetration rates.
+  headshot rate, penetration rates, and what the raid cost you: the handbook
+  value of every round you fired, and that value per kill.
 - **Records** — per-raid highlights: longest hit, hardest hit dealt and
   taken, most hits on one target.
 - Everything is shown separately for damage **received** and **dealt**, and
@@ -387,7 +395,11 @@ Every feature group can be disabled individually in the configuration.
 - No dependencies beyond a standard SPT install.
 - Statistics cover the whole raid even when another mod lets you die and
   respawn more than once per raid.
-- Fika: not tested in Fika sessions.
+- Fika: the raid analysis overlay does not work. Fika replaces the game's
+  damage handling, so no hits are recorded and the window stays empty. The
+  kill list and death screen additions still work, except that the killer's
+  weapon is missing when the shot came in over the network. This is based on
+  source analysis, not on a live coop test.
 
 #### Installation
 
@@ -419,6 +431,9 @@ To remove the mod, delete that file.
   from shot counts and accuracy (shown as "—").
 - Penetration rate only counts hits where armor was actually involved; pure
   flesh hits do not distort the number.
+- Ammunition cost uses handbook base prices, not flea market values, and only
+  covers rounds fired from firearms. Ammunition without a handbook entry is
+  left out of the total.
 - "Shots" and "Hits" come from two different game systems; in rare cases (for
   example one bullet passing through two body parts) the columns can disagree
   by a hit while the accuracy percentage stays consistent.
