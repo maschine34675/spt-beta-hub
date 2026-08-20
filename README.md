@@ -1,6 +1,6 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-08-20 13:39** · 13 mods with download, 4 in development.
+Overview of all mods in beta testing · Last updated: **2026-08-20 22:06** · 13 mods with download, 4 in development.
 
 This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
@@ -16,7 +16,7 @@ Please always include it when reporting issues.
 
 | Mod | Version | Updated | Type | Description | Preview | Download |
 |---|---|---|---|---|---|---|
-| [**Airburst**](#airburst) | `1.1.0+c8865d5` | 2026-08-20 | Client + Server | A 40x46mm airburst grenade for SPT: the **XM1166 HEAB**, a full HE round that additionally detonates mid-flight at a set distance, raining fragments down on whatever… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Airburst-1.1.0-c8865d5.zip) |
+| [**Airburst**](#airburst) | `1.0.0+10f1fe8` | 2026-08-20 | Client + Server | A 40x46mm airburst grenade for SPT: the **XM1166 HEAB**, a full HE round that additionally detonates mid-flight at a set distance, raining fragments down on whatever… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Airburst-1.0.0-10f1fe8.zip) |
 | [**BangAndClear**](#bangandclear) | `0.9.1+c44dad7` | 2026-08-15 | Client | An SPT 4.0 client mod for tactical door work: crack a door open a few degrees, put a grenade through the gap, close the door, wait for the bang. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.1-c44dad7.zip) |
 | [**BtrTurretControl**](#btrturretcontrol) | `1.0.0+37e08ef` | 2026-08-14 | Client | Client-only SPT mod that lets a seated BTR passenger take direct control of the gun turret. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BtrTurretControl-1.0.0-37e08ef.zip) |
 | [**ClusterGrenade**](#clustergrenade) | `2.6.0+c0f3830` | 2026-08-20 | Client + Server | Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets. Also adds a 40mm cluster round and HE ammunition<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2310/wtt-commonlib">WTT - CommonLib</a></sub> | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.6.0-c0f3830.zip) |
@@ -26,7 +26,7 @@ Please always include it when reporting issues.
 | [**KillcamReplay**](#killcamreplay) | `0.9.2+8dd53d0` | 2026-08-14 | Client | True killcam: on death, the killer's final moments are replayed from their point of view, based on the recorded movement of the last seconds before the kill. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.2-8dd53d0.zip) |
 | [**ModProfiler**](#modprofiler) | `2.0.0+e12e624` | 2026-08-15 | Client | In-game profiler modeled after Dubs Performance Analyzer (RimWorld): shows live how much CPU time each installed client mod costs per frame – find the cause of…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2879/weboverlay">WebOverlay</a></sub> | <a href="#modprofiler"><img src="assets/ModProfiler/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-2.0.0-e12e624.zip) |
 | [**ModSourceDebugger**](#modsourcedebugger) | `2.0.0+7371199` | 2026-08-15 | Client + Server | Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-2.0.0-7371199.zip) |
-| [**QuestMarkers**](#questmarkers) | `0.1.0+393f10d` | 2026-08-15 | Client | World-anchored HUD markers for your unfinished quest objectives: zones to visit, spots to place items or beacons at, and quest items lying in the raid. No more running…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2879/weboverlay">WebOverlay</a></sub> | <a href="#questmarkers"><img src="assets/QuestMarkers/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-0.1.0-393f10d.zip) |
+| [**QuestMarkers**](#questmarkers) | `0.1.0+686cf52` | 2026-08-20 | Client | World-anchored HUD markers for your unfinished quest objectives: zones to visit, spots to place items or beacons at, and quest items lying in the raid. No more running…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2879/weboverlay">WebOverlay</a></sub> | <a href="#questmarkers"><img src="assets/QuestMarkers/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-0.1.0-686cf52.zip) |
 | [**RaidInfoPanels**](#raidinfopanels) | `1.0.0+76aab7b` | 2026-08-18 | Client | Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x. | <a href="#raidinfopanels"><img src="assets/RaidInfoPanels/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-76aab7b.zip) |
 | [**SurroundAudio**](#surroundaudio) | `1.0.0+a29569c` | 2026-08-14 | Client | Experimental proof of concept: plays SPT on a real surround speaker setup (5.1/7.1) instead of binaural headphone audio. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-a29569c.zip) |
 
@@ -43,9 +43,9 @@ Please always include it when reporting issues.
 
 ## Airburst
 
-**Type:** Client + Server · **Version:** `1.1.0+c8865d5` · **Updated:** 2026-08-20 12:48 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Airburst-1.1.0-c8865d5.zip)
+**Type:** Client + Server · **Version:** `1.0.0+10f1fe8` · **Updated:** 2026-08-20 21:32 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Airburst-1.0.0-10f1fe8.zip)
 
-**Components:** Client `1.1.0+c8865d5` · Server `1.1.0+c8865d5`
+**Components:** Client `1.0.0+10f1fe8` · Server `1.0.0+10f1fe8`
 
 <details><summary><b>Show usage notes</b></summary>
 
@@ -53,7 +53,7 @@ Please always include it when reporting issues.
 
 A 40x46mm airburst grenade for SPT: the **XM1166 HEAB**, a full HE round that additionally detonates mid-flight at a set distance, raining fragments down on whatever hides behind cover (XM25 style). On a direct hit it simply explodes like a regular M381. Fits all 40x46 launchers (MSGL drum, M203, FN40GL); the GP-25 uses a different caliber (40mmRU) and is not covered.
 
-Sold by Skier (LL2, ~9,500 ₽, red tracer).
+Sold by Skier (LL2, 21,250 ₽, limited stock of 18 per restock, red tracer).
 
 #### Components
 
@@ -67,6 +67,14 @@ Sold by Skier (LL2, ~9,500 ₽, red tracer).
 
 **Prerequisite:** [WTT-ServerCommonLib](https://github.com/WelcomeToTarkov/WTT-CommonLib) (`com.wtt.commonlib`).
 
+#### Requirements and compatibility
+
+- SPT 4.1.x, client + server component (both parts of this repository must be installed).
+- **Required:** [WTT-ServerCommonLib](https://github.com/WelcomeToTarkov/WTT-CommonLib) (`com.wtt.commonlib`).
+- **Optional:** [ScopeRangefinder](https://github.com/maschine34675/ScopeRangefinder) for meter-exact range locks.
+- **Not supported with Fika (co-op):** Fika replaces the game hook the M397A1 relies on, leaving that round completely inert, and the XM1166's mid-air detonation is computed per machine, so peers see different results (static analysis, 2026-08 audit). Single player only.
+- The GP-25 uses a different caliber (40mmRU) and cannot fire these rounds.
+
 #### Usage
 
 The intended workflow is the same as the real thing: **range the cover, then lob the round over it.**
@@ -74,7 +82,7 @@ The intended workflow is the same as the real thing: **range the cover, then lob
 - **Range lock (the important part):** aim down sights at the cover, press the lock hotkey (`J` by default), then lob and fire. Measuring and firing are separate moments, which is the whole point: when you fire you are aiming at the burst point in the air, not at the cover any more. The lock stays until you re-lock or the raid ends, so you can put several rounds onto the same position — **press the hotkey from the hip to clear it**. Every press answers with an in-game toast: the locked ground range plus the nearest sight zeroing step (e.g. "Airburst locked: 51 m (zeroing 50 fits)"), or why the lock was refused.
 - The lock belongs to the weapon it was set with, so zeroing a rifle later cannot hijack the launcher's range, and it is refused below a 20 m safety minimum (the round carries a full HE charge with a 7 m blast radius).
 - The lock hotkey defaults to the same key as **[ScopeRangefinder](https://github.com/maschine34675/ScopeRangefinder)**'s zeroing hotkey, so a single press can do both — note that SR only zeroes if its own Auto Zero is switched on (it ships disabled).
-- A locked or measured range gets `AirburstBurstOffset` (default 2 m) added so the shell bursts *past* the cover rather than level with it — real fire control does the same, and it keeps the wall from shielding whoever is behind it.
+- A locked or measured range gets `AirburstBurstOffset` (default 1 m) added so the shell bursts *past* the cover rather than level with it — real fire control does the same, and it keeps the wall from shielding whoever is behind it.
 - **ScopeRangefinder integration (optional):** with the mod installed, both the lock and (without a lock) the shot itself use its **meter-exact measurement** instead of the 50 m zeroing steps. Without it, the lock falls back to the mod's own raycast, and unlocked shots use the sight zeroing. The distance source is logged per shot in the BepInEx log.
 - Ranges are measured as line of sight but the fuze counts **ground distance**, so shooting down from a rooftop bursts where you aimed rather than long. A wild mortar lob crosses the set distance far above the target, and rather than pop uselessly up there the round simply flies on and impacts.
 - **Without a lock** the round falls back to the sight zeroing at the moment of the shot (MSGL reflex sight: 50 m steps from 50 to 400 m, a fresh sight sits at 50 m), and without any sight to `AirburstDefaultDistance`.
@@ -90,7 +98,16 @@ The intended workflow is the same as the real thing: **range the cover, then lob
 | `AirburstDefaultDistance` | `100` | Detonation distance in meters without a mounted sight (25–400) |
 | `UseScopeRangefinderDistance` | `true` | Prefer ScopeRangefinder's live measured distance when available |
 | `AirburstLockHotkey` | `J` | Lock the measured range (same key as ScopeRangefinder's zeroing by default) |
-| `AirburstBurstOffset` | `2` | Meters added to a measured range so the burst clears the cover (0–10) |
+| `AirburstBurstOffset` | `1` | Meters added to a measured range so the burst clears the cover (0–10) |
+
+#### M397A1 Jump-Up (bounding grenade)
+
+The second round in the box: the **40x46mm M397A1 Jump-Up** (Skier LL2, 21,250 ₽, limited stock of 18 per restock, green tracer) recreates the real 1964 bounding grenade. On impact, an ejection charge kicks the HE charge - a real, visible projectile popping off the surface - about 1.5 m **along the surface normal** before it detonates: ground hits pop straight up (fragments over anyone prone or crouched), wall hits pop out of the wall into the room. It arms after ~14 m of flight - closer impacts are duds, exactly like the real one. No fire control needed; just shoot at the ground or wall next to your target.
+
+| Setting | Default | Description |
+|-------------|----------|--------------|
+| `JumpUpTemplateIds` | `67d4f0c8a1b2e30123457043` | Comma-separated template IDs treated as bounding grenades |
+| `JumpUpHeight` | `1.5` | Meters the charge jumps from the surface before detonating (0.5–3) |
 
 #### Other mods' ammunition
 
@@ -871,7 +888,7 @@ UI mods often clone vanilla elements (`GameObject.Instantiate`) without mod-spec
 
 ## QuestMarkers
 
-**Type:** Client · **Version:** `0.1.0+393f10d` · **Updated:** 2026-08-15 12:50 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-0.1.0-393f10d.zip)
+**Type:** Client · **Version:** `0.1.0+686cf52` · **Updated:** 2026-08-20 16:34 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-0.1.0-686cf52.zip)
 
 > 🔌 **Requires:** [WebOverlay](https://sp-mod.com/mod/2879/weboverlay) — install separately, not included in the ZIP.
 
@@ -908,7 +925,8 @@ where the objective is, with the quest name and the distance.
 #### Requirements and compatibility
 
 - SPT 4.1 (client mod only, nothing to install server-side).
-- [Anvil-WebOverlay](https://forge.sp-tarkov.com/) library (hard dependency)
+- [Anvil-WebOverlay](https://sp-mod.com/mod/2879/weboverlay) library 1.6.0 or
+  newer (hard dependency)
   and the Microsoft WebView2 runtime it needs - current Windows 10/11 already
   includes it.
 - Borderless windowed or windowed mode (exclusive fullscreen cannot show an
