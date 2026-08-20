@@ -1,6 +1,6 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-08-19 22:59** · 12 mods with download, 4 in development.
+Overview of all mods in beta testing · Last updated: **2026-08-20 13:39** · 13 mods with download, 4 in development.
 
 This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
@@ -16,9 +16,10 @@ Please always include it when reporting issues.
 
 | Mod | Version | Updated | Type | Description | Preview | Download |
 |---|---|---|---|---|---|---|
+| [**Airburst**](#airburst) | `1.1.0+c8865d5` | 2026-08-20 | Client + Server | A 40x46mm airburst grenade for SPT: the **XM1166 HEAB**, a full HE round that additionally detonates mid-flight at a set distance, raining fragments down on whatever… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Airburst-1.1.0-c8865d5.zip) |
 | [**BangAndClear**](#bangandclear) | `0.9.1+c44dad7` | 2026-08-15 | Client | An SPT 4.0 client mod for tactical door work: crack a door open a few degrees, put a grenade through the gap, close the door, wait for the bang. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.1-c44dad7.zip) |
 | [**BtrTurretControl**](#btrturretcontrol) | `1.0.0+37e08ef` | 2026-08-14 | Client | Client-only SPT mod that lets a seated BTR passenger take direct control of the gun turret. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BtrTurretControl-1.0.0-37e08ef.zip) |
-| [**ClusterGrenade**](#clustergrenade) | `2.5.0+115c771` | 2026-08-19 | Client + Server | Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets. Also adds a 40mm cluster round and HE ammunition<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2310/wtt-commonlib">WTT - CommonLib</a></sub> | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.5.0-115c771.zip) |
+| [**ClusterGrenade**](#clustergrenade) | `2.6.0+c0f3830` | 2026-08-20 | Client + Server | Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets. Also adds a 40mm cluster round and HE ammunition<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2310/wtt-commonlib">WTT - CommonLib</a></sub> | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.6.0-c0f3830.zip) |
 | [**CombatSlide**](#combatslide) | `2.0.0+c57f2f8` | 2026-08-09 | Client | Press crouch while sprinting to keep sliding at decreasing speed – a "combat slide" like in other shooters. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatSlide-2.0.0-c57f2f8.zip) |
 | [**CorpseRun**](#corpserun) | `0.9.0+0a62fa2` | 2026-08-14 | Client + Server | After dying in a raid, optionally respawn (naked), loot your own corpse and continue the raid; giving up ends the raid normally. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CorpseRun-0.9.0-0a62fa2.zip) |
 | [**KillAndDamageInfo**](#killanddamageinfo) | `1.0.0+55bc2b4` | 2026-08-19 | Client | KillAndDamageInfo shows the combat information the game keeps to itself: what your kills died to, who killed you and in what state they were, what each hit actually did… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-1.0.0-55bc2b4.zip) |
@@ -37,6 +38,76 @@ Please always include it when reporting issues.
 | **AiStoryQuests** | Client + Server | Experiment: AI-generated story quests (providers: OpenAI/Anthropic/Ollama, own API key required). |
 | **AutoWishlist** | Client + Server | – |
 | **StashSort** | Client | – |
+
+---
+
+## Airburst
+
+**Type:** Client + Server · **Version:** `1.1.0+c8865d5` · **Updated:** 2026-08-20 12:48 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Airburst-1.1.0-c8865d5.zip)
+
+**Components:** Client `1.1.0+c8865d5` · Server `1.1.0+c8865d5`
+
+<details><summary><b>Show usage notes</b></summary>
+
+### Airburst Mod
+
+A 40x46mm airburst grenade for SPT: the **XM1166 HEAB**, a full HE round that additionally detonates mid-flight at a set distance, raining fragments down on whatever hides behind cover (XM25 style). On a direct hit it simply explodes like a regular M381. Fits all 40x46 launchers (MSGL drum, M203, FN40GL); the GP-25 uses a different caliber (40mmRU) and is not covered.
+
+Sold by Skier (LL2, ~9,500 ₽, red tracer).
+
+#### Components
+
+| Part | Path |
+|------|------|
+| Client mod (BepInEx) | `Airburst.Client/` |
+| Server mod (SPT + WTT) | `Airburst.Server/` |
+| Server item | `SPT_Runtime/user/mods/Airburst/db/CustomItems/Airburst.json` |
+
+**Item ID:** `67d4f0c8a1b2e30123457041`
+
+**Prerequisite:** [WTT-ServerCommonLib](https://github.com/WelcomeToTarkov/WTT-CommonLib) (`com.wtt.commonlib`).
+
+#### Usage
+
+The intended workflow is the same as the real thing: **range the cover, then lob the round over it.**
+
+- **Range lock (the important part):** aim down sights at the cover, press the lock hotkey (`J` by default), then lob and fire. Measuring and firing are separate moments, which is the whole point: when you fire you are aiming at the burst point in the air, not at the cover any more. The lock stays until you re-lock or the raid ends, so you can put several rounds onto the same position — **press the hotkey from the hip to clear it**. Every press answers with an in-game toast: the locked ground range plus the nearest sight zeroing step (e.g. "Airburst locked: 51 m (zeroing 50 fits)"), or why the lock was refused.
+- The lock belongs to the weapon it was set with, so zeroing a rifle later cannot hijack the launcher's range, and it is refused below a 20 m safety minimum (the round carries a full HE charge with a 7 m blast radius).
+- The lock hotkey defaults to the same key as **[ScopeRangefinder](https://github.com/maschine34675/ScopeRangefinder)**'s zeroing hotkey, so a single press can do both — note that SR only zeroes if its own Auto Zero is switched on (it ships disabled).
+- A locked or measured range gets `AirburstBurstOffset` (default 2 m) added so the shell bursts *past* the cover rather than level with it — real fire control does the same, and it keeps the wall from shielding whoever is behind it.
+- **ScopeRangefinder integration (optional):** with the mod installed, both the lock and (without a lock) the shot itself use its **meter-exact measurement** instead of the 50 m zeroing steps. Without it, the lock falls back to the mod's own raycast, and unlocked shots use the sight zeroing. The distance source is logged per shot in the BepInEx log.
+- Ranges are measured as line of sight but the fuze counts **ground distance**, so shooting down from a rooftop bursts where you aimed rather than long. A wild mortar lob crosses the set distance far above the target, and rather than pop uselessly up there the round simply flies on and impacts.
+- **Without a lock** the round falls back to the sight zeroing at the moment of the shot (MSGL reflex sight: 50 m steps from 50 to 400 m, a fresh sight sits at 50 m), and without any sight to `AirburstDefaultDistance`.
+
+#### Configuration
+
+`BepInEx/config/com.maschine.Airburst.cfg`
+
+| Setting | Default | Description |
+|-------------|----------|--------------|
+| `Enabled` | `true` | Mod on/off |
+| `AirburstShellTemplateIds` | `67d4f0c8a1b2e30123457041` | Comma-separated template IDs treated as airburst rounds |
+| `AirburstDefaultDistance` | `100` | Detonation distance in meters without a mounted sight (25–400) |
+| `UseScopeRangefinderDistance` | `true` | Prefer ScopeRangefinder's live measured distance when available |
+| `AirburstLockHotkey` | `J` | Lock the measured range (same key as ScopeRangefinder's zeroing by default) |
+| `AirburstBurstOffset` | `2` | Meters added to a measured range so the burst clears the cover (0–10) |
+
+#### Other mods' ammunition
+
+Any explosive round (`HasGrenaderComponent: true`) can be given the same fire control: add its template ID to `AirburstShellTemplateIds` (comma-separated). The mid-air detonation then uses **that round's own** explosion values.
+
+Known candidate: **WTT-Armory**'s 25x59mm XM1019 for the Barrett XM109 — add `6938bc0b6e96bcf17932873e` once that mod is available for SPT 4.1.
+
+#### Build
+
+```powershell
+cd D:\SPT41\Development\Airburst
+dotnet build .\Airburst.slnx -c Release
+```
+
+With `-p:DeployToSpt=true` (default) the client DLL goes to `BepInEx/plugins/` and the server DLL plus item JSON to `SPT_Runtime/user/mods/Airburst/`.
+
+</details>
 
 ---
 
@@ -164,17 +235,17 @@ The DLL is copied to `BepInEx\plugins\` automatically.
 
 ## ClusterGrenade
 
-**Type:** Client + Server · **Version:** `2.5.0+115c771` · **Updated:** 2026-08-19 21:17 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.5.0-115c771.zip)
+**Type:** Client + Server · **Version:** `2.6.0+c0f3830` · **Updated:** 2026-08-20 12:00 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.6.0-c0f3830.zip)
 
 > 🔌 **Requires:** [WTT - CommonLib](https://sp-mod.com/mod/2310/wtt-commonlib) — install separately, not included in the ZIP.
 
-**Components:** Client `2.5.0+115c771` · Server `2.5.0+115c771`
+**Components:** Client `2.6.0+c0f3830` · Server `2.6.0+c0f3830`
 
 <details><summary><b>Show usage notes</b></summary>
 
 ### ClusterGrenade Mod
 
-Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact-fuzed bomblets (frag or flash, weighted mix). There is also a 40x46mm cluster round for grenade launchers (MSGL, M203, FN40GL).
+Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact-fuzed bomblets (frag or flash, weighted mix). There is also a 40x46mm cluster round for grenade launchers (MSGL, M203, FN40GL). The former airburst round has moved into its own mod, **Airburst**.
 
 #### Components
 
@@ -272,31 +343,6 @@ The 40x46mm cluster round (M381 clone, at Skier LL2, ~8,500 ₽) spreads bomblet
 |-------------|----------|--------------|
 | `ClusterShellTemplateId` | `67d4f0c8a1b2e3012345678e` | Must match the server item ID |
 | `ShellSubGrenadeCount` | `5` | Number of sub-grenades per 40mm impact (1–24) |
-
-##### Airburst round (40mm)
-
-The **M381 Airburst** round (Skier LL2, ~9,500 ₽, red tracer) is a full M381 HE round that additionally detonates mid-flight at a set distance, raining fragments down on whatever hides behind cover. The mid-air detonation is instant (XM25 style), so targets have no time to react; on a direct hit it simply explodes like a regular M381.
-
-The intended workflow is the same as the real thing: **range the cover, then lob the round over it.**
-
-- **Range lock (the important part):** aim down sights at the cover, press the lock hotkey (`J` by default), then lob and fire. Measuring and firing are separate moments, which is the whole point: when you fire you are aiming at the burst point in the air, not at the cover any more. The lock stays until you re-lock or the raid ends, so you can put several rounds onto the same position — **press the hotkey from the hip to clear it**.
-- The lock belongs to the weapon it was set with, so zeroing a rifle later cannot hijack the launcher's range, and it is refused below a 20 m safety minimum (the round is a full M381 with a 7 m blast radius).
-- The lock hotkey defaults to the same key as **[ScopeRangefinder](https://github.com/maschine34675/ScopeRangefinder)**'s zeroing hotkey, so a single press can do both — note that SR only zeroes if its own Auto Zero is switched on (it ships disabled).
-- A locked or measured range gets `AirburstBurstOffset` (default 2 m) added so the shell bursts *past* the cover rather than level with it — real fire control does the same, and it keeps the wall from shielding whoever is behind it.
-- **ScopeRangefinder integration:** with the mod installed, both the lock and (without a lock) the shot itself use its **meter-exact measurement** instead of the 50 m zeroing steps. Without it, the lock falls back to the mod's own raycast, and unlocked shots use the sight zeroing. The distance source is logged per shot in the BepInEx log.
-- Ranges are measured as line of sight but the fuze counts **ground distance**, so shooting down from a rooftop bursts where you aimed rather than long. Fire it like the sight tells you: a wild mortar lob crosses the set distance far above the target, and rather than pop uselessly up there the round simply flies on and impacts.
-- **Without a lock** the round falls back to the sight zeroing at the moment of the shot (MSGL reflex sight: 50 m steps from 50 to 400 m, a fresh sight sits at 50 m), and without any sight to `AirburstDefaultDistance`.
-- `AirburstPayload` can be switched to `Bomblets` to eject impact-fuze bomblets downward at the burst point instead of detonating — slower, but rains over a wider area.
-
-| Setting | Default | Description |
-|-------------|----------|--------------|
-| `AirburstShellTemplateId` | `67d4f0c8a1b2e30123457041` | Must match the server item ID |
-| `AirburstPayload` | `Explosion` | Mid-air payload: instant `Explosion` or downward `Bomblets` |
-| `AirburstSubGrenadeCount` | `5` | Number of bomblets in `Bomblets` payload mode (1–24) |
-| `AirburstDefaultDistance` | `100` | Detonation distance in meters without a mounted sight (25–400) |
-| `UseScopeRangefinderDistance` | `true` | Prefer ScopeRangefinder's live measured distance when available |
-| `AirburstLockHotkey` | `J` | Lock the measured range (same key as ScopeRangefinder's zeroing by default) |
-| `AirburstBurstOffset` | `2` | Meters added to a measured range so the burst clears the cover (0–10) |
 
 ##### Explosive and flash ammunition
 
