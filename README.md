@@ -1,6 +1,6 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-08-23 12:49** · 12 mods with download, 4 in development.
+Overview of all mods in beta testing · Last updated: **2026-08-23 19:48** · 12 mods with download, 4 in development.
 
 This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
@@ -23,10 +23,10 @@ Please always include it when reporting issues.
 | [**CorpseRun**](#corpserun) | `0.9.0+0a62fa2` | 2026-08-14 | Client + Server | After dying in a raid, optionally respawn (naked), loot your own corpse and continue the raid; giving up ends the raid normally. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CorpseRun-0.9.0-0a62fa2.zip) |
 | [**KillAndDamageInfo**](#killanddamageinfo) | `1.0.0+de15673` | 2026-08-23 | Client | KillAndDamageInfo shows the combat information the game keeps to itself: what your kills died to, who killed you and in what state they were, what each hit actually did… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-1.0.0-de15673.zip) |
 | [**KillcamReplay**](#killcamreplay) | `0.9.2+8dd53d0` | 2026-08-14 | Client | True killcam: on death, the killer's final moments are replayed from their point of view, based on the recorded movement of the last seconds before the kill. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.2-8dd53d0.zip) |
-| [**ModProfiler**](#modprofiler) | `1.0.0+04fb9d3` | 2026-08-23 | Client | In-game profiler modeled after Dubs Performance Analyzer (RimWorld): shows live how much CPU time each installed client mod costs per frame – find the cause of…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2879/weboverlay">WebOverlay</a></sub> | <a href="#modprofiler"><img src="assets/ModProfiler/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-1.0.0-04fb9d3.zip) |
 | [**ModSourceDebugger**](#modsourcedebugger) | `2.0.0+7371199` | 2026-08-15 | Client + Server | Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-2.0.0-7371199.zip) |
-| [**QuestMarkers**](#questmarkers) | `1.0.0+c6eadd5` | 2026-08-23 | Client | World-anchored HUD markers for your unfinished quest objectives: zones to visit, spots to place items or beacons at, and quest items lying in the raid. No more running…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2879/weboverlay">WebOverlay</a></sub> | <a href="#questmarkers"><img src="assets/QuestMarkers/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-1.0.0-c6eadd5.zip) |
+| [**QuestMarkers**](#questmarkers) | `1.0.0+51803f6` | 2026-08-23 | Client | World-anchored HUD markers for your unfinished quest objectives: zones to visit, spots to place items or beacons at, and quest items lying in the raid. No more running…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2879/weboverlay">WebOverlay</a></sub> | <a href="#questmarkers"><img src="assets/QuestMarkers/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-1.0.0-51803f6.zip) |
 | [**RaidInfoPanels**](#raidinfopanels) | `1.0.0+76aab7b` | 2026-08-18 | Client | Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x. | <a href="#raidinfopanels"><img src="assets/RaidInfoPanels/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-76aab7b.zip) |
+| [**RaidReviewOverlay**](#raidreviewoverlay) | `1.0.0+ac8c81a` | 2026-08-23 | Client | Opens [Raid Review](https://sp-mod.com/mod/1479/raid-review)'s web interface **in a window over the game** instead of an external browser tab — same page, same features,… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidReviewOverlay-1.0.0-ac8c81a.zip) |
 | [**SurroundAudio**](#surroundaudio) | `1.0.0+f693bc7` | 2026-08-23 | Client | Replaces Tarkov's binaural (headphone) audio with real 5.1/7.1 output, so you can play on a surround speaker system instead of headphones. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-f693bc7.zip) |
 
 ## 🚧 In development – no build yet
@@ -617,190 +617,6 @@ Automatically copies DLL + PDB to `C:\SPT\BepInEx\plugins\`.
 
 ---
 
-## ModProfiler
-
-**Type:** Client · **Version:** `1.0.0+04fb9d3` · **Updated:** 2026-08-23 12:41 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-1.0.0-04fb9d3.zip)
-
-> 🔌 **Requires:** [WebOverlay](https://sp-mod.com/mod/2879/weboverlay) — install separately, not included in the ZIP.
-
-<img src="assets/ModProfiler/preview.png" width="440">
-
-<details><summary><b>Show usage notes</b></summary>
-
-In-game profiler for SPT modeled after **Dubs Performance Analyzer** (RimWorld):
-shows live how much CPU time each installed client mod costs per frame — to find the
-culprit behind performance drops without having to disable mods one by one.
-
-![The profiler window over a running game](assets/ModProfiler/preview.png)
-
-#### Usage
-
-- **F11** (configurable): open/close the profiler. The first activation instruments
-  all mod code and can freeze the game for a few seconds — that is normal.
-- If the [Anvil-WebOverlay](https://github.com/maschine34675/WebOverlay) library is
-  installed (1.8.0 or newer), the profiler opens as **its own window on top of the
-  game** (HTML UI):
-  draggable with remembered position/size, sorting via column headers, filter field,
-  per-mod trend sparklines and a frame history in the header. **Esc** or the toggle key
-  closes it. A mouse mode is unnecessary here: while the window has focus it captures
-  mouse and keyboard itself; one click into the game returns both.
-- Without the library — or with `UI/PreferWebOverlay = false` — the previous
-  **IMGUI overlay** appears. There, the mouse cursor is left untouched on opening and you
-  can keep playing normally. The **"Mouse"** button in its toolbar activates mouse mode:
-  cursor free, all game controls blocked (shooting, movement, mouse look), so you can
-  safely click inside the window; the same button switches back. If that block could not
-  be installed — a game update changed what it hooks — the mod says so in the log at
-  startup; the cursor is still freed, but the game keeps reacting.
-  In menus (cursor already free), hovering over the window is enough: clicks then no
-  longer reach the game UI underneath.
-- Table: one row per mod with **avg ms/frame**, **max ms**, **calls/frame**, **% frame**
-  and **Σ ms** (accumulated since activation). Clicking a column header sorts.
-  The web window additionally shows **µs/call** (average cost of a single call):
-  values close to 1 µs consist mostly of the measurement overhead of the instrumentation
-  itself — such rows are grayed out, and their ranking is not reliable either. In the
-  web window, all column headers, metrics and buttons also explain themselves via
-  tooltips.
-- Clicking a mod name expands the mod's most expensive methods
-  (`[H]` Harmony patch, `[U]` Unity frame method, `[C]` coroutine/async).
-- The web window's header also shows the **GC rate** (collections per second; amber
-  ticks on the frame graph mark intervals in which a collection ran), and a **spike
-  log** records frames slower than `UI/SpikeThresholdMs` (default 30 ms, and at least
-  1.5× the current average) together with the top measured contributors of that exact
-  frame — a spike without contributors points at the engine or the GC.
-- **Pause/Resume**: stop measuring, window stays open. **Rescan**: picks up patches
-  created later (e.g. at raid start — press it once during the raid!).
-  **Reset**: zero the counters. **CSV**: export to
-  `BepInEx/plugins/maschine-ModProfiler/modprofiler-<time>.csv`.
-
-#### What is measured
-
-1. **Harmony patches**: every prefix/postfix/finalizer method a mod has patched onto the
-   game is itself wrapped with a stopwatch via Harmony and attributed to the assembly
-   (= mod).
-2. **MonoBehaviours**: `Update`/`FixedUpdate`/`LateUpdate`/`OnGUI` of all components
-   defined in mod assemblies.
-3. **Coroutines & async**: `MoveNext` of the compiler-generated state machines from
-   mod assemblies.
-
-#### Limits (important for interpretation)
-
-- **Transpilers** run only once, at patch time; their runtime cost lives inside the
-  original method and cannot be attributed.
-- **Indirect costs** are not captured: a mod that spawns more bots or generates more loot
-  causes load in the game engine (AI, rendering, GC), not in its own code.
-  If everything is green here but FPS still drop, it is caused by such mods or by the
-  base game — then compare with the mod on/off, or use the SimpleMonoProfiler from
-  [BepInEx.Debug](https://github.com/BepInEx/BepInEx.Debug).
-- **GC runs** are not reported separately. A blocking GC in the middle of a measured
-  method lengthens its sample — occasional max outliers can therefore be the GC,
-  not the method. The web window's GC rate and the amber ticks on the frame graph
-  make this case visible.
-- Times are **inclusive**: if measured code calls other measured code, the time counts
-  twice; the sum can therefore exceed 100% of a frame. This also applies across mods —
-  a measured prefix of mod B on a measured method of mod A counts in both rows.
-- **Off-thread work** (async continuations, worker threads) is attributed to the next
-  rendered frame — max and % frame can then look high without that frame actually
-  having been blocked.
-- **One-time lifecycle methods** (Awake/Start/OnEnable/OnDestroy) are not captured —
-  a mod's loading and raid-start spikes stay invisible.
-- The **instrumentation persists until the game is restarted**: even with the window
-  closed or paused, all captured methods keep their (small) Harmony detour;
-  only the timing itself is skipped. For before/after measurements of other mods,
-  restart once without opening the profiler.
-- **Patch failures** (the amber counter in the header) are methods Harmony could not
-  wrap — most often because another mod's patch on the same method already uses a
-  `__state` of a different type. The originals are untouched, but their cost is
-  invisible here, so such a mod looks cheaper than it is. In the web window the
-  counter is clickable and lists mod, method and Harmony's reason.
-- Very small patch methods may have been inlined by the Mono JIT and then show up
-  with 0 ms — but they are not the problem anyway.
-- The instrumentation itself costs about a microsecond per measured call, so every
-  value is slightly inflated. For a mod whose methods are called rarely that is noise
-  and the ranking holds; for one called tens of thousands of times per frame the
-  overhead can be most of its row and push it up the table. The web window's
-  **µs/call** column is what tells the two apart — a value near 1 µs means you are
-  largely looking at the profiler's own cost.
-
-#### Requirements and compatibility
-
-- **SPT:** built and tested on 4.1.x, single player. Client-side only, no server
-  component. Only one piece touches the game itself — the input mute described under
-  Usage looks up `EFT.InputSystem.InputManager` by name — so a game update can disable
-  that one feature (a warning appears in the log); the profiling itself keeps working.
-  Other SPT lines are untested.
-- **Optional:** [Anvil-WebOverlay](https://github.com/maschine34675/WebOverlay) 1.8.0
-  or newer for the web window. Without it — or with an older version, which is
-  reported in the log — the built-in IMGUI overlay is used instead. The web window
-  additionally needs the Microsoft WebView2 runtime, which current Windows 10 and 11
-  installations already include, and borderless windowed or windowed mode.
-- **Fika (co-op):** not tested. The mod only measures and draws locally; it changes
-  no game state and sends nothing over the network.
-
-#### Installation
-
-Extract the zip over the SPT game directory (contains
-`BepInEx/plugins/maschine-ModProfiler/`). Nothing else to set up: the profiler stays
-idle until you press its hotkey.
-
-#### Configuration
-
-Through the in-game config manager, or `BepInEx/config/com.maschine.ModProfiler.cfg`:
-
-In the order the F12 menu shows them:
-
-| Option | Default | Meaning |
-|---|---|---|
-| `General/ToggleOverlay` | F11 | Opens and closes the profiler. |
-| `UI/PreferWebOverlay` | on | Use the web window when the library is installed. Read once at startup. |
-| `UI/RefreshInterval` | 0.5 s | Seconds between table refreshes. |
-| `UI/TopMethodsPerMod` | 15 | How many methods an expanded mod row lists. |
-| `UI/SpikeThresholdMs` | 30 ms | Frames slower than this enter the spike log; 0 disables it. |
-| `Profiling/HarmonyPatches` | on | Measure the Harmony patches other mods applied. |
-| `Profiling/MonoBehaviours` | on | Measure mod `Update`/`FixedUpdate`/`LateUpdate`/`OnGUI`. |
-| `Profiling/CoroutinesAndAsync` | on | Measure coroutine and async state machine steps. |
-| `Profiling/IncludeSptCorePlugins` | on | Also profile the SPT core plugins. |
-
-Two things do not take effect immediately. `UI/PreferWebOverlay` is read once at
-startup, so changing it mid-session does nothing — restart the game. And changing
-`Profiling/*` only affects methods that have not been instrumented yet; instrumentation
-already applied also stays until the game restarts.
-
-#### Support
-
-Report problems on the [issue tracker](https://github.com/maschine34675/ModProfiler/issues)
-with your exact ModProfiler and SPT versions, what you expected and what happened,
-short reproduction steps, and your complete `BepInEx/LogOutput.log` — not thousands of
-pasted lines. A CSV export (the **CSV** button) is the most useful attachment for
-anything about the numbers themselves.
-
-#### Build
-
-```
-dotnet build -c Release
-```
-
-The project resolves BepInEx, Harmony and the Unity assemblies through relative paths
-two levels up, so the checkout has to sit inside an SPT installation — clone it as
-`<your SPT folder>/Development/ModProfiler`, or adjust the `HintPath`s. The optional
-`Anvil-WebOverlay.dll` reference resolves from
-`<your SPT folder>/BepInEx/plugins/Anvil-WebOverlay/`; without that library installed the
-build fails, since the web window is compiled against it (it stays optional at runtime).
-
-A successful build copies the DLL to `..\..\BepInEx\plugins\maschine-ModProfiler\` and
-creates the release zip next to the project file.
-
-#### License and credits
-
-MIT, see [LICENSE](LICENSE). The approach — wrapping other mods' Harmony patches with
-a stopwatch instead of profiling the engine — is taken from **Dubs Performance
-Analyzer** for RimWorld; no code is shared with it. For what this profiler cannot see,
-the **SimpleMonoProfiler** from [BepInEx.Debug](https://github.com/BepInEx/BepInEx.Debug)
-is the complement.
-
-</details>
-
----
-
 ## ModSourceDebugger
 
 **Type:** Client + Server · **Version:** `2.0.0+7371199` · **Updated:** 2026-08-15 22:05 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-2.0.0-7371199.zip)
@@ -875,7 +691,7 @@ UI mods often clone vanilla elements (`GameObject.Instantiate`) without mod-spec
 
 ## QuestMarkers
 
-**Type:** Client · **Version:** `1.0.0+c6eadd5` · **Updated:** 2026-08-23 12:44 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-1.0.0-c6eadd5.zip)
+**Type:** Client · **Version:** `1.0.0+51803f6` · **Updated:** 2026-08-23 18:13 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-1.0.0-51803f6.zip)
 
 > 🔌 **Requires:** [WebOverlay](https://sp-mod.com/mod/2879/weboverlay) — install separately, not included in the ZIP.
 
@@ -1018,6 +834,148 @@ The DLL is automatically copied to `BepInEx/plugins/maschine-RaidInfoPanels.dll`
 
 - Hit, kill, grenade and compass panels as separate modules
 - Configuration via ConfigurationManager
+
+</details>
+
+---
+
+## RaidReviewOverlay
+
+**Type:** Client · **Version:** `1.0.0+ac8c81a` · **Updated:** 2026-08-23 17:00 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidReviewOverlay-1.0.0-ac8c81a.zip)
+
+<details><summary><b>Show usage notes</b></summary>
+
+Opens [Raid Review](https://sp-mod.com/mod/1479/raid-review)'s web interface **in a
+window over the game** instead of an external browser tab — same page, same features,
+without alt-tabbing out of EFT.
+
+This is a small addon, not a fork: Raid Review does all the work (recording, the
+server, the web client). All this does is put its page in an
+[Anvil-WebOverlay](https://github.com/maschine34675/WebOverlay) window and redirect
+the two places Raid Review opens it from.
+
+#### Requirements
+
+- **Raid Review** (`ekky.raidreview`) — the addon stays inactive without it and says so
+  once in the log.
+- **Anvil-WebOverlay 1.7.0 or newer** — optional. Without it (or without a WebView2
+  runtime) everything falls back to the external browser, exactly like Raid Review on
+  its own, so the addon is never worse than not having it.
+
+#### Usage
+
+- **F5** (configurable): opens or closes Raid Review over the game. This is Raid
+  Review's own key — the addon takes it over, so the press you are used to now shows
+  the window instead of a browser tab.
+- **Shift+F5**: forces the page into your external browser, ignoring the window.
+- **RAID REVIEW** in the bottom menu bar: same as the hotkey.
+- **Escape** or the same hotkey closes the window while it has focus.
+
+The window is movable and resizable and remembers its position and size. While it has
+focus it takes mouse and keyboard itself; one click into the game gives both back.
+
+#### Settings
+
+BepInEx configuration manager (F12), section `RaidReviewOverlay`:
+
+| Setting | Default | What it does |
+| --- | --- | --- |
+| `Main / Open overlay` | F5 | Shows or hides Raid Review over the game. |
+| `Main / Open in browser` | Shift+F5 | Forces the external browser. |
+| `Main / Menu bar button` | on | Adds the RAID REVIEW button to the bottom menu bar. |
+| `Integration / Take over the Raid Review hotkey` | on | Stops Raid Review from opening a browser tab on its own key. Off means both work: its key opens the browser, this addon's key the window. |
+| `Overlay / Use overlay` | on | Off sends every trigger to the external browser. |
+| `Overlay / Window frame` | on | Title bar to drag and resize. Frameless is cleaner but can only be moved from inside the page. Read when the window is first created. |
+
+#### What it changes about Raid Review
+
+Both of Raid Review's triggers end in `Application.OpenURL`, which is an internal call
+with no IL body — Harmony cannot intercept it at the call site. So the redirect happens
+at the triggers instead, and only in memory:
+
+- Its `Open Webpage Keybind` is set to unbound for the session, and this addon adopts
+  the key. Raid Review polls that key five times a second and answers every poll with a
+  browser tab; taking the key out of the poll is the one place to stop it.
+- Its `Insert Menu Item` setting is turned off for the session while this addon's own
+  menu button is enabled, so there is one RAID REVIEW button, not two that behave
+  differently.
+
+**Raid Review's own config file is never written to.** Both values are restored when the
+game closes, and BepInEx's save-on-set is suppressed while they are changed, so
+uninstalling this addon leaves Raid Review exactly as it was. Turning either setting off
+in the configuration manager restores the corresponding value immediately.
+
+The address comes from Raid Review itself (`RAID_REVIEW_HTTP_Server`), read fresh on
+every press, so a custom server IP, port or TLS setting in its config is honoured — a
+server on another machine included. If that field cannot be read, the addon falls back
+to Raid Review's default `http://127.0.0.1:7829` and says so once.
+
+Everything about Raid Review is reached through reflection: this plugin is not built
+against `RAID_REVIEW.dll`, so a missing, renamed or newer Raid Review costs a log line,
+not a crash.
+
+#### When the window is not used
+
+The external browser takes over, with a line in the log, when:
+
+- `Overlay / Use overlay` is off, or Shift+F5 was pressed;
+- Anvil-WebOverlay is missing or older than 1.7.0;
+- the game runs in **exclusive fullscreen** (a window over it would minimise the game —
+  borderless works);
+- no WebView2 runtime is installed, or the browser process failed. A failure during the
+  first press still opens the browser for that press, so no press is lost.
+
+#### Building
+
+```
+dotnet build RaidReviewOverlay.csproj -c Release
+```
+
+Assembly references are relative to the SPT installation two directories up
+(`..\..\EscapeFromTarkov_Data\Managed`, `..\..\BepInEx`), so the repository is expected
+to live in `<SPT>\Development\RaidReviewOverlay`. The build deploys to
+`<SPT>\BepInEx\plugins` as a single DLL; `-p:DeployToSpt=false` skips that.
+
+`scripts\Test-SoftDependency.ps1` verifies the Anvil-WebOverlay soft dependency (rule 5
+of the library's `docs/SOFT-DEPENDENCY.md`): no field, base type, interface, generic
+argument or method signature may name a library type, and only the gate class may use
+them in method bodies.
+
+`scripts\Test-ConfigKeys.ps1` runs every `Config.Bind` section and key name through
+BepInEx's own `ConfigDefinition` constructor. BepInEx rejects `= \n \t \ " ' [ ]` there
+and throws out of `Awake`, so one apostrophe in a key name keeps the whole plugin from
+loading — invisible to the compiler, and only visible on a real game start.
+
+`scripts\New-ReleasePackage.ps1` builds, runs both checks and writes the release archive
+to `artifacts\`.
+
+`scripts\Test-RaidReviewFields.ps1` checks a `RAID_REVIEW.dll` for the three static
+members this addon reflects on — worth running against a new Raid Review release before
+assuming this addon still redirects it.
+
+#### The button icon
+
+A hexagon with three rising bars, matching the shape and muted gold of the glyphs the
+bottom bar already has. `tools\build-icon.py` draws it to `assets\task-bar-icon.png`
+(needs Pillow) and the build embeds that PNG in the assembly.
+
+Three details in there were paid for in the game rather than in a preview, and the
+script keeps them:
+
+- **Hexagon, not circle.** A ring reads as visibly ragged at the ~24 px the bar gives an
+  icon, because a curve that size is all antialiasing.
+- **The colour is baked into the PNG.** The button's animator writes `Image.color` every
+  frame, so tinting a white glyph from code loses and the icon shows up plain white.
+- **The sprite is scaled to the one it replaces.** An `Image` reports its preferred size
+  as `sprite.rect.width / sprite.pixelsPerUnit`, so a sprite at the default 100
+  pixels-per-unit asks the layout for a much larger glyph — which grows the button and
+  leaves the icon floating in the space that opened up.
+
+The icon is this project's own work — no third-party artwork ships with it.
+
+#### License
+
+MIT — see [LICENSE](LICENSE).
 
 </details>
 

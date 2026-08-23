@@ -1,40 +1,32 @@
 {
   "mods": {
-    "com.maschine.scoperangefinder": {
-      "name": "ScopeRangefinder",
-      "url": "https://sp-mod.com/mod/2735/scoperangefinder"
-    },
-    "com.maschine.defaultautofiremode": {
-      "name": "DefaultAutoFireMode",
-      "url": "https://sp-mod.com/mod/2740/defaultautofiremode"
-    },
-    "com.maschine.receiveallchats": {
-      "name": "ReceiveAllChats",
-      "url": "https://sp-mod.com/mod/2785/receiveallchats"
-    },
-    "com.maschine.airburst": {
-      "name": "Airburst",
-      "url": "https://sp-mod.com/mod/2948/airburst"
-    },
-    "com.maschine.weaponbuildersearch": {
-      "name": "WeaponBuilderSearch",
-      "url": "https://sp-mod.com/mod/2743/weaponbuildersearch"
+    "com.maschine.unloadallmagazines": {
+      "name": "UnloadAllMagazines",
+      "url": "https://sp-mod.com/mod/2739/unloadallmagazines"
     },
     "com.anvil.weboverlay": {
       "name": "WebOverlay",
       "url": "https://sp-mod.com/mod/2879/weboverlay"
     },
-    "com.wtt.commonlib": {
-      "name": "WTT - CommonLib",
-      "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
+    "com.maschine.morequickslots": {
+      "name": "MoreQuickSlots",
+      "url": "https://sp-mod.com/mod/2812/morequickslots"
     },
     "com.maschine.autocorpsesearch": {
       "name": "AutoCorpseSearch",
       "url": "https://sp-mod.com/mod/2730/autocorpsesearch"
     },
-    "com.maschine.autoiff": {
-      "name": "AutoIFF",
-      "url": "https://sp-mod.com/mod/2784/autoiff"
+    "com.maschine.easymounting": {
+      "name": "EasyMounting",
+      "url": "https://sp-mod.com/mod/2790/easymounting"
+    },
+    "com.maschine.craftqueue": {
+      "name": "CraftQueue",
+      "url": "https://sp-mod.com/mod/2860/craftqueue"
+    },
+    "com.wtt.commonlib": {
+      "name": "WTT - CommonLib",
+      "url": "https://sp-mod.com/mod/2310/wtt-commonlib"
     },
     "com.maschine.stashfilter": {
       "name": "StashFilter",
@@ -48,34 +40,46 @@
       "name": "DualSideDoorBreach",
       "url": "https://sp-mod.com/mod/2752/dualsidedoorbreach"
     },
-    "com.maschine.morequickslots": {
-      "name": "MoreQuickSlots",
-      "url": "https://sp-mod.com/mod/2812/morequickslots"
+    "com.maschine.autoiff": {
+      "name": "AutoIFF",
+      "url": "https://sp-mod.com/mod/2784/autoiff"
     },
-    "com.maschine.easymounting": {
-      "name": "EasyMounting",
-      "url": "https://sp-mod.com/mod/2790/easymounting"
+    "com.maschine.modprofiler": {
+      "name": "ModProfiler",
+      "url": "https://sp-mod.com/mod/2952/modprofiler"
     },
-    "com.maschine.craftqueue": {
-      "name": "CraftQueue",
-      "url": "https://sp-mod.com/mod/2860/craftqueue"
+    "com.maschine.receiveallchats": {
+      "name": "ReceiveAllChats",
+      "url": "https://sp-mod.com/mod/2785/receiveallchats"
     },
     "com.maschine.notificationfilter": {
       "name": "NotificationFilter",
       "url": "https://sp-mod.com/mod/2729/notificationfilter"
     },
+    "com.maschine.defaultautofiremode": {
+      "name": "DefaultAutoFireMode",
+      "url": "https://sp-mod.com/mod/2740/defaultautofiremode"
+    },
+    "com.maschine.weaponbuildersearch": {
+      "name": "WeaponBuilderSearch",
+      "url": "https://sp-mod.com/mod/2743/weaponbuildersearch"
+    },
     "com.maschine.raidmenucleanupfix": {
       "name": "RaidMenuCleanupFix",
       "url": "https://sp-mod.com/mod/2733/raidmenucleanupfix"
     },
-    "com.maschine.unloadallmagazines": {
-      "name": "UnloadAllMagazines",
-      "url": "https://sp-mod.com/mod/2739/unloadallmagazines"
-    },
     "com.maschine.linkedsearchinstash": {
       "name": "LinkedSearchInStash",
       "url": "https://sp-mod.com/mod/2731/linkedsearchinstash"
+    },
+    "com.maschine.scoperangefinder": {
+      "name": "ScopeRangefinder",
+      "url": "https://sp-mod.com/mod/2735/scoperangefinder"
+    },
+    "com.maschine.airburst": {
+      "name": "Airburst",
+      "url": "https://sp-mod.com/mod/2948/airburst"
     }
   },
-  "fetchedAt": "2026-08-23T12:49:32.2152380+02:00"
+  "fetchedAt": "2026-08-23T19:48:42.1772153+02:00"
 }
