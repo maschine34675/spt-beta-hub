@@ -193,11 +193,14 @@ function Get-ForgeMods([string[]]$guids, [string]$cachePath) {
         while ($url) {
             $resp = Invoke-RestMethod -Uri $url -UserAgent $ua -TimeoutSec 60
             foreach ($m in $resp.data) {
-                $map[([string]$m.guid).ToLower()] = @{ name = [string]$m.name; url = [string]$m.detail_url }
+                $map[([string]$m.guid).ToLower()] = [ordered]@{ name = [string]$m.name; url = [string]$m.detail_url }
             }
             $url = $resp.links.next
         }
-        @{ fetchedAt = (Get-Date).ToString('o'); mods = $map } |
+        # Sortiert schreiben: gleiche Daten -> byte-gleicher Cache, kein Diff-Rauschen
+        $sorted = [ordered]@{}
+        foreach ($k in ($map.Keys | Sort-Object)) { $sorted[$k] = $map[$k] }
+        [ordered]@{ fetchedAt = (Get-Date).ToString('o'); mods = $sorted } |
             ConvertTo-Json -Depth 4 | Set-Content $cachePath -Encoding utf8NoBOM
         return @{ Mods = $map; Source = 'Forge-API (live)' }
     }
