@@ -9,19 +9,19 @@
     "dependencies": ["com.wtt.commonlib"]
   },
   "CombatSlide": {
-    "description": "Press crouch while sprinting to keep sliding at decreasing speed – a \"combat slide\" like in other shooters."
+    "description": "Press crouch while sprinting to keep sliding at decreasing speed - a \"combat slide\" like in other shooters."
   },
   "CorpseRun": {
     "description": "After dying in a raid, optionally respawn (naked), loot your own corpse and continue the raid; giving up ends the raid normally."
   },
   "Killcam": {
     "description": "\"Killcam light\": on death the camera switches to the killer's first-person view for about 6 seconds; the death panel shows the killer's name and remaining HP.",
-    "notes": "Predecessor of **KillcamReplay** – do not install both at the same time.",
+    "notes": "Predecessor of **KillcamReplay** - do not install both at the same time.",
     "enabled": "false"
   },
   "KillcamReplay": {
     "description": "True killcam: on death, the killer's final moments are replayed from their point of view, based on the recorded movement of the last seconds before the kill.",
-    "notes": "Successor of **Killcam** – do not install both at the same time."
+    "notes": "Successor of **Killcam** - do not install both at the same time."
   },
   "ModProfiler": {
     "description": "In-game profiler modeled after Dubs Performance Analyzer (RimWorld): shows live how much CPU time each installed client mod costs per frame – find the cause of performance drops without disabling mods one by one.",
@@ -36,7 +36,7 @@
     "screenshots": ["preview.png"]
   },
   "QuestMarkers": {
-    "screenshots": ["preview.png"],
+    "screenshots": ["docs/forge/example.png"],
     "dependencies": ["com.anvil.weboverlay"]
   },
   "UnloadAllMagazinesInventory": {

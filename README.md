@@ -1,6 +1,6 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-08-23 19:48** · 12 mods with download, 4 in development.
+Overview of all mods in beta testing · Last updated: **2026-08-23 19:54** · 12 mods with download, 4 in development.
 
 This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
@@ -19,12 +19,12 @@ Please always include it when reporting issues.
 | [**BangAndClear**](#bangandclear) | `0.9.1+c44dad7` | 2026-08-15 | Client | An SPT 4.0 client mod for tactical door work: crack a door open a few degrees, put a grenade through the gap, close the door, wait for the bang. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.1-c44dad7.zip) |
 | [**BtrTurretControl**](#btrturretcontrol) | `1.0.0+37e08ef` | 2026-08-14 | Client | Client-only SPT mod that lets a seated BTR passenger take direct control of the gun turret. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BtrTurretControl-1.0.0-37e08ef.zip) |
 | [**ClusterGrenade**](#clustergrenade) | `2.6.0+c0f3830` | 2026-08-20 | Client + Server | Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets. Also adds a 40mm cluster round and HE ammunition<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2310/wtt-commonlib">WTT - CommonLib</a></sub> | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.6.0-c0f3830.zip) |
-| [**CombatSlide**](#combatslide) | `2.0.0+c57f2f8` | 2026-08-09 | Client | Press crouch while sprinting to keep sliding at decreasing speed – a "combat slide" like in other shooters. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatSlide-2.0.0-c57f2f8.zip) |
+| [**CombatSlide**](#combatslide) | `2.0.0+c57f2f8` | 2026-08-09 | Client | Press crouch while sprinting to keep sliding at decreasing speed - a "combat slide" like in other shooters. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatSlide-2.0.0-c57f2f8.zip) |
 | [**CorpseRun**](#corpserun) | `0.9.0+0a62fa2` | 2026-08-14 | Client + Server | After dying in a raid, optionally respawn (naked), loot your own corpse and continue the raid; giving up ends the raid normally. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CorpseRun-0.9.0-0a62fa2.zip) |
 | [**KillAndDamageInfo**](#killanddamageinfo) | `1.0.0+de15673` | 2026-08-23 | Client | KillAndDamageInfo shows the combat information the game keeps to itself: what your kills died to, who killed you and in what state they were, what each hit actually did… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-1.0.0-de15673.zip) |
 | [**KillcamReplay**](#killcamreplay) | `0.9.2+8dd53d0` | 2026-08-14 | Client | True killcam: on death, the killer's final moments are replayed from their point of view, based on the recorded movement of the last seconds before the kill. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.2-8dd53d0.zip) |
 | [**ModSourceDebugger**](#modsourcedebugger) | `2.0.0+7371199` | 2026-08-15 | Client + Server | Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-2.0.0-7371199.zip) |
-| [**QuestMarkers**](#questmarkers) | `1.0.0+51803f6` | 2026-08-23 | Client | World-anchored HUD markers for your unfinished quest objectives: zones to visit, spots to place items or beacons at, and quest items lying in the raid. No more running…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2879/weboverlay">WebOverlay</a></sub> | <a href="#questmarkers"><img src="assets/QuestMarkers/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-1.0.0-51803f6.zip) |
+| [**QuestMarkers**](#questmarkers) | `1.0.0+51803f6` | 2026-08-23 | Client | World-anchored HUD markers for your unfinished quest objectives: zones to visit, spots to place items or beacons at, and quest items lying in the raid. No more running…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2879/weboverlay">WebOverlay</a></sub> | <a href="#questmarkers"><img src="assets/QuestMarkers/example.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-1.0.0-51803f6.zip) |
 | [**RaidInfoPanels**](#raidinfopanels) | `1.0.0+76aab7b` | 2026-08-18 | Client | Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x. | <a href="#raidinfopanels"><img src="assets/RaidInfoPanels/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-76aab7b.zip) |
 | [**RaidReviewOverlay**](#raidreviewoverlay) | `1.0.0+ac8c81a` | 2026-08-23 | Client | Opens [Raid Review](https://sp-mod.com/mod/1479/raid-review)'s web interface **in a window over the game** instead of an external browser tab — same page, same features,… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidReviewOverlay-1.0.0-ac8c81a.zip) |
 | [**SurroundAudio**](#surroundaudio) | `1.0.0+f693bc7` | 2026-08-23 | Client | Replaces Tarkov's binaural (headphone) audio with real 5.1/7.1 output, so you can play on a surround speaker system instead of headphones. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-f693bc7.zip) |
@@ -436,7 +436,7 @@ MIT — see [LICENSE](LICENSE).
 
 **Type:** Client · **Version:** `0.9.2+8dd53d0` · **Updated:** 2026-08-14 09:14 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.2-8dd53d0.zip)
 
-> **Tester note:** Successor of **Killcam** – do not install both at the same time.
+> **Tester note:** Successor of **Killcam** - do not install both at the same time.
 
 <details><summary><b>Show usage notes</b></summary>
 
@@ -695,7 +695,7 @@ UI mods often clone vanilla elements (`GameObject.Instantiate`) without mod-spec
 
 > 🔌 **Requires:** [WebOverlay](https://sp-mod.com/mod/2879/weboverlay) — install separately, not included in the ZIP.
 
-<img src="assets/QuestMarkers/preview.png" width="440">
+<img src="assets/QuestMarkers/example.png" width="440">
 
 <details><summary><b>Show usage notes</b></summary>
 
