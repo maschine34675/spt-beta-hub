@@ -1,6 +1,6 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-08-23 20:09** · 12 mods with download, 4 in development.
+Overview of all mods in beta testing · Last updated: **2026-08-23 20:31** · 12 mods with download, 4 in development.
 
 This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
@@ -26,7 +26,7 @@ Please always include it when reporting issues.
 | [**ModSourceDebugger**](#modsourcedebugger) | `2.0.0+7371199` | 2026-08-15 | Client + Server | Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-2.0.0-7371199.zip) |
 | [**QuestMarkers**](#questmarkers) | `1.0.0+51803f6` | 2026-08-23 | Client | World-anchored HUD markers for your unfinished quest objectives: zones to visit, spots to place items or beacons at, and quest items lying in the raid. No more running…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2879/weboverlay">WebOverlay</a></sub> | <a href="#questmarkers"><img src="assets/QuestMarkers/example.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-1.0.0-51803f6.zip) |
 | [**RaidInfoPanels**](#raidinfopanels) | `1.0.0+76aab7b` | 2026-08-18 | Client | Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x. | <a href="#raidinfopanels"><img src="assets/RaidInfoPanels/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-76aab7b.zip) |
-| [**RaidReviewOverlay**](#raidreviewoverlay) | `1.0.0+ac8c81a` | 2026-08-23 | Client | Opens [Raid Review](https://sp-mod.com/mod/1479/raid-review)'s web interface **in a window over the game** instead of an external browser tab — same page, same features,… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidReviewOverlay-1.0.0-ac8c81a.zip) |
+| [**RaidReviewOverlay**](#raidreviewoverlay) | `1.0.0+ac8c81a` | 2026-08-23 | Client | Opens Raid Review's web interface in a window over the game instead of an external browser tab | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidReviewOverlay-1.0.0-ac8c81a.zip) |
 | [**SurroundAudio**](#surroundaudio) | `1.0.0+f693bc7` | 2026-08-23 | Client | Replaces Tarkov's binaural (headphone) audio with real 5.1/7.1 output, so you can play on a surround speaker system instead of headphones. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-f693bc7.zip) |
 
 ## 🚧 In development – no build yet
@@ -107,6 +107,8 @@ Drop `maschine-BangAndClear.dll` into `BepInEx/plugins/`.
 ## BtrTurretControl
 
 **Type:** Client · **Version:** `1.0.0+37e08ef` · **Updated:** 2026-08-14 17:24 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BtrTurretControl-1.0.0-37e08ef.zip)
+
+> **Tester note:** You still have to pay for the taxi service to not get thrown out on departure
 
 <details><summary><b>Show usage notes</b></summary>
 

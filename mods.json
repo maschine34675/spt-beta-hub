@@ -4,6 +4,9 @@
   "AiStoryQuests": {
     "description": "Experiment: AI-generated story quests (providers: OpenAI/Anthropic/Ollama, own API key required)."
   },
+  "BtrTurretControl": {
+    "notes": "You still have to pay for the taxi service to not get thrown out on departure"
+  },
   "ClusterGrenade": {
     "description": "Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets. Also adds a 40mm cluster round and HE ammunition",
     "dependencies": ["com.wtt.commonlib"]
