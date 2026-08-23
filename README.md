@@ -1,6 +1,6 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-08-20 22:06** · 13 mods with download, 4 in development.
+Overview of all mods in beta testing · Last updated: **2026-08-23 12:49** · 12 mods with download, 4 in development.
 
 This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
@@ -16,19 +16,18 @@ Please always include it when reporting issues.
 
 | Mod | Version | Updated | Type | Description | Preview | Download |
 |---|---|---|---|---|---|---|
-| [**Airburst**](#airburst) | `1.0.0+10f1fe8` | 2026-08-20 | Client + Server | A 40x46mm airburst grenade for SPT: the **XM1166 HEAB**, a full HE round that additionally detonates mid-flight at a set distance, raining fragments down on whatever… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Airburst-1.0.0-10f1fe8.zip) |
 | [**BangAndClear**](#bangandclear) | `0.9.1+c44dad7` | 2026-08-15 | Client | An SPT 4.0 client mod for tactical door work: crack a door open a few degrees, put a grenade through the gap, close the door, wait for the bang. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.1-c44dad7.zip) |
 | [**BtrTurretControl**](#btrturretcontrol) | `1.0.0+37e08ef` | 2026-08-14 | Client | Client-only SPT mod that lets a seated BTR passenger take direct control of the gun turret. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BtrTurretControl-1.0.0-37e08ef.zip) |
 | [**ClusterGrenade**](#clustergrenade) | `2.6.0+c0f3830` | 2026-08-20 | Client + Server | Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets. Also adds a 40mm cluster round and HE ammunition<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2310/wtt-commonlib">WTT - CommonLib</a></sub> | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.6.0-c0f3830.zip) |
 | [**CombatSlide**](#combatslide) | `2.0.0+c57f2f8` | 2026-08-09 | Client | Press crouch while sprinting to keep sliding at decreasing speed – a "combat slide" like in other shooters. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatSlide-2.0.0-c57f2f8.zip) |
 | [**CorpseRun**](#corpserun) | `0.9.0+0a62fa2` | 2026-08-14 | Client + Server | After dying in a raid, optionally respawn (naked), loot your own corpse and continue the raid; giving up ends the raid normally. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CorpseRun-0.9.0-0a62fa2.zip) |
-| [**KillAndDamageInfo**](#killanddamageinfo) | `1.0.0+55bc2b4` | 2026-08-19 | Client | KillAndDamageInfo shows the combat information the game keeps to itself: what your kills died to, who killed you and in what state they were, what each hit actually did… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-1.0.0-55bc2b4.zip) |
+| [**KillAndDamageInfo**](#killanddamageinfo) | `1.0.0+de15673` | 2026-08-23 | Client | KillAndDamageInfo shows the combat information the game keeps to itself: what your kills died to, who killed you and in what state they were, what each hit actually did… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-1.0.0-de15673.zip) |
 | [**KillcamReplay**](#killcamreplay) | `0.9.2+8dd53d0` | 2026-08-14 | Client | True killcam: on death, the killer's final moments are replayed from their point of view, based on the recorded movement of the last seconds before the kill. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.2-8dd53d0.zip) |
-| [**ModProfiler**](#modprofiler) | `2.0.0+e12e624` | 2026-08-15 | Client | In-game profiler modeled after Dubs Performance Analyzer (RimWorld): shows live how much CPU time each installed client mod costs per frame – find the cause of…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2879/weboverlay">WebOverlay</a></sub> | <a href="#modprofiler"><img src="assets/ModProfiler/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-2.0.0-e12e624.zip) |
+| [**ModProfiler**](#modprofiler) | `1.0.0+04fb9d3` | 2026-08-23 | Client | In-game profiler modeled after Dubs Performance Analyzer (RimWorld): shows live how much CPU time each installed client mod costs per frame – find the cause of…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2879/weboverlay">WebOverlay</a></sub> | <a href="#modprofiler"><img src="assets/ModProfiler/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-1.0.0-04fb9d3.zip) |
 | [**ModSourceDebugger**](#modsourcedebugger) | `2.0.0+7371199` | 2026-08-15 | Client + Server | Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-2.0.0-7371199.zip) |
-| [**QuestMarkers**](#questmarkers) | `0.1.0+686cf52` | 2026-08-20 | Client | World-anchored HUD markers for your unfinished quest objectives: zones to visit, spots to place items or beacons at, and quest items lying in the raid. No more running…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2879/weboverlay">WebOverlay</a></sub> | <a href="#questmarkers"><img src="assets/QuestMarkers/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-0.1.0-686cf52.zip) |
+| [**QuestMarkers**](#questmarkers) | `1.0.0+c6eadd5` | 2026-08-23 | Client | World-anchored HUD markers for your unfinished quest objectives: zones to visit, spots to place items or beacons at, and quest items lying in the raid. No more running…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2879/weboverlay">WebOverlay</a></sub> | <a href="#questmarkers"><img src="assets/QuestMarkers/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-1.0.0-c6eadd5.zip) |
 | [**RaidInfoPanels**](#raidinfopanels) | `1.0.0+76aab7b` | 2026-08-18 | Client | Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x. | <a href="#raidinfopanels"><img src="assets/RaidInfoPanels/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-76aab7b.zip) |
-| [**SurroundAudio**](#surroundaudio) | `1.0.0+a29569c` | 2026-08-14 | Client | Experimental proof of concept: plays SPT on a real surround speaker setup (5.1/7.1) instead of binaural headphone audio. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-a29569c.zip) |
+| [**SurroundAudio**](#surroundaudio) | `1.0.0+f693bc7` | 2026-08-23 | Client | Replaces Tarkov's binaural (headphone) audio with real 5.1/7.1 output, so you can play on a surround speaker system instead of headphones. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-f693bc7.zip) |
 
 ## 🚧 In development – no build yet
 
@@ -38,93 +37,6 @@ Please always include it when reporting issues.
 | **AiStoryQuests** | Client + Server | Experiment: AI-generated story quests (providers: OpenAI/Anthropic/Ollama, own API key required). |
 | **AutoWishlist** | Client + Server | – |
 | **StashSort** | Client | – |
-
----
-
-## Airburst
-
-**Type:** Client + Server · **Version:** `1.0.0+10f1fe8` · **Updated:** 2026-08-20 21:32 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Airburst-1.0.0-10f1fe8.zip)
-
-**Components:** Client `1.0.0+10f1fe8` · Server `1.0.0+10f1fe8`
-
-<details><summary><b>Show usage notes</b></summary>
-
-### Airburst Mod
-
-A 40x46mm airburst grenade for SPT: the **XM1166 HEAB**, a full HE round that additionally detonates mid-flight at a set distance, raining fragments down on whatever hides behind cover (XM25 style). On a direct hit it simply explodes like a regular M381. Fits all 40x46 launchers (MSGL drum, M203, FN40GL); the GP-25 uses a different caliber (40mmRU) and is not covered.
-
-Sold by Skier (LL2, 21,250 ₽, limited stock of 18 per restock, red tracer).
-
-#### Components
-
-| Part | Path |
-|------|------|
-| Client mod (BepInEx) | `Airburst.Client/` |
-| Server mod (SPT + WTT) | `Airburst.Server/` |
-| Server item | `SPT_Runtime/user/mods/Airburst/db/CustomItems/Airburst.json` |
-
-**Item ID:** `67d4f0c8a1b2e30123457041`
-
-**Prerequisite:** [WTT-ServerCommonLib](https://github.com/WelcomeToTarkov/WTT-CommonLib) (`com.wtt.commonlib`).
-
-#### Requirements and compatibility
-
-- SPT 4.1.x, client + server component (both parts of this repository must be installed).
-- **Required:** [WTT-ServerCommonLib](https://github.com/WelcomeToTarkov/WTT-CommonLib) (`com.wtt.commonlib`).
-- **Optional:** [ScopeRangefinder](https://github.com/maschine34675/ScopeRangefinder) for meter-exact range locks.
-- **Not supported with Fika (co-op):** Fika replaces the game hook the M397A1 relies on, leaving that round completely inert, and the XM1166's mid-air detonation is computed per machine, so peers see different results (static analysis, 2026-08 audit). Single player only.
-- The GP-25 uses a different caliber (40mmRU) and cannot fire these rounds.
-
-#### Usage
-
-The intended workflow is the same as the real thing: **range the cover, then lob the round over it.**
-
-- **Range lock (the important part):** aim down sights at the cover, press the lock hotkey (`J` by default), then lob and fire. Measuring and firing are separate moments, which is the whole point: when you fire you are aiming at the burst point in the air, not at the cover any more. The lock stays until you re-lock or the raid ends, so you can put several rounds onto the same position — **press the hotkey from the hip to clear it**. Every press answers with an in-game toast: the locked ground range plus the nearest sight zeroing step (e.g. "Airburst locked: 51 m (zeroing 50 fits)"), or why the lock was refused.
-- The lock belongs to the weapon it was set with, so zeroing a rifle later cannot hijack the launcher's range, and it is refused below a 20 m safety minimum (the round carries a full HE charge with a 7 m blast radius).
-- The lock hotkey defaults to the same key as **[ScopeRangefinder](https://github.com/maschine34675/ScopeRangefinder)**'s zeroing hotkey, so a single press can do both — note that SR only zeroes if its own Auto Zero is switched on (it ships disabled).
-- A locked or measured range gets `AirburstBurstOffset` (default 1 m) added so the shell bursts *past* the cover rather than level with it — real fire control does the same, and it keeps the wall from shielding whoever is behind it.
-- **ScopeRangefinder integration (optional):** with the mod installed, both the lock and (without a lock) the shot itself use its **meter-exact measurement** instead of the 50 m zeroing steps. Without it, the lock falls back to the mod's own raycast, and unlocked shots use the sight zeroing. The distance source is logged per shot in the BepInEx log.
-- Ranges are measured as line of sight but the fuze counts **ground distance**, so shooting down from a rooftop bursts where you aimed rather than long. A wild mortar lob crosses the set distance far above the target, and rather than pop uselessly up there the round simply flies on and impacts.
-- **Without a lock** the round falls back to the sight zeroing at the moment of the shot (MSGL reflex sight: 50 m steps from 50 to 400 m, a fresh sight sits at 50 m), and without any sight to `AirburstDefaultDistance`.
-
-#### Configuration
-
-`BepInEx/config/com.maschine.Airburst.cfg`
-
-| Setting | Default | Description |
-|-------------|----------|--------------|
-| `Enabled` | `true` | Mod on/off |
-| `AirburstShellTemplateIds` | `67d4f0c8a1b2e30123457041` | Comma-separated template IDs treated as airburst rounds |
-| `AirburstDefaultDistance` | `100` | Detonation distance in meters without a mounted sight (25–400) |
-| `UseScopeRangefinderDistance` | `true` | Prefer ScopeRangefinder's live measured distance when available |
-| `AirburstLockHotkey` | `J` | Lock the measured range (same key as ScopeRangefinder's zeroing by default) |
-| `AirburstBurstOffset` | `1` | Meters added to a measured range so the burst clears the cover (0–10) |
-
-#### M397A1 Jump-Up (bounding grenade)
-
-The second round in the box: the **40x46mm M397A1 Jump-Up** (Skier LL2, 21,250 ₽, limited stock of 18 per restock, green tracer) recreates the real 1964 bounding grenade. On impact, an ejection charge kicks the HE charge - a real, visible projectile popping off the surface - about 1.5 m **along the surface normal** before it detonates: ground hits pop straight up (fragments over anyone prone or crouched), wall hits pop out of the wall into the room. It arms after ~14 m of flight - closer impacts are duds, exactly like the real one. No fire control needed; just shoot at the ground or wall next to your target.
-
-| Setting | Default | Description |
-|-------------|----------|--------------|
-| `JumpUpTemplateIds` | `67d4f0c8a1b2e30123457043` | Comma-separated template IDs treated as bounding grenades |
-| `JumpUpHeight` | `1.5` | Meters the charge jumps from the surface before detonating (0.5–3) |
-
-#### Other mods' ammunition
-
-Any explosive round (`HasGrenaderComponent: true`) can be given the same fire control: add its template ID to `AirburstShellTemplateIds` (comma-separated). The mid-air detonation then uses **that round's own** explosion values.
-
-Known candidate: **WTT-Armory**'s 25x59mm XM1019 for the Barrett XM109 — add `6938bc0b6e96bcf17932873e` once that mod is available for SPT 4.1.
-
-#### Build
-
-```powershell
-cd D:\SPT41\Development\Airburst
-dotnet build .\Airburst.slnx -c Release
-```
-
-With `-p:DeployToSpt=true` (default) the client DLL goes to `BepInEx/plugins/` and the server DLL plus item JSON to `SPT_Runtime/user/mods/Airburst/`.
-
-</details>
 
 ---
 
@@ -399,7 +311,7 @@ _No detailed description yet._
 
 ## KillAndDamageInfo
 
-**Type:** Client · **Version:** `1.0.0+55bc2b4` · **Updated:** 2026-08-19 22:42 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-1.0.0-55bc2b4.zip)
+**Type:** Client · **Version:** `1.0.0+de15673` · **Updated:** 2026-08-23 12:42 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-1.0.0-de15673.zip)
 
 <details><summary><b>Show usage notes</b></summary>
 
@@ -431,7 +343,7 @@ actually did — and a full per-raid statistics window on a hotkey.
 - Body-part damage tooltips additionally show the weapon and the distance of
   the hits.
 
-**Raid analysis overlay** (default key: F7, rebindable)
+**Raid analysis overlay** (default key: F10, rebindable)
 
 - **Heatmap** — a body silhouette with color-coded zones showing where you got
   hit and where you hit others, with hit counts and damage per zone.
@@ -477,7 +389,7 @@ To remove the mod, delete that file.
 
 - Play normally — the kill list, death screen and treatment screen additions
   appear automatically after a raid.
-- Press **F7** (rebindable) during or after a raid to open the raid analysis
+- Press **F10** (rebindable) during or after a raid to open the raid analysis
   window. Switch tabs at the top, toggle between **Received** and **Dealt** at
   the top right, and drag the title bar to move the window. Statistics reset
   when the next raid starts.
@@ -707,7 +619,7 @@ Automatically copies DLL + PDB to `C:\SPT\BepInEx\plugins\`.
 
 ## ModProfiler
 
-**Type:** Client · **Version:** `2.0.0+e12e624` · **Updated:** 2026-08-15 20:45 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-2.0.0-e12e624.zip)
+**Type:** Client · **Version:** `1.0.0+04fb9d3` · **Updated:** 2026-08-23 12:41 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModProfiler-1.0.0-04fb9d3.zip)
 
 > 🔌 **Requires:** [WebOverlay](https://sp-mod.com/mod/2879/weboverlay) — install separately, not included in the ZIP.
 
@@ -719,29 +631,35 @@ In-game profiler for SPT modeled after **Dubs Performance Analyzer** (RimWorld):
 shows live how much CPU time each installed client mod costs per frame — to find the
 culprit behind performance drops without having to disable mods one by one.
 
+![The profiler window over a running game](assets/ModProfiler/preview.png)
+
 #### Usage
 
-- **F10** (configurable): open/close the profiler. The first activation instruments
+- **F11** (configurable): open/close the profiler. The first activation instruments
   all mod code and can freeze the game for a few seconds — that is normal.
 - If the [Anvil-WebOverlay](https://github.com/maschine34675/WebOverlay) library is
-  installed, the profiler opens as **its own window on top of the game** (HTML UI):
+  installed (1.8.0 or newer), the profiler opens as **its own window on top of the
+  game** (HTML UI):
   draggable with remembered position/size, sorting via column headers, filter field,
   per-mod trend sparklines and a frame history in the header. **Esc** or the toggle key
   closes it. A mouse mode is unnecessary here: while the window has focus it captures
   mouse and keyboard itself; one click into the game returns both.
 - Without the library — or with `UI/PreferWebOverlay = false` — the previous
   **IMGUI overlay** appears. There, the mouse cursor is left untouched on opening and you
-  can keep playing normally. **F11** (configurable) or the "Mouse" button activates
-  mouse mode: cursor free, all game controls blocked (shooting, movement, mouse look),
-  so you can safely click inside the window. F11 again → back to the game.
+  can keep playing normally. The **"Mouse"** button in its toolbar activates mouse mode:
+  cursor free, all game controls blocked (shooting, movement, mouse look), so you can
+  safely click inside the window; the same button switches back. If that block could not
+  be installed — a game update changed what it hooks — the mod says so in the log at
+  startup; the cursor is still freed, but the game keeps reacting.
   In menus (cursor already free), hovering over the window is enough: clicks then no
   longer reach the game UI underneath.
 - Table: one row per mod with **avg ms/frame**, **max ms**, **calls/frame**, **% frame**
   and **Σ ms** (accumulated since activation). Clicking a column header sorts.
   The web window additionally shows **µs/call** (average cost of a single call):
   values close to 1 µs consist mostly of the measurement overhead of the instrumentation
-  itself — such rows are grayed out, and their ranking is not reliable either.
-  All column headers, metrics and buttons explain themselves via tooltips.
+  itself — such rows are grayed out, and their ranking is not reliable either. In the
+  web window, all column headers, metrics and buttons also explain themselves via
+  tooltips.
 - Clicking a mod name expands the mod's most expensive methods
   (`[H]` Harmony patch, `[U]` Unity frame method, `[C]` coroutine/async).
 - The web window's header also shows the **GC rate** (collections per second; amber
@@ -789,17 +707,71 @@ culprit behind performance drops without having to disable mods one by one.
   closed or paused, all captured methods keep their (small) Harmony detour;
   only the timing itself is skipped. For before/after measurements of other mods,
   restart once without opening the profiler.
+- **Patch failures** (the amber counter in the header) are methods Harmony could not
+  wrap — most often because another mod's patch on the same method already uses a
+  `__state` of a different type. The originals are untouched, but their cost is
+  invisible here, so such a mod looks cheaper than it is. In the web window the
+  counter is clickable and lists mod, method and Harmony's reason.
 - Very small patch methods may have been inlined by the Mono JIT and then show up
   with 0 ms — but they are not the problem anyway.
-- The instrumentation itself costs something (~1 µs per measured call); values are
-  slightly inflated, the ranking is correct.
+- The instrumentation itself costs about a microsecond per measured call, so every
+  value is slightly inflated. For a mod whose methods are called rarely that is noise
+  and the ranking holds; for one called tens of thousands of times per frame the
+  overhead can be most of its row and push it up the table. The web window's
+  **µs/call** column is what tells the two apart — a value near 1 µs means you are
+  largely looking at the profiler's own cost.
+
+#### Requirements and compatibility
+
+- **SPT:** built and tested on 4.1.x, single player. Client-side only, no server
+  component. Only one piece touches the game itself — the input mute described under
+  Usage looks up `EFT.InputSystem.InputManager` by name — so a game update can disable
+  that one feature (a warning appears in the log); the profiling itself keeps working.
+  Other SPT lines are untested.
+- **Optional:** [Anvil-WebOverlay](https://github.com/maschine34675/WebOverlay) 1.8.0
+  or newer for the web window. Without it — or with an older version, which is
+  reported in the log — the built-in IMGUI overlay is used instead. The web window
+  additionally needs the Microsoft WebView2 runtime, which current Windows 10 and 11
+  installations already include, and borderless windowed or windowed mode.
+- **Fika (co-op):** not tested. The mod only measures and draws locally; it changes
+  no game state and sends nothing over the network.
 
 #### Installation
 
-Extract the zip over the SPT game directory (contains `BepInEx/plugins/maschine-ModProfiler/`).
-No server component. Requires only BepInEx 5.x, no dependency on the EFT version.
-Optional: install **Anvil-WebOverlay** to get the web window instead of the IMGUI overlay —
-the wiring happens automatically at startup.
+Extract the zip over the SPT game directory (contains
+`BepInEx/plugins/maschine-ModProfiler/`). Nothing else to set up: the profiler stays
+idle until you press its hotkey.
+
+#### Configuration
+
+Through the in-game config manager, or `BepInEx/config/com.maschine.ModProfiler.cfg`:
+
+In the order the F12 menu shows them:
+
+| Option | Default | Meaning |
+|---|---|---|
+| `General/ToggleOverlay` | F11 | Opens and closes the profiler. |
+| `UI/PreferWebOverlay` | on | Use the web window when the library is installed. Read once at startup. |
+| `UI/RefreshInterval` | 0.5 s | Seconds between table refreshes. |
+| `UI/TopMethodsPerMod` | 15 | How many methods an expanded mod row lists. |
+| `UI/SpikeThresholdMs` | 30 ms | Frames slower than this enter the spike log; 0 disables it. |
+| `Profiling/HarmonyPatches` | on | Measure the Harmony patches other mods applied. |
+| `Profiling/MonoBehaviours` | on | Measure mod `Update`/`FixedUpdate`/`LateUpdate`/`OnGUI`. |
+| `Profiling/CoroutinesAndAsync` | on | Measure coroutine and async state machine steps. |
+| `Profiling/IncludeSptCorePlugins` | on | Also profile the SPT core plugins. |
+
+Two things do not take effect immediately. `UI/PreferWebOverlay` is read once at
+startup, so changing it mid-session does nothing — restart the game. And changing
+`Profiling/*` only affects methods that have not been instrumented yet; instrumentation
+already applied also stays until the game restarts.
+
+#### Support
+
+Report problems on the [issue tracker](https://github.com/maschine34675/ModProfiler/issues)
+with your exact ModProfiler and SPT versions, what you expected and what happened,
+short reproduction steps, and your complete `BepInEx/LogOutput.log` — not thousands of
+pasted lines. A CSV export (the **CSV** button) is the most useful attachment for
+anything about the numbers themselves.
 
 #### Build
 
@@ -807,8 +779,23 @@ the wiring happens automatically at startup.
 dotnet build -c Release
 ```
 
-Automatically copies the DLL to `..\..\BepInEx\plugins\maschine-ModProfiler\` and creates
-the release zip next to the project file.
+The project resolves BepInEx, Harmony and the Unity assemblies through relative paths
+two levels up, so the checkout has to sit inside an SPT installation — clone it as
+`<your SPT folder>/Development/ModProfiler`, or adjust the `HintPath`s. The optional
+`Anvil-WebOverlay.dll` reference resolves from
+`<your SPT folder>/BepInEx/plugins/Anvil-WebOverlay/`; without that library installed the
+build fails, since the web window is compiled against it (it stays optional at runtime).
+
+A successful build copies the DLL to `..\..\BepInEx\plugins\maschine-ModProfiler\` and
+creates the release zip next to the project file.
+
+#### License and credits
+
+MIT, see [LICENSE](LICENSE). The approach — wrapping other mods' Harmony patches with
+a stopwatch instead of profiling the engine — is taken from **Dubs Performance
+Analyzer** for RimWorld; no code is shared with it. For what this profiler cannot see,
+the **SimpleMonoProfiler** from [BepInEx.Debug](https://github.com/BepInEx/BepInEx.Debug)
+is the complement.
 
 </details>
 
@@ -888,7 +875,7 @@ UI mods often clone vanilla elements (`GameObject.Instantiate`) without mod-spec
 
 ## QuestMarkers
 
-**Type:** Client · **Version:** `0.1.0+686cf52` · **Updated:** 2026-08-20 16:34 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-0.1.0-686cf52.zip)
+**Type:** Client · **Version:** `1.0.0+c6eadd5` · **Updated:** 2026-08-23 12:44 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-1.0.0-c6eadd5.zip)
 
 > 🔌 **Requires:** [WebOverlay](https://sp-mod.com/mod/2879/weboverlay) — install separately, not included in the ZIP.
 
@@ -925,12 +912,14 @@ where the objective is, with the quest name and the distance.
 #### Requirements and compatibility
 
 - SPT 4.1 (client mod only, nothing to install server-side).
-- [Anvil-WebOverlay](https://sp-mod.com/mod/2879/weboverlay) library 1.6.0 or
+- [Anvil-WebOverlay](https://sp-mod.com/mod/2879/weboverlay) library 1.8.2 or
   newer (hard dependency)
   and the Microsoft WebView2 runtime it needs - current Windows 10/11 already
   includes it.
 - Borderless windowed or windowed mode (exclusive fullscreen cannot show an
   overlay over the game).
+- Fika: not tested. The mod only reads the local player's quest data and
+  draws locally, so it is expected to work, but that is unverified.
 
 #### Installation
 
@@ -940,7 +929,7 @@ first if you do not have it yet.
 
 #### Usage and default controls
 
-**F6** shows the markers for five seconds - a quick glance to orient
+**F7** shows the markers for six seconds - a quick glance to orient
 yourself, then they are out of the way again. The key works while moving,
 and the same peek happens automatically when a raid starts. Set *Auto-hide
 after* to 0 if you would rather have them stay until you toggle them off.
@@ -948,15 +937,15 @@ after* to 0 if you would rather have them stay until you toggle them off.
 | Section | Option | Default | Meaning |
 |---|---|---|---|
 | General | Show in raid automatically | on | Show the markers whenever a raid starts. |
-| General | Toggle key | F6 | Show or hide the markers during a raid. |
+| General | Toggle key | F7 | Show or hide the markers during a raid. |
 | Filter | Maximum distance | 0 (unlimited) | Hide markers farther away than this many meters. |
-| Filter | Maximum markers | 12 | At most this many markers at once; the closest objectives win. |
+| Filter | Maximum markers | 16 | At most this many markers at once; the closest objectives win. |
 | Display | Show quest names | on | Print the quest name under each marker. |
 | Display | Show distances | on | Print the distance under each marker. |
 | Display | Edge arrows | on | Point at off-screen objectives with border arrows. |
-| Display | Auto-hide after | 5 s | Hide the markers again this many seconds after they appeared. 0 keeps them visible. |
-| Display | Marker size | 1.0 | Overall size of the markers. |
-| Display | Size at distance | 0.8 | How large a far marker is compared to a close one; 1 makes every marker the same size. |
+| Display | Auto-hide after | 6 s | Hide the markers again this many seconds after they appeared. 0 keeps them visible. |
+| Display | Marker size | 1.8 | Overall size of the markers. |
+| Display | Size at distance | 0.5 | How large a far marker is compared to a close one; 1 makes every marker the same size. |
 | Display | Distance for smallest size | 250 m | Where that smallest size is reached. |
 
 #### Known limitations
@@ -964,9 +953,13 @@ after* to 0 if you would rather have them stay until you toggle them off.
 - Markers show through walls - there is no occlusion. For "go there"
   guidance that is usually what you want.
 - Kill counters, handovers, skill and trader conditions have no world
-  position and therefore no marker.
+  position and therefore no marker. "Find item" means quest items lying in
+  the raid, not found-in-raid collection quests; a condition that asks for an
+  item category rather than a specific item gets no marker either.
 - A zone id that exists several times in a map is shown as one marker at the
   combined center.
+- Quest items inside containers are only known to the game once the
+  container has been opened, so their marker can appear late.
 
 #### Support
 
@@ -1032,7 +1025,13 @@ The DLL is automatically copied to `BepInEx/plugins/maschine-RaidInfoPanels.dll`
 
 ## SurroundAudio
 
-**Type:** Client · **Version:** `1.0.0+a29569c` · **Updated:** 2026-08-14 15:46 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-a29569c.zip)
+**Type:** Client · **Version:** `1.0.0+f693bc7` · **Updated:** 2026-08-23 12:44 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-f693bc7.zip)
+
+> **Tester note:** **Beta - feedback wanted.** Requires your Windows output device to be configured for the same layout (Configure Speakers > 5.1) with Windows Sonic/Atmos **off**.
+
+When reporting, please include your speaker layout and how it is connected (HDMI to receiver / analog), plus the `maschine-SurroundAudio` lines from the BepInEx console. To verify your channels, bind `ChannelTestKey` in the F12 config menu and run the test.
+
+Known: vertical cues (enemy above/below) are weaker than with binaural headphones - that is inherent to speaker playback, not a bug.
 
 <details><summary><b>Show usage notes</b></summary>
 
@@ -1067,7 +1066,7 @@ Configuration (F12)
 - DisableHrtf: disables the binaural spatializer per source (required for real surround).
 - KeepReverb: keep the small Meta XR acoustics reverb share (default on). The main mixer-based environment reverb is always active and unaffected.
 - OwnSounds2D: your own footsteps/gear/voice as 2D stereo (default on). The game parents these sources at your feet; on 5.1 they would otherwise image loudly to the rear-left.
-- ChannelTestKey (default F10): two phases - first discrete tones per output channel (FL, FR, Center, LFE at 60 Hz, rears; bypasses the panner entirely), then 3D-panned tones around the listener (the game's path, some bleed into adjacent speakers is normal). Logs the active audio configuration to the BepInEx console.
+- ChannelTestKey (UNBOUND by default - assign a key in the F12 config menu to use it): two phases - first discrete tones per output channel (FL, FR, Center, LFE at 60 Hz, rears; bypasses the panner entirely), then 3D-panned tones around the listener (the game path, some bleed into adjacent speakers is normal). Logs the active audio configuration to the BepInEx console.
 
 
 
@@ -1076,7 +1075,7 @@ Known limitations
 
 
 - Vertical hearing is inherently reduced: height cues (enemy above/below on Interchange, Labs, Streets) came from the HRTF processing that this mod disables. A flat 5.1 layout cannot reproduce them - sounds from other floors image at ear level.
-- The LFE (.1) channel is never driven by game sounds; let your receiver's bass management handle it. (The F10 direct test does drive it.)
+- The LFE (.1) channel is never driven by game sounds; let your receiver's bass management handle it. (The direct channel test does drive it.)
 - Toggling settings mid-raid applies best-effort to live sources; a raid restart gives a clean state. In particular, looping sounds started while KeepReverb was off stay dry after re-enabling it until the loop is re-triggered.
 - VOIP (Dissonance) is untouched.
 
@@ -1086,9 +1085,9 @@ Troubleshooting
 
 
 
-- No sound from the rears: press F10 and check the BepInEx console. If it logs "active: Stereo" although Mode5point1 was requested, Windows presents the device as stereo - reconfigure the output device (Configure Speakers > 5.1) and disable Windows Sonic/Atmos.
+- No sound from the rears: bind ChannelTestKey in the F12 config menu, run the test and check the BepInEx console. If it logs "active: Stereo" although Mode5point1 was requested, Windows presents the device as stereo - reconfigure the output device (Configure Speakers > 5.1) and disable Windows Sonic/Atmos.
 - Muddy/washed-out positioning: some virtual surround (Windows Sonic, Dolby Atmos for Headphones, vendor drivers) is still active on top of the real 5.1 output - turn it off.
-- Phase 1 of the F10 test plays clean discrete tones but game sounds seem misplaced: report it - that points at a specific game path, not at your setup.
+- Phase 1 of the channel test plays clean discrete tones but game sounds seem misplaced: report it - that points at a specific game path, not at your setup.
 
 
 
