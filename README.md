@@ -1,6 +1,6 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-08-23 20:37** · 12 mods with download, 3 in development.
+Overview of all mods in beta testing · Last updated: **2026-08-25 14:44** · 10 mods with download, 3 in development.
 
 This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
@@ -20,13 +20,11 @@ Please always include it when reporting issues.
 | [**BtrTurretControl**](#btrturretcontrol) | `1.0.0+37e08ef` | 2026-08-14 | Client | Client-only SPT mod that lets a seated BTR passenger take direct control of the gun turret. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BtrTurretControl-1.0.0-37e08ef.zip) |
 | [**ClusterGrenade**](#clustergrenade) | `2.6.0+c0f3830` | 2026-08-20 | Client + Server | Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets. Also adds a 40mm cluster round and HE ammunition<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2310/wtt-commonlib">WTT - CommonLib</a></sub> | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.6.0-c0f3830.zip) |
 | [**CombatSlide**](#combatslide) | `2.0.0+c57f2f8` | 2026-08-09 | Client | Press crouch while sprinting to keep sliding at decreasing speed - a "combat slide" like in other shooters. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatSlide-2.0.0-c57f2f8.zip) |
-| [**CorpseRun**](#corpserun) | `0.9.0+0a62fa2` | 2026-08-14 | Client + Server | After dying in a raid, optionally respawn (naked), loot your own corpse and continue the raid; giving up ends the raid normally. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CorpseRun-0.9.0-0a62fa2.zip) |
-| [**KillAndDamageInfo**](#killanddamageinfo) | `1.0.0+de15673` | 2026-08-23 | Client | KillAndDamageInfo shows the combat information the game keeps to itself: what your kills died to, who killed you and in what state they were, what each hit actually did… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-1.0.0-de15673.zip) |
+| [**CorpseRun**](#corpserun) | `0.9.0+46bed4d` | 2026-08-24 | Client + Server | After dying in a raid, optionally respawn (naked), loot your own corpse and continue the raid; giving up ends the raid normally. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CorpseRun-0.9.0-46bed4d.zip) |
+| [**KillAndDamageInfo**](#killanddamageinfo) | `1.0.0+b0ab19c` | 2026-08-24 | Client | KillAndDamageInfo shows the combat information the game keeps to itself: what your kills died to, who killed you and in what state they were, what each hit actually did… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-1.0.0-b0ab19c.zip) |
 | [**KillcamReplay**](#killcamreplay) | `0.9.2+8dd53d0` | 2026-08-14 | Client | True killcam: on death, the killer's final moments are replayed from their point of view, based on the recorded movement of the last seconds before the kill. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.2-8dd53d0.zip) |
 | [**ModSourceDebugger**](#modsourcedebugger) | `2.0.0+7371199` | 2026-08-15 | Client + Server | Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-2.0.0-7371199.zip) |
-| [**QuestMarkers**](#questmarkers) | `1.0.0+51803f6` | 2026-08-23 | Client | World-anchored HUD markers for your unfinished quest objectives: zones to visit, spots to place items or beacons at, and quest items lying in the raid. No more running…<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2879/weboverlay">WebOverlay</a></sub> | <a href="#questmarkers"><img src="assets/QuestMarkers/example.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-1.0.0-51803f6.zip) |
 | [**RaidInfoPanels**](#raidinfopanels) | `1.0.0+76aab7b` | 2026-08-18 | Client | Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x. | <a href="#raidinfopanels"><img src="assets/RaidInfoPanels/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-76aab7b.zip) |
-| [**RaidReviewOverlay**](#raidreviewoverlay) | `1.0.0+ac8c81a` | 2026-08-23 | Client | Opens Raid Review's web interface in a window over the game instead of an external browser tab | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidReviewOverlay-1.0.0-ac8c81a.zip) |
 | [**SurroundAudio**](#surroundaudio) | `1.0.0+f693bc7` | 2026-08-23 | Client | Replaces Tarkov's binaural (headphone) audio with real 5.1/7.1 output, so you can play on a surround speaker system instead of headphones. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-f693bc7.zip) |
 
 ## 🚧 In development – no build yet
@@ -302,9 +300,9 @@ _No detailed description yet._
 
 ## CorpseRun
 
-**Type:** Client + Server · **Version:** `0.9.0+0a62fa2` · **Updated:** 2026-08-14 10:03 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CorpseRun-0.9.0-0a62fa2.zip)
+**Type:** Client + Server · **Version:** `0.9.0+46bed4d` · **Updated:** 2026-08-24 13:57 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CorpseRun-0.9.0-46bed4d.zip)
 
-**Components:** Client `0.9.0+0a62fa2` · Server `0.9.0+119da90`
+**Components:** Client `0.9.0+46bed4d` · Server `0.9.0+119da90`
 
 <details><summary><b>Show usage notes</b></summary>
 
@@ -406,7 +404,7 @@ Released under the MIT License; see `LICENSE`.
 
 ## KillAndDamageInfo
 
-**Type:** Client · **Version:** `1.0.0+de15673` · **Updated:** 2026-08-23 12:42 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-1.0.0-de15673.zip)
+**Type:** Client · **Version:** `1.0.0+b0ab19c` · **Updated:** 2026-08-24 13:56 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-1.0.0-b0ab19c.zip)
 
 <details><summary><b>Show usage notes</b></summary>
 
@@ -453,8 +451,7 @@ actually did — and a full per-raid statistics window on a hotkey.
   value of every round you fired, and that value per kill.
 - **Records** — per-raid highlights: longest hit, hardest hit dealt and
   taken, most hits on one target.
-- Everything is shown separately for damage **received** and **dealt**, and
-  weapon fire is blocked while the mouse is over the window.
+- Everything is shown separately for damage **received** and **dealt**.
 
 Every feature group can be disabled individually in the configuration.
 
@@ -485,9 +482,13 @@ To remove the mod, delete that file.
 - Play normally — the kill list, death screen and treatment screen additions
   appear automatically after a raid.
 - Press **F10** (rebindable) during or after a raid to open the raid analysis
-  window. Switch tabs at the top, toggle between **Received** and **Dealt** at
-  the top right, and drag the title bar to move the window. Statistics reset
-  when the next raid starts.
+  window. Statistics reset when the next raid starts.
+- **During a raid the window only reads.** It asks for no mouse cursor, so you
+  keep playing with it open - and nothing it draws can swallow your fire. The
+  price is that the tabs, the **Received**/**Dealt** switch, the scroll areas
+  and dragging the window all need a cursor, so they wait until the raid is
+  over. Afterwards, on the menu screens, the game shows its own cursor and the
+  window is fully interactive.
 - Options live in `BepInEx/config/com.maschine.KillAndDamageInfo.cfg` and can
   also be changed in-game with a configuration manager: the overlay key and
   one on/off switch per feature group (kill list ammo, damaged targets, death
@@ -784,111 +785,6 @@ UI mods often clone vanilla elements (`GameObject.Instantiate`) without mod-spec
 
 ---
 
-## QuestMarkers
-
-**Type:** Client · **Version:** `1.0.0+51803f6` · **Updated:** 2026-08-23 18:13 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuestMarkers-1.0.0-51803f6.zip)
-
-> 🔌 **Requires:** [WebOverlay](https://sp-mod.com/mod/2879/weboverlay) — install separately, not included in the ZIP.
-
-<img src="assets/QuestMarkers/example.png" width="440">
-
-<details><summary><b>Show usage notes</b></summary>
-
-World-anchored HUD markers for your unfinished quest objectives: zones to
-visit, spots to place items or beacons at, and quest items lying in the raid.
-No more running circles around a vague quest description - the marker floats
-where the objective is, with the quest name and the distance.
-
-#### Main features
-
-- **Markers anchored in the world.** Objectives on screen get a pin whose tip
-  sits on the spot, with the quest name and distance below it; objectives off
-  screen get an arrow at the screen border pointing toward them. Distant
-  markers are drawn slightly smaller, which reads as depth rather than as a
-  flat overlay.
-- **An icon per kind of objective**, in its own colour, on the pin and on the
-  edge arrow: a gold flag for a place to reach, a green crate for something
-  to leave behind, a violet antenna for a beacon, an orange burst for a
-  flare, a blue case for a quest item to find.
-- **A glance, not a permanent overlay.** The markers show for a few seconds
-  per keypress and then fade out again (configurable, including "stay").
-- **Only what is still open.** Completed conditions disappear, picked-up
-  quest items too. Objectives of other maps never show.
-- **Click-through glass.** The HUD ignores mouse and keyboard entirely; the
-  game stays fully playable while it is visible.
-- **Honest when the picture lies.** While aiming through a magnified optic
-  (whose lens renders its own camera) the markers fade out instead of
-  pointing at wrong pixels. Scav raids show no PMC quest markers.
-
-#### Requirements and compatibility
-
-- SPT 4.1 (client mod only, nothing to install server-side).
-- [Anvil-WebOverlay](https://sp-mod.com/mod/2879/weboverlay) library 1.8.2 or
-  newer (hard dependency)
-  and the Microsoft WebView2 runtime it needs - current Windows 10/11 already
-  includes it.
-- Borderless windowed or windowed mode (exclusive fullscreen cannot show an
-  overlay over the game).
-- Fika: not tested. The mod only reads the local player's quest data and
-  draws locally, so it is expected to work, but that is unverified.
-
-#### Installation
-
-Extract the release zip over your SPT folder; it places
-`BepInEx/plugins/maschine-QuestMarkers.dll`. Install the Anvil-WebOverlay zip
-first if you do not have it yet.
-
-#### Usage and default controls
-
-**F7** shows the markers for six seconds - a quick glance to orient
-yourself, then they are out of the way again. The key works while moving,
-and the same peek happens automatically when a raid starts. Set *Auto-hide
-after* to 0 if you would rather have them stay until you toggle them off.
-
-| Section | Option | Default | Meaning |
-|---|---|---|---|
-| General | Show in raid automatically | on | Show the markers whenever a raid starts. |
-| General | Toggle key | F7 | Show or hide the markers during a raid. |
-| Filter | Maximum distance | 0 (unlimited) | Hide markers farther away than this many meters. |
-| Filter | Maximum markers | 16 | At most this many markers at once; the closest objectives win. |
-| Display | Show quest names | on | Print the quest name under each marker. |
-| Display | Show distances | on | Print the distance under each marker. |
-| Display | Edge arrows | on | Point at off-screen objectives with border arrows. |
-| Display | Auto-hide after | 6 s | Hide the markers again this many seconds after they appeared. 0 keeps them visible. |
-| Display | Marker size | 1.8 | Overall size of the markers. |
-| Display | Size at distance | 0.5 | How large a far marker is compared to a close one; 1 makes every marker the same size. |
-| Display | Distance for smallest size | 250 m | Where that smallest size is reached. |
-
-#### Known limitations
-
-- Markers show through walls - there is no occlusion. For "go there"
-  guidance that is usually what you want.
-- Kill counters, handovers, skill and trader conditions have no world
-  position and therefore no marker. "Find item" means quest items lying in
-  the raid, not found-in-raid collection quests; a condition that asks for an
-  item category rather than a specific item gets no marker either.
-- A zone id that exists several times in a map is shown as one marker at the
-  combined center.
-- Quest items inside containers are only known to the game once the
-  container has been opened, so their marker can appear late.
-
-#### Support
-
-Please include your exact SPT and mod versions, what you expected, what
-happened instead, and the client log
-(`BepInEx/LogOutput.log`) when reporting a problem.
-
-#### License, credits, third-party
-
-MIT. Renders through the [Anvil-WebOverlay](https://github.com/maschine34675/WebOverlay)
-library. The quest-condition walk follows the approach proven by the
-DynamicMaps and GTFO mods (both MIT) - thanks to their authors; no code was
-copied.
-
-</details>
-
----
-
 ## RaidInfoPanels
 
 **Type:** Client · **Version:** `1.0.0+76aab7b` · **Updated:** 2026-08-18 09:52 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-76aab7b.zip)
@@ -929,148 +825,6 @@ The DLL is automatically copied to `BepInEx/plugins/maschine-RaidInfoPanels.dll`
 
 - Hit, kill, grenade and compass panels as separate modules
 - Configuration via ConfigurationManager
-
-</details>
-
----
-
-## RaidReviewOverlay
-
-**Type:** Client · **Version:** `1.0.0+ac8c81a` · **Updated:** 2026-08-23 17:00 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidReviewOverlay-1.0.0-ac8c81a.zip)
-
-<details><summary><b>Show usage notes</b></summary>
-
-Opens [Raid Review](https://sp-mod.com/mod/1479/raid-review)'s web interface **in a
-window over the game** instead of an external browser tab — same page, same features,
-without alt-tabbing out of EFT.
-
-This is a small addon, not a fork: Raid Review does all the work (recording, the
-server, the web client). All this does is put its page in an
-[Anvil-WebOverlay](https://github.com/maschine34675/WebOverlay) window and redirect
-the two places Raid Review opens it from.
-
-#### Requirements
-
-- **Raid Review** (`ekky.raidreview`) — the addon stays inactive without it and says so
-  once in the log.
-- **Anvil-WebOverlay 1.7.0 or newer** — optional. Without it (or without a WebView2
-  runtime) everything falls back to the external browser, exactly like Raid Review on
-  its own, so the addon is never worse than not having it.
-
-#### Usage
-
-- **F5** (configurable): opens or closes Raid Review over the game. This is Raid
-  Review's own key — the addon takes it over, so the press you are used to now shows
-  the window instead of a browser tab.
-- **Shift+F5**: forces the page into your external browser, ignoring the window.
-- **RAID REVIEW** in the bottom menu bar: same as the hotkey.
-- **Escape** or the same hotkey closes the window while it has focus.
-
-The window is movable and resizable and remembers its position and size. While it has
-focus it takes mouse and keyboard itself; one click into the game gives both back.
-
-#### Settings
-
-BepInEx configuration manager (F12), section `RaidReviewOverlay`:
-
-| Setting | Default | What it does |
-| --- | --- | --- |
-| `Main / Open overlay` | F5 | Shows or hides Raid Review over the game. |
-| `Main / Open in browser` | Shift+F5 | Forces the external browser. |
-| `Main / Menu bar button` | on | Adds the RAID REVIEW button to the bottom menu bar. |
-| `Integration / Take over the Raid Review hotkey` | on | Stops Raid Review from opening a browser tab on its own key. Off means both work: its key opens the browser, this addon's key the window. |
-| `Overlay / Use overlay` | on | Off sends every trigger to the external browser. |
-| `Overlay / Window frame` | on | Title bar to drag and resize. Frameless is cleaner but can only be moved from inside the page. Read when the window is first created. |
-
-#### What it changes about Raid Review
-
-Both of Raid Review's triggers end in `Application.OpenURL`, which is an internal call
-with no IL body — Harmony cannot intercept it at the call site. So the redirect happens
-at the triggers instead, and only in memory:
-
-- Its `Open Webpage Keybind` is set to unbound for the session, and this addon adopts
-  the key. Raid Review polls that key five times a second and answers every poll with a
-  browser tab; taking the key out of the poll is the one place to stop it.
-- Its `Insert Menu Item` setting is turned off for the session while this addon's own
-  menu button is enabled, so there is one RAID REVIEW button, not two that behave
-  differently.
-
-**Raid Review's own config file is never written to.** Both values are restored when the
-game closes, and BepInEx's save-on-set is suppressed while they are changed, so
-uninstalling this addon leaves Raid Review exactly as it was. Turning either setting off
-in the configuration manager restores the corresponding value immediately.
-
-The address comes from Raid Review itself (`RAID_REVIEW_HTTP_Server`), read fresh on
-every press, so a custom server IP, port or TLS setting in its config is honoured — a
-server on another machine included. If that field cannot be read, the addon falls back
-to Raid Review's default `http://127.0.0.1:7829` and says so once.
-
-Everything about Raid Review is reached through reflection: this plugin is not built
-against `RAID_REVIEW.dll`, so a missing, renamed or newer Raid Review costs a log line,
-not a crash.
-
-#### When the window is not used
-
-The external browser takes over, with a line in the log, when:
-
-- `Overlay / Use overlay` is off, or Shift+F5 was pressed;
-- Anvil-WebOverlay is missing or older than 1.7.0;
-- the game runs in **exclusive fullscreen** (a window over it would minimise the game —
-  borderless works);
-- no WebView2 runtime is installed, or the browser process failed. A failure during the
-  first press still opens the browser for that press, so no press is lost.
-
-#### Building
-
-```
-dotnet build RaidReviewOverlay.csproj -c Release
-```
-
-Assembly references are relative to the SPT installation two directories up
-(`..\..\EscapeFromTarkov_Data\Managed`, `..\..\BepInEx`), so the repository is expected
-to live in `<SPT>\Development\RaidReviewOverlay`. The build deploys to
-`<SPT>\BepInEx\plugins` as a single DLL; `-p:DeployToSpt=false` skips that.
-
-`scripts\Test-SoftDependency.ps1` verifies the Anvil-WebOverlay soft dependency (rule 5
-of the library's `docs/SOFT-DEPENDENCY.md`): no field, base type, interface, generic
-argument or method signature may name a library type, and only the gate class may use
-them in method bodies.
-
-`scripts\Test-ConfigKeys.ps1` runs every `Config.Bind` section and key name through
-BepInEx's own `ConfigDefinition` constructor. BepInEx rejects `= \n \t \ " ' [ ]` there
-and throws out of `Awake`, so one apostrophe in a key name keeps the whole plugin from
-loading — invisible to the compiler, and only visible on a real game start.
-
-`scripts\New-ReleasePackage.ps1` builds, runs both checks and writes the release archive
-to `artifacts\`.
-
-`scripts\Test-RaidReviewFields.ps1` checks a `RAID_REVIEW.dll` for the three static
-members this addon reflects on — worth running against a new Raid Review release before
-assuming this addon still redirects it.
-
-#### The button icon
-
-A hexagon with three rising bars, matching the shape and muted gold of the glyphs the
-bottom bar already has. `tools\build-icon.py` draws it to `assets\task-bar-icon.png`
-(needs Pillow) and the build embeds that PNG in the assembly.
-
-Three details in there were paid for in the game rather than in a preview, and the
-script keeps them:
-
-- **Hexagon, not circle.** A ring reads as visibly ragged at the ~24 px the bar gives an
-  icon, because a curve that size is all antialiasing.
-- **The colour is baked into the PNG.** The button's animator writes `Image.color` every
-  frame, so tinting a white glyph from code loses and the icon shows up plain white.
-- **The sprite is scaled to the one it replaces.** An `Image` reports its preferred size
-  as `sprite.rect.width / sprite.pixelsPerUnit`, so a sprite at the default 100
-  pixels-per-unit asks the layout for a much larger glyph — which grows the button and
-  leaves the icon floating in the space that opened up.
-
-The icon is this project's own work — no third-party artwork ships with it.
-
-#### License
-
-MIT — see [LICENSE](LICENSE).
 
 </details>
 

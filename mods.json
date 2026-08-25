@@ -43,7 +43,8 @@
     "dependencies": ["com.anvil.weboverlay"]
   },
   "RaidReviewOverlay": {
-    "description": "Opens Raid Review's web interface in a window over the game instead of an external browser tab"
+    "description": "Opens Raid Review's web interface in a window over the game instead of an external browser tab",
+    "enabled": "false"
   },
   "UnloadAllMagazinesInventory": {
     "enabled": "false"

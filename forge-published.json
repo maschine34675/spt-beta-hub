@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-23T20:37:59.2945687+02:00",
+  "fetchedAt": "2026-08-25T14:44:08.4312017+02:00",
   "mods": {
     "com.anvil.weboverlay": {
       "name": "WebOverlay",
@@ -48,6 +48,10 @@
     "com.maschine.notificationfilter": {
       "name": "NotificationFilter",
       "url": "https://sp-mod.com/mod/2729/notificationfilter"
+    },
+    "com.maschine.questmarkers": {
+      "name": "QuestMarker",
+      "url": "https://sp-mod.com/mod/2954/questmarker"
     },
     "com.maschine.raidmenucleanupfix": {
       "name": "RaidMenuCleanupFix",
