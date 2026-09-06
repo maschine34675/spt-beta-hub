@@ -1,6 +1,6 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-08-26 22:10** · 11 mods with download, 3 in development.
+Overview of all mods in beta testing · Last updated: **2026-09-06 18:23** · 17 mods with download, 3 in development.
 
 This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
@@ -16,16 +16,22 @@ Please always include it when reporting issues.
 
 | Mod | Version | Updated | Type | Description | Preview | Download |
 |---|---|---|---|---|---|---|
-| [**BangAndClear**](#bangandclear) | `0.9.1+c44dad7` | 2026-08-15 | Client | An SPT 4.0 client mod for tactical door work: crack a door open a few degrees, put a grenade through the gap, close the door, wait for the bang. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.1-c44dad7.zip) |
+| [**BangAndClear**](#bangandclear) | `0.9.2+9882bbc` | 2026-08-26 | Client | An SPT 4.0 client mod for tactical door work: crack a door open a few degrees, put a grenade through the gap, close the door, wait for the bang. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.2-9882bbc.zip) |
 | [**BtrTurretControl**](#btrturretcontrol) | `1.0.0+37e08ef` | 2026-08-14 | Client | Client-only SPT mod that lets a seated BTR passenger take direct control of the gun turret. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BtrTurretControl-1.0.0-37e08ef.zip) |
 | [**ClusterGrenade**](#clustergrenade) | `2.6.0+c0f3830` | 2026-08-20 | Client + Server | Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets. Also adds a 40mm cluster round and HE ammunition<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2310/wtt-commonlib">WTT - CommonLib</a></sub> | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.6.0-c0f3830.zip) |
-| [**CombatLog**](#combatlog) | `0.1.0+f89f3b9` | 2026-08-26 | Client | _(description to follow)_ | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatLog-0.1.0-f89f3b9.zip) |
+| [**CombatLog**](#combatlog) | `0.1.0+f314405` | 2026-09-05 | Client | _(description to follow)_ | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatLog-0.1.0-f314405.zip) |
 | [**CombatSlide**](#combatslide) | `2.0.0+c57f2f8` | 2026-08-09 | Client | Press crouch while sprinting to keep sliding at decreasing speed - a "combat slide" like in other shooters. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatSlide-2.0.0-c57f2f8.zip) |
+| [**ConsoleToMonitor**](#consoletomonitor) | `1.0.0+8bef20d` | 2026-08-28 | Client | _(description to follow)_ | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ConsoleToMonitor-1.0.0-8bef20d.zip) |
 | [**CorpseRun**](#corpserun) | `0.9.0+46bed4d` | 2026-08-24 | Client + Server | After dying in a raid, optionally respawn (naked), loot your own corpse and continue the raid; giving up ends the raid normally. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CorpseRun-0.9.0-46bed4d.zip) |
+| [**DoorDash**](#doordash) | `1.2.0+083cd0b` | 2026-08-29 | Client | > Blow open doors without stopping. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/DoorDash-1.2.0-083cd0b.zip) |
 | [**KillAndDamageInfo**](#killanddamageinfo) | `1.0.0+b0ab19c` | 2026-08-24 | Client | KillAndDamageInfo shows the combat information the game keeps to itself: what your kills died to, who killed you and in what state they were, what each hit actually did… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-1.0.0-b0ab19c.zip) |
-| [**KillcamReplay**](#killcamreplay) | `0.9.2+8dd53d0` | 2026-08-14 | Client | True killcam: on death, the killer's final moments are replayed from their point of view, based on the recorded movement of the last seconds before the kill. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.2-8dd53d0.zip) |
+| [**KillcamReplay**](#killcamreplay) | `0.9.3+6151e52` | 2026-09-03 | Client | True killcam: on death, the killer's final moments are replayed from their point of view, based on the recorded movement of the last seconds before the kill. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.3-6151e52.zip) |
+| [**LogTools**](#logtools) | `1.3.0+8525b6a` | 2026-09-02 | Client | Three things BepInEx 5 will not do for its own `LogOutput.log`: | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/LogTools-1.3.0-8525b6a.zip) |
+| [**MedicRound**](#medicround) | `0.1.0+97b9031` | 2026-09-06 | Client + Server | **Status: 0.1.0 (single player). Fika co-op support is planned for 0.2.0.** | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/MedicRound-0.1.0-97b9031.zip) |
 | [**ModSourceDebugger**](#modsourcedebugger) | `2.0.0+7371199` | 2026-08-15 | Client + Server | Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-2.0.0-7371199.zip) |
+| [**QuietBrainLog**](#quietbrainlog) | `1.0.0+e345181` | 2026-09-06 | Client | SPT logs a warning for every PMC that spawns, about something working as intended. QuietBrainLog turns that one line down to Info — or off — and leaves the rest alone. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuietBrainLog-1.0.0-e345181.zip) |
 | [**RaidInfoPanels**](#raidinfopanels) | `1.0.0+76aab7b` | 2026-08-18 | Client | Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x. | <a href="#raidinfopanels"><img src="assets/RaidInfoPanels/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-76aab7b.zip) |
+| [**Redeploy**](#redeploy) | `0.9.0+0cd80ee` | 2026-09-06 | Client + Server | > Formerly **CorpseRun** — renamed in 0.9.x. The old GUID `com.maschine.CorpseRun`, the `user/mods/CorpseRun` server folder and `maschine-CorpseRun.*.dll` files are… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Redeploy-0.9.0-0cd80ee.zip) |
 | [**SurroundAudio**](#surroundaudio) | `1.0.0+f693bc7` | 2026-08-23 | Client | Replaces Tarkov's binaural (headphone) audio with real 5.1/7.1 output, so you can play on a surround speaker system instead of headphones. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-f693bc7.zip) |
 
 ## 🚧 In development – no build yet
@@ -40,7 +46,7 @@ Please always include it when reporting issues.
 
 ## BangAndClear
 
-**Type:** Client · **Version:** `0.9.1+c44dad7` · **Updated:** 2026-08-15 23:29 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.1-c44dad7.zip)
+**Type:** Client · **Version:** `0.9.2+9882bbc` · **Updated:** 2026-08-26 22:13 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.2-9882bbc.zip)
 
 <details><summary><b>Show usage notes</b></summary>
 
@@ -69,7 +75,7 @@ and hand animation, and the throw is the vanilla underhand toss.
 | CrackSpeed | 1.0 | Speed multiplier for the crack movement. |
 | SqueakVolume | 0.35 | Volume of the squeak while cracking. |
 | AutoCloseDoor | true | Bang & clear closes the door after the throw. |
-| CloseDelaySeconds | 1.5 | Delay between the grenade leaving the hand and the door closing. |
+| CloseDelaySeconds | 0.5 | Delay between the grenade leaving the hand and the door closing. |
 | IgnoreDoorCollision | true | The scripted throw can't bounce back off the door leaf (frame/walls still block). |
 | GuidedThrow | true | Redirect the toss through the gap regardless of standing position (speed kept, direction corrected). |
 | AimSpeedDegPerSec | 360 | Turn speed of the scripted aim toward the gap. |
@@ -293,7 +299,7 @@ Both are purely server-side (no client logic) and work in any weapon that fires 
 
 ## CombatLog
 
-**Type:** Client · **Version:** `0.1.0+f89f3b9` · **Updated:** 2026-08-26 21:51 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatLog-0.1.0-f89f3b9.zip)
+**Type:** Client · **Version:** `0.1.0+f314405` · **Updated:** 2026-09-05 18:09 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatLog-0.1.0-f314405.zip)
 
 _No detailed description yet._
 
@@ -302,6 +308,14 @@ _No detailed description yet._
 ## CombatSlide
 
 **Type:** Client · **Version:** `2.0.0+c57f2f8` · **Updated:** 2026-08-09 12:53 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatSlide-2.0.0-c57f2f8.zip)
+
+_No detailed description yet._
+
+---
+
+## ConsoleToMonitor
+
+**Type:** Client · **Version:** `1.0.0+8bef20d` · **Updated:** 2026-08-28 15:43 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ConsoleToMonitor-1.0.0-8bef20d.zip)
 
 _No detailed description yet._
 
@@ -406,6 +420,100 @@ Released under the MIT License; see `LICENSE`.
 
 - The spawn protection and the optional respawn cost were inspired by **PlayerLives** and **RevivalMod** (KaiKiNoodles, gitTerebi), which approach the same problem with a downed state instead of a respawn. No code was taken from either mod.
 - CorpseRun contains compatibility code for **DynamicMaps** (mpstark), **Freecam** (Terkoiz) and **KillcamReplay**. None of these are bundled; they remain the property of their authors.
+
+</details>
+
+---
+
+## DoorDash
+
+**Type:** Client · **Version:** `1.2.0+083cd0b` · **Updated:** 2026-08-29 15:57 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/DoorDash-1.2.0-083cd0b.zip)
+
+<details><summary><b>Show usage notes</b></summary>
+
+### DoorDash — SPT 4.1 port
+
+> Blow open doors without stopping.
+
+Sprint into a door and ram it open — no interaction prompt, no stopping. Occasionally the door is
+knocked clean off its frame and tumbles through the room as a physics object.
+
+**This is a port of [tarkin](https://sp-mod.com/mod/2214/doordash)'s DoorDash to SPT 4.1.** The
+original mod targets SPT 4.0 and does not run on 4.1. All credit for the mod itself goes to tarkin;
+this port only updates the renamed game APIs and fixes a handful of pre-existing bugs. Plugin GUID,
+config keys, file name and install path are unchanged, so it drops in over an existing install.
+
+- Original mod: https://sp-mod.com/mod/2214/doordash
+- Original source: https://github.com/bmpq/spt-doordash
+- License: MIT (see `LICENSE`)
+
+---
+
+#### Requirements
+
+- SPT 4.1 with BepInEx
+- No other dependencies
+
+#### Installation
+
+Extract into your SPT folder so that the DLL lands in `BepInEx/plugins/tarkin/doordash.dll`.
+If you are upgrading from the 4.0 version, this overwrites the old file in place — do not keep both.
+
+#### Configuration
+
+Everything is under `BepInEx/config/com.tarkin.doordash.cfg` and in the F12 menu (most entries are
+marked advanced). Existing config files from the 4.0 version keep working; the two entries below are
+the only additions.
+
+| Setting | Section | Default | Description |
+|---------|---------|---------|-------------|
+| `Impact Damage Per Speed` | Physical Door | `8` | Damage a flying door deals per m/s of its speed |
+| `Impact Damage Max` | Physical Door | `120` | Upper limit for a single door impact |
+
+#### Compatibility
+
+- **[DualSideDoorBreach](https://github.com/maschine34675/DualSideDoorBreach)** — fully supported.
+  That mod hooks DoorDash reflectively to allow sprint rams from both sides of a door; this port
+  keeps the exact type, method, parameter and field names it binds to, and keeps the ram committing
+  in the same frame as the door query, which its key handling relies on.
+- **Fika** — untested and not supported, same as the original. The dislodge roll and the resulting
+  door physics are computed independently on each machine, so a knocked-out door will behave
+  differently for each player.
+
+---
+
+#### Changes in this port
+
+##### Ported to SPT 4.1
+
+Three renamed game types, nothing else in the mod's API surface moved:
+`LayerMaskClass` → `LayersMaskController`, `DamageInfoStruct` → `EFT.Ballistics.DamageInfo`,
+`ShotIdStruct` → `EFT.Ballistics.ShotId`. The project now builds against the game's own assemblies
+(`netstandard2.1`, direct references) instead of NuGet packages and a `$(SPTPath)` variable.
+
+##### Bugs fixed along the way
+
+- **Dislodged doors no longer break the door for the rest of the raid.** When the physics conversion
+  triggered, vanilla's breach was skipped entirely, so the door stayed in an interacting, never-broken
+  state: bots refused to path through it and the occlusion portal stayed shut. The door is now marked
+  broken and open, as a completed breach would.
+- **Doors that cannot be converted are no longer swallowed.** The conversion only works on doors with
+  a mesh collider; on any other door the roll used to consume the breach and leave the door shut.
+  It now falls through to the normal breach.
+- **A flying door no longer instantly kills whoever it touches.** Impact damage was the square of the
+  door's speed times 100 — about 10,000 damage at default settings, through any armour. It is now
+  linear in speed and capped.
+- **Raid end no longer logs `Can't remove LocalPlayer`.** Caused by a `[RequireComponent]` attribute
+  that kept Unity from tearing the player component down.
+- **Ram detection no longer depends on which way you are facing.** The two probe rays were offset in
+  world space, so they collapsed into one whenever the player looked along the world X axis.
+- **No more NullReferenceExceptions** from a door without a breach sound, from a physics door that
+  failed to initialise, or from a double conversion of the same door.
+- Breach-sound material matching is now case-insensitive (the metal-door damage multiplier could
+  silently never apply).
+- A failing Harmony patch no longer silently disables the whole mod.
+- The mod no longer throws on a Fika headless host, which has no local player. (It still does nothing
+  useful there — see Compatibility.)
 
 </details>
 
@@ -539,7 +647,9 @@ MIT — see [LICENSE](LICENSE).
 
 ## KillcamReplay
 
-**Type:** Client · **Version:** `0.9.2+8dd53d0` · **Updated:** 2026-08-14 09:14 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.2-8dd53d0.zip)
+**Type:** Client · **Version:** `0.9.3+6151e52` · **Updated:** 2026-09-03 19:57 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.3-6151e52.zip)
+
+**Components:** Client `0.9.3+6151e52` · Client `0.9.3+6151e52`
 
 > **Tester note:** Successor of **Killcam** - do not install both at the same time.
 
@@ -703,12 +813,12 @@ head stays invisible there for FPS reasons): stand in front of a bot, F9, watch 
   (deferred stop + camera takeover). If that mod is loaded, the death replay disables itself
   automatically (log warning); the F9 debug replay still works. To test the death replay,
   temporarily remove the KillAndDamageInfo DLL from `BepInEx/plugins`.
-- **Respawn compatibility (e.g. CorpseRun):** recording is deliberately NOT stopped
+- **Respawn compatibility (e.g. Redeploy):** recording is deliberately NOT stopped
   permanently on your own death (only during the ~10 s a replay actively occupies the
   screen) — otherwise recording would end for good after the first death and every further
   replay in the same round would fail with "Killer track too short". The `BoneRecorder`
   detects a character switch (new player GameObject after respawn) and reinitializes itself
-  automatically. Verified in-game with CorpseRun (multiple deaths/replays in one round).
+  automatically. Verified in-game with Redeploy (multiple deaths/replays in one round).
 
 #### Build
 
@@ -717,6 +827,279 @@ dotnet build -c Debug
 ```
 
 Automatically copies DLL + PDB to `C:\SPT\BepInEx\plugins\`.
+
+</details>
+
+---
+
+## LogTools
+
+**Type:** Client · **Version:** `1.3.0+8525b6a` · **Updated:** 2026-09-02 07:22 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/LogTools-1.3.0-8525b6a.zip)
+
+<details><summary><b>Show usage notes</b></summary>
+
+Three things BepInEx 5 will not do for its own `LogOutput.log`:
+
+1. **Timestamps** on every line.
+2. **One log file per session**, instead of one file that either gets thrown
+   away on every start or grows without limit.
+3. **A list of what is installed**, at the top of the file.
+
+All three are done from a **preloader patcher** rather than a plugin — by the time
+plugins load, most of the interesting lines are already written and the log file
+is long since open.
+
+#### Timestamps
+
+BepInEx has no option for this: the line format (`[Level  :Source] message`) is
+hardcoded in `LogEventArgs`, and none of the `[Logging*]` config sections offer a
+timestamp.
+
+The timing is the whole difficulty. During the preloader the log file does not
+exist yet — BepInEx only collects log events in a memory buffer and creates the
+disk listener much later, in `Chainloader.Initialize`, which then replays the
+buffered lines into it. Searching for the listener at patcher time finds nothing.
+
+So instead of searching once, a tiny probe listener is registered at the earliest
+possible moment and waits for the disk listener to appear. Listeners are
+dispatched in registration order, so the probe runs *before* the disk listener on
+the very event that follows its creation — not a single line reaches the file
+unstamped, replayed preloader lines included.
+
+Once it appears, the probe wraps its `TextWriter` rather than replacing the
+listener: BepInEx keeps owning the file handle, the flush timer and the disposal,
+so there is nothing to get wrong at shutdown.
+
+##### Which clock
+
+The per-line format carries no date and no time zone, and the client log is the
+odd one out in the SPT stack: the server log, the launcher log and EFT's own
+logs are all **UTC**, while BepInEx runs on local time. So the first line of the
+file says which clock is in use and gives the session start in both:
+
+```
+[07:22:22.299] [Info   :  LogTools] Log file timestamps active — every line below is LOCAL time
+(UTC+02:00). Session start: 2026-09-02 07:22:22 local = 2026-09-02 05:22:22 UTC (SPT's server and
+launcher logs and EFT's own logs are UTC).
+```
+
+Converting the whole file to server time is then one subtraction. `UseUtc = true`
+switches the stamps themselves to UTC, which makes the two logs line up directly
+— at the cost of every timestamp disagreeing with the clock on the wall. Setting
+`Format = yyyy-MM-dd HH:mm:ss.fff` on top of that produces exactly the server
+log's format.
+
+Notes:
+
+- Replayed preloader lines carry the time they were *written to the file*, not
+  the time they happened — BepInEx's buffered events do not record a timestamp.
+  Everything from the chainloader onwards is exact.
+- The console is a separate listener and stays unchanged.
+- The offset in the header is the one in effect at startup. A session that runs
+  across a daylight-saving switch keeps stamping local time, so the stated offset
+  is stale for the part after the switch. `UseUtc` has no such gap.
+
+#### Rotation
+
+BepInEx offers exactly two options and neither is what a debugging session wants:
+`AppendLog = false` throws the previous session away, `AppendLog = true` grows one
+file forever.
+
+So at startup — still in the preloader, while nothing in the process holds the
+file — the previous `LogOutput.log` is moved to
+`BepInEx/logs/LogOutput-<last write>.log`. BepInEx then finds no file and creates
+a fresh one, whichever of the two settings is active (`FileMode.Append` creates a
+missing file too), and `BepInEx/LogOutput.log` keeps meaning "the session running
+right now".
+
+- `AppendLog = true` is the better companion setting: if a rotation ever fails
+  (a second game instance still holding the file), appending loses nothing while
+  truncating would.
+- BepInEx's numbered fallbacks (`LogOutput.log.1` … `.4`, used when the main file
+  is locked) are archived as well.
+- Archives are named after the moment that session *last wrote*. NTFS keeps the
+  creation timestamp of a truncated — or quickly recreated — file, so creation
+  time would lie.
+- Old archives are deleted oldest-first once either limit is hit. The newest one
+  is always kept, even if it busts the size limit on its own. Only files matching
+  `LogOutput-*.log` are ever considered; the match is done in code, because
+  Windows' pattern matching widens three-letter extensions and this is a delete
+  list.
+
+#### Manifest
+
+Every DLL in `BepInEx/plugins` and `BepInEx/patchers`, with its version, its date
+and its plugin GUID, logged near the top of the file:
+
+```
+Installed plugins — 59 DLL(s) in D:\SPT41\BepInEx\plugins:
+  maschine-ArenaMode.Client.dll   0.1.0    2026-08-31 22:33  com.maschine.ArenaMode
+  maschine-Redeploy.Core.dll      0.9.0.0  2026-08-31 22:30
+  SAIN\SAIN.dll                   4.5.0    2026-08-27 19:22  me.sol.sain
+  (BepInEx plugins: 50, other DLLs: 9. A version without a GUID next to it is the assembly version.)
+```
+
+It lists the **folder**, not the plugins BepInEx managed to load — that
+difference is the point. A stale DLL left behind by a rename, a plugin that
+never loads, two copies of the same mod: none of those appear in a list of
+loaded plugins, and all of them appear here. Two files declaring the same plugin
+GUID get an explicit warning, because BepInEx silently loads only one of them.
+
+Versions come from the `[BepInPlugin]` attribute where there is one — the
+version the mod author declares, the same one BepInEx reports — read with
+Mono.Cecil, which the preloader has loaded anyway and which reads metadata
+*without* loading the assembly. Loading these assemblies here would be a real
+hazard: they are meant to be loaded by the chainloader, later, once. A DLL with
+no plugin attribute shows its assembly version; an unmanaged one shows its file
+version.
+
+Cost is one pass over the plugin folder at startup — around 200 ms cold, 25 ms
+warm for 59 DLLs.
+
+#### Config
+
+`BepInEx/config/maschine-LogTools.cfg`
+
+| Section | Key | Default | Meaning |
+| --- | --- | --- | --- |
+| `Timestamps` | `Enabled` | `true` | Prefix log lines with a timestamp |
+| `Timestamps` | `Format` | `HH:mm:ss.fff` | .NET date/time format; use `yyyy-MM-dd HH:mm:ss.fff` for sessions spanning midnight |
+| `Timestamps` | `UseUtc` | `false` | Stamp in UTC instead of local time, matching SPT's server log |
+| `Rotation` | `Enabled` | `true` | Archive the previous session's log at startup |
+| `Rotation` | `MaxArchivedFiles` | `10` | How many archives to keep; `0` = unlimited |
+| `Rotation` | `MaxArchivedMegabytes` | `200` | Ceiling for `BepInEx/logs` as a whole; `0` = unlimited |
+| `Manifest` | `Enabled` | `true` | List every installed DLL near the top of the log |
+
+An invalid `Format` falls back to the default instead of throwing once per log
+line.
+
+#### Failure behaviour
+
+Everything fails open, feature by feature: a preloader that throws takes the game
+down with it, and neither a timestamp nor a tidy log folder is worth that. A
+locked log file is left exactly where it is, with a warning, and BepInEx behaves
+as if this mod were not installed.
+
+#### Build
+
+`dotnet build -c Release` — deploys to `BepInEx/patchers/`.
+
+</details>
+
+---
+
+## MedicRound
+
+**Type:** Client + Server · **Version:** `0.1.0+97b9031` · **Updated:** 2026-09-06 18:16 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/MedicRound-0.1.0-97b9031.zip)
+
+**Components:** Client `0.1.0+97b9031` · Client `0.1.0+97b9031` · Server `0.1.0+97b9031`
+
+<details><summary><b>Show usage notes</b></summary>
+
+**Status: 0.1.0 (single player). Fika co-op support is planned for 0.2.0.**
+
+A 9x19mm cartridge for SPT that heals instead of hurting: shoot a **teammate** with the **9x19mm Medic** round and the hit body part gains 25 HP and stops bleeding. Hit anyone else and nothing happens at all.
+
+#### Features
+
+- **9x19mm Medic (MED)**: a clone of the 9x19mm GT with zero damage, zero penetration and a green tracer. Fits every 9x19 weapon and magazine, sold by Therapist at loyalty level 1 (1000 RUB, unlimited stock).
+- **Heals the body part you hit**: 25 HP per round on the hit body part (never above its maximum), and light and heavy bleeding on that body part stop. Aim at the injured limb; the surplus does not move elsewhere unless you enable `SpilloverToWorstPart`.
+- **Blacked-out limbs**: a destroyed body part cannot take health, so by default a hit on it heals nothing (grey marker). With `SpilloverToWorstPart` on, the full amount of such a hit passes to the body part with the most missing HP instead. Restoring the limb itself stays optional via `RestoreDestroyedLimbs` (arms, legs and stomach only, with a max-HP penalty like a field surgery).
+- **Shooter feedback**: a green hitmarker and a floating "+N" at the hit point tell you how much the hit healed ("+limb" when a limb was restored). A grey marker without a number means the hit had no effect: the body part was already full, the limb is blacked out without spillover, or the hit fell into the duplicate cooldown.
+- **Bot thanks**: a healed bot answers with its heal voice line, at most every 8 seconds per bot.
+- **No side effects on teammates**: the healed teammate does not flinch, bleed, grunt, lose armor durability, turn hostile or shout "Friendly fire!".
+- **Inert on everyone else**: enemies, strangers, ricochet fragments and yourself get a plain flesh impact and nothing more, no damage, no armor wear, no aggro, no Scav karma. A `Vanilla` mode (regular zero-damage bullet with the usual reactions) is available as a config option.
+- **Teammate** means: same non-empty group as the shooter. That covers PitFireTeam followers in single player and, with the planned Fika satellite, human co-op players.
+- Configurable through the BepInEx F12 menu only: no hotkeys, no JSON next to the DLL.
+
+#### Requirements and compatibility
+
+- SPT: 4.1.x. Built against SPT 4.1 in single player.
+- Components: combined client (BepInEx plugin) and server mod. Both parts must be installed.
+- Dependencies: [WTT-ServerCommonLib](https://github.com/WelcomeToTarkov/WTT-CommonLib) (`com.wtt.commonlib`) is required on the server.
+- **Single player needs a companion mod.** The round only heals members of the shooter's group. Vanilla SPT never assigns a group, so solo single player without a companion mod (PitFireTeam, for example) heals nobody. The round is still harmless.
+- **Fika (co-op): not yet supported.** Fika support is planned as a separate satellite DLL (`maschine-MedicRound.Client.Fika.dll`) and will ship as 0.2.0 after it has been tested. Until then the mod is inert under Fika: the round is a zero-damage bullet, nothing crashes, nobody is healed. Under Fika every human counts as a teammate.
+
+#### Installation
+
+1. Extract the release ZIP into your SPT installation directory.
+2. Verify that `BepInEx/plugins/maschine-MedicRound.Client.dll` and `SPT_Runtime/user/mods/MedicRound/maschine-MedicRound.Server.dll` exist. The 0.1.0 ZIP does not contain the Fika satellite (`maschine-MedicRound.Client.Fika.dll`); it ships with 0.2.0 once tested.
+3. Start the server, then the game; the round appears at Therapist (LL1).
+
+#### Updating
+
+Extract the new ZIP over the old files; nothing needs to be removed. Rounds already in your stash keep working because the item ID is stable.
+
+#### Usage
+
+- Buy **9x19mm Medic** from Therapist (LL1, 1000 RUB each) and load it into any 9x19 magazine.
+- Shoot your teammate on the body part that needs it. Every hit heals that body part by 25 HP and stops bleeding there; the green tracer shows where your first aid went, the green hitmarker and the floating "+25" confirm that it arrived.
+- Hits on anyone else, on yourself, or by ricochet fragments do nothing.
+- **Use dedicated medic magazines.** The Medic round uses the same model and icon as the 9x19mm GT; inside a magazine the two are indistinguishable. Keep medic ammunition in its own magazines (a medic sidearm such as a PL-15 works well) or mixed magazines will surprise you.
+- Every shot is a normal, unsuppressed 9x19 report and alerts bots like any other shot; a suppressor and subsonic habits are the matching kit.
+- Therapist does not buy ammunition back; sell surplus rounds to Skier, Mechanic or Prapor.
+
+#### Configuration
+
+`BepInEx/config/com.maschine.MedicRound.cfg` (also live in the F12 menu):
+
+| Setting | Default | Description |
+|-------------|----------|--------------|
+| `General.Enabled` | `true` | Master switch; off makes the round a plain vanilla zero-damage bullet (heal hooks, hitmarker and flinch suppression all off) |
+| `General.HealTemplateIds` | `67d4f0c8a1b2e30123457101` | Comma-separated template IDs (24 hex characters each) treated as medic rounds; must match the server item. An empty or invalid list acts like `Enabled = false` with one warning |
+| `General.TargetMode` | `TeammatesOnly` | Who can be healed: `TeammatesOnly` (same non-empty group as the shooter) or `Everyone` (any player hit, test or fun mode) |
+| `General.NonTeammateMode` | `Inert` | Hit on a non-teammate: `Inert` (flesh impact, nothing else) or `Vanilla` (zero-damage bullet with the usual flinch, aggro and armor wear) |
+| `General.AllowAiShooter` | `false` | Let bot shooters (followers with looted rounds) heal instead of being treated like non-teammates |
+| `General.HealWhenShooterUnknown` | `false` | Heal even when the shooter cannot be resolved (dead or extracted while the round was in flight) |
+| `Heal.HealPerHit` | `25` | HP restored on the hit body part, clamped at its maximum (5-100) |
+| `Heal.SpilloverToWorstPart` | `false` | Surplus HP goes once to the body part with the most missing HP; a hit on a blacked-out limb passes its full amount there |
+| `Heal.StopLightBleeding` | `true` | Stop light bleeding on the hit body part |
+| `Heal.StopHeavyBleeding` | `true` | Stop heavy bleeding on the hit body part |
+| `Heal.RestoreDestroyedLimbs` | `false` | Restore blacked-out arms, legs and stomach (never head or chest) before healing them |
+| `Heal.RestoreLimbHealthFraction` | `0.6` | Max-HP fraction that *remains* after a limb restore, 1.0 = no penalty (0.3-1.0) |
+| `Heal.CooldownSeconds` | `0.3` | Duplicate-hit guard per target, not a rate limiter: further heal hits on the same player within this window are ignored (0-5) |
+| `Feedback.ShooterHitmarker` | `true` | Hitmarker for the local shooter: green when the hit healed or restored a limb, grey when it had no effect (full part, blacked-out limb, cooldown) |
+| `Feedback.ShooterHealNumbers` | `true` | Floating "+N" at the hit point for the local shooter ("+limb" on a limb restore); a grey marker never shows a number |
+| `Feedback.TeammateImpactVfx` | `None` | Impact effect on a healed teammate: `None` shows no impact at all, `SilentBody` shows the flesh impact without the impact sound, `Body` shows the vanilla flesh impact with sound. `SilentBody`/`Body` are the fallback in case `None` still renders an effect on your installation |
+| `Feedback.BotThanksVoice` | `true` | A healed bot says its heal voice line, at most every 8 s per bot |
+| `Feedback.TargetHealthPanelPulse` | `true` | Your health panel opens briefly when a teammate heals you (Fika, 0.2.0+; in single player only reachable via `Debug.SelfTestHeal`) |
+| `Feedback.SuppressTeammateFlinch` | `true` | No flinch and no blood decal on a teammate hit by a heal round. Redundant in single player, where the heal hook already skips both; under Fika it applies on every peer that replays the shot |
+| `Debug.LogHeals` | `false` | One Info-level log line per heal or inert hit with hook origin, both group IDs, direct and spilled amounts and the part's HP afterwards |
+| `Debug.SelfTestHeal` | `false` | Developer self-test: set to true once in a raid to heal your own `SelfTestBodyPart`, bypassing the team rule; resets itself. Shows the healed-human feedback (panel pulse, "+N", toast) |
+| `Debug.SelfTestBodyPart` | `LeftArm` | Body part for the self-test (any except `Common`) |
+
+#### Known limitations
+
+- No revive: dead (or Fika downed) players cannot be brought back.
+- Solo single player without a companion mod that assigns a group (PitFireTeam or similar) heals nobody.
+- MED and GT share model and icon; use dedicated medic magazines (see Usage).
+- Mixed squads of PitFireTeam followers and MiyakoCarryService bots can carry two different group IDs; part of such a squad is then not healable.
+- Bots that loot medic rounds cannot heal unless `AllowAiShooter` is on.
+- Under Fika, "teammate" means every human plus every companion bot of every human, also in friendly-fire lobbies. PitFireTeam together with Fika is not supported.
+- Under Fika a client shooter gets no hitmarker and no "+N". In 0.1.0 nothing is healed under Fika at all; with the 0.2.0 satellite the heal runs on the target's machine, where the shooter is only an observed copy, so only a human host healing a FikaBot sees the marker. A predicted marker for client shooters is planned for a later version.
+- In single player nobody shoots the player with medic rounds, so the healed-human feedback (health panel pulse, "Treatment - Healed" toast) is only reachable via `Debug.SelfTestHeal`.
+- Full-auto fire at the default `CooldownSeconds` of 0.3 s ignores roughly every second hit on the same target (grey marker, no heal): the cooldown is a duplicate guard, not a rate limiter. Fire single shots or short bursts, or lower `CooldownSeconds`.
+- `NonTeammateMode = Vanilla` is not "no effect": non-teammates then take a regular zero-damage bullet with the usual flinch, blood decal, pain grunt, bot aggro, Scav-karma marking and at least one point of armor durability per armored hit, only without HP loss. Only `Inert` (the default) suppresses all of that.
+- `spt give` refuses the item because it is blacklisted from loot and Fence; buy it at Therapist instead.
+- `RestoreDestroyedLimbs` replaces the limb's health value and thereby drops a Redeploy spawn protection on that limb. It is off by default.
+- Fika co-op is not supported in 0.1.0 (see Requirements and compatibility).
+
+#### Support
+
+Report issues on the [GitHub issue tracker](https://github.com/maschine34675/MedicRound/issues). Include the exact mod and SPT versions, expected and actual behavior, short reproduction steps, and your complete `BepInEx/LogOutput.log` rather than pasted excerpts.
+
+#### License and credits
+
+MIT License (see `LICENSE`). Item loading via [WTT-ServerCommonLib](https://github.com/WelcomeToTarkov/WTT-CommonLib). Hitmarker and heal-number geometry adapted from DragonDen.Hitmarker (MIT, (c) 2025 Drexira).
+
+#### Build
+
+```powershell
+cd D:\SPT41\Development\MedicRound
+dotnet build .\MedicRound.slnx -c Release
+```
+
+With `-p:DeployToSpt=true` (default) the client DLL and the Fika satellite DLL go to `BepInEx/plugins/` and the server DLL plus item JSON to `SPT_Runtime/user/mods/MedicRound/`. The satellite compiles against `Fika.Core.dll` (2.4.x); the build looks for it in a Fika installation next to the SPT root (`..\SPT41Fika\BepInEx\plugins\Fika\`), in the SPT root itself, or on `Z:\`, or pass `-p:FikaPluginDir=<dir>\`. `scripts\New-ReleasePackage.ps1` builds both projects and stages the release ZIP under `artifacts/`; the satellite DLL is only staged with `-IncludeFikaSatellite` (0.2.0+).
 
 </details>
 
@@ -794,6 +1177,156 @@ UI mods often clone vanilla elements (`GameObject.Instantiate`) without mod-spec
 
 ---
 
+## QuietBrainLog
+
+**Type:** Client · **Version:** `1.0.0+e345181` · **Updated:** 2026-09-06 14:20 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuietBrainLog-1.0.0-e345181.zip)
+
+<details><summary><b>Show usage notes</b></summary>
+
+SPT logs a warning for every PMC that spawns, about something working as
+intended. QuietBrainLog turns that one line down to Info — or off — and leaves
+the rest alone.
+
+The line looks like this, dozens of times per raid:
+
+```
+[Warning:ModulePatch] Updated spt bot GGaulin: pmcUSEC to use: pmcUSEC brain
+```
+
+Nothing is wrong when it appears. SPT draws each PMC's brain from a weighted
+table when its AI activates, and this is the success message. On a stock install
+that table holds exactly one candidate per PMC role per map — `pmcBEAR` for
+BEARs, `pmcUSEC` for USECs, in `SPT_Data/configs/pmc.json` — so the draw can only
+ever return the role the bot already had. `pmcUSEC to use: pmcUSEC` is not the
+common case; it is the only case. The two sibling methods in the same SPT class
+log the identical event for scavs and player scavs at **Info**. Only the PMC path
+calls `LogWarning`, which reads like an oversight rather than a decision.
+
+#### Features
+
+- **One line, one level.** The PMC brain assignment message is logged at Info,
+  or dropped entirely, or left alone — a single setting decides which.
+- **Nothing else changes.** Bot behaviour, brain selection and every other SPT
+  log line are untouched. Failures on the same code path are logged at Error by
+  SPT and stay visible in all modes.
+- **Applies live.** The setting is read per message, so changing it in the F12
+  menu takes effect immediately, mid-raid.
+- **Fails loudly, never silently.** If the patch does not find exactly what it
+  expects in this SPT build, it logs an error and leaves SPT's output alone.
+
+#### How it works
+
+The message comes from `AIBrainSpawnWeightAdjustment.GetPmcWildSpawnType` in
+`spt-custom.dll`, called from `CustomAiPatch` every time a PMC's
+`StandartBotBrain` activates.
+
+Blunter approaches do not fit. BepInEx's log levels are global, so turning
+warnings off costs every warning in the game. The logger here is SPT's *shared*
+`ModulePatch` source, so filtering by source would swallow every other SPT patch
+warning too. And the message is built inline, so there is no seam to hook.
+
+What is left is the call site itself, and it turns out to be an unusually clean
+target: the method contains exactly **one** `LogWarning`, and its stack shape —
+`(ManualLogSource, object) -> void` — is precisely the signature of a static
+two-argument method. So a Harmony transpiler swaps that one `callvirt` for a
+`call` into this mod, in place, without moving a single instruction around it.
+
+The relay then decides per call, from the current config value:
+
+| Mode | What the relay does |
+|---|---|
+| `Off` | `source.LogWarning(data)` — byte-identical to SPT's own output |
+| `Info` | `source.LogInfo(data)` — same source, same text, quieter level |
+| `Silent` | nothing |
+
+Deciding at call time rather than at patch time is what makes the setting live,
+and it is why `Off` reproduces vanilla exactly instead of approximating it.
+
+#### Requirements and compatibility
+
+- SPT 4.1.x. Built and verified against `spt-custom` 4.1.4.
+- Client-only BepInEx plugin — no server component, no profile changes, no
+  effect on bot behaviour.
+- Declares a hard dependency on `com.SPT.custom`, purely so BepInEx loads that
+  assembly before this plugin's `Awake` runs.
+- Fika: untested. The patch is client-local and rewrites nothing but a log call,
+  so it should behave the same wherever it is installed — but bot brains activate
+  where the bots are simulated. On a headless setup that is the headless client,
+  a separate install with its own `BepInEx/plugins`; quieting its log means
+  installing the plugin there too. On a joining client the line does not appear
+  in the first place.
+- AI mods (SAIN, BigBrain, Waypoints and friends): no conflict, and no effect on
+  how often the line fires. They patch different methods and none of them
+  unpatches SPT's — BigBrain only adds a postfix to the same
+  `StandartBotBrain.Activate` that SPT prefixes; SAIN and Waypoints do not touch
+  it at all. Checked by reading the installed assemblies (BigBrain 1.5.0,
+  SAIN 4.5.1, Waypoints 1.9.0), not by playing a raid.
+
+#### Installation
+
+Extract the release ZIP into your SPT installation directory. The plugin ends up
+at:
+
+`BepInEx/plugins/maschine-QuietBrainLog.dll`
+
+On a Fika headless setup, install it into the headless client's own install as
+well — that is where the bots, and therefore the log line, live.
+
+To remove the mod, delete that file.
+
+#### Configuration
+
+In the F12 menu, or in `BepInEx/config/com.maschine.QuietBrainLog.cfg`. The F12
+menu applies a change immediately, mid-raid; the file is read once at startup, so
+editing it needs a game restart.
+
+| Setting | Default | Description |
+|---|---|---|
+| `General.Mode` | `Info` | `Off` leaves SPT's warning as it is. `Info` keeps the line at Info level. `Silent` drops it. |
+
+`Info` is the default rather than `Silent` because the line still marks the
+moment a PMC's AI came up, which is worth having when reading a log after the
+fact, and because a server mod that widens `pmcType` would make its content
+informative again. What it is not, on any install, is a warning. Choose `Silent`
+if you would rather it were gone.
+
+#### Known limitations
+
+- **Exactly one line.** Every other noisy SPT message is left alone. Widening
+  this into a general log filter would mean matching on message text, which
+  breaks the moment SPT rewords anything.
+- **`Silent` still builds the message.** The interpolated string is assembled
+  before the call and then discarded — one string per PMC spawn, in exchange for
+  a log write that no longer happens. Removing that too would mean cutting a
+  block of IL instead of swapping one operand, for no measurable gain.
+- **An SPT update can retire the patch.** If the target method or its single
+  `LogWarning` is not found, the mod logs an error naming what it expected and
+  leaves SPT's output unchanged. It never guesses.
+
+#### Support
+
+Report issues on the [GitHub issue tracker](https://github.com/maschine34675/QuietBrainLog/issues).
+Include the exact mod and SPT versions, expected and actual behavior, short
+reproduction steps, and your complete `BepInEx/LogOutput.log` rather than pasted
+excerpts.
+
+#### License and credits
+
+MIT License (see `LICENSE`).
+
+#### Build
+
+```powershell
+cd D:\SPT41\Development\QuietBrainLog
+dotnet build -c Release
+```
+
+The post-build step copies the DLL to `BepInEx/plugins/`.
+
+</details>
+
+---
+
 ## RaidInfoPanels
 
 **Type:** Client · **Version:** `1.0.0+76aab7b` · **Updated:** 2026-08-18 09:52 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-76aab7b.zip)
@@ -834,6 +1367,112 @@ The DLL is automatically copied to `BepInEx/plugins/maschine-RaidInfoPanels.dll`
 
 - Hit, kill, grenade and compass panels as separate modules
 - Configuration via ConfigurationManager
+
+</details>
+
+---
+
+## Redeploy
+
+**Type:** Client + Server · **Version:** `0.9.0+0cd80ee` · **Updated:** 2026-09-06 18:23 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Redeploy-0.9.0-0cd80ee.zip)
+
+**Components:** Client `0.9.0+0cd80ee` · Client `0.9.0+58abf58` · Server `0.9.0+0cd80ee`
+
+<details><summary><b>Show usage notes</b></summary>
+
+> Formerly **CorpseRun** — renamed in 0.9.x. The old GUID `com.maschine.CorpseRun`, the `user/mods/CorpseRun` server folder and `maschine-CorpseRun.*.dll` files are obsolete; remove them when updating. The respawn engine now lives in the shared library `maschine-Redeploy.Core.dll` (deployed next to the client plugin), which other mods (e.g. ArenaMode) build on.
+
+Dying no longer ends your raid: respawn without gear, fight your way back to your own corpse, and take your equipment back.
+
+#### Features
+
+- **Choose what happens when you die.** A prompt offers a respawn near your corpse, a respawn at a regular player spawn, or ending the raid as usual.
+- **Your gear stays on your corpse.** The replacement character spawns with nothing; everything you carried is lootable from your body — if you make it back.
+- **What you would normally keep, you keep.** Secure container, melee weapon, armband and pocket special slots move to the replacement character, because corpses never hand those back.
+- **Spawn protection.** A short invulnerability window covers the way back. It ends the moment you draw a weapon, and its last seconds are announced on screen.
+- **Optional respawn cost.** Require a medical item to be in your inventory; it is consumed when you respawn.
+- **Insurance keeps working.** Gear left behind on a corpse is reported as lost at the end of the raid, so insurance returns it as usual.
+- **Kills are carried over.** Kills you scored before respawning still appear on the end-of-raid screen.
+- **Fails safe.** When the server component is missing, the mod stays inactive and death behaves exactly like vanilla.
+
+#### Requirements and compatibility
+
+- **SPT:** 4.1.x. The server component declares `~4.1.0`; the client is built against game build `0.16.9.40743`.
+- **Components:** Client **and** server. Both are required — see the warning under Installation.
+- **Dependencies:** None.
+- **Optional integrations**, each installed separately and none of them required:
+  - **DynamicMaps** — your position marker follows the replacement character.
+  - **Freecam** (Terkoiz) — the free camera keeps working after a respawn.
+  - **KillcamReplay** — the death replay stays visible behind the respawn prompt.
+- **Confirmed incompatibility: Fika.** A replacement character cannot be synchronised to other co-op clients, so Redeploy disables itself when Fika is installed and says so at raid start.
+
+#### Installation
+
+1. Extract the release ZIP into your SPT installation directory.
+2. Verify that both files exist:
+   - `BepInEx/plugins/maschine-Redeploy.Client.dll`
+   - `SPT_Runtime/user/mods/Redeploy/maschine-Redeploy.Server.dll`
+3. Start the SPT server once and confirm that `Redeploy` appears among the loaded mods.
+
+Both components belong to the same installation. Installing only the client DLL would corrupt your profile at the end of a raid, so in that case Redeploy refuses to do anything and shows a warning when a raid starts.
+
+#### Updating
+
+Overwrite both files with the new versions. Your configuration file is kept.
+
+If you ran an early internal build, delete these leftovers first — otherwise an obsolete copy of the mod loads alongside the current one:
+
+- `BepInEx/plugins/maschine-Redeploy.dll` (the old name, without `.Client`)
+- `SPT/user/mods/Redeploy/` (the SPT 4.0 server path; SPT 4.1 uses `SPT_Runtime/`)
+
+#### Usage
+
+There are no hotkeys. When you die, the raid keeps running and a window opens with the mouse cursor released:
+
+- **Respawn near corpse** — you spawn a configurable distance from your body.
+- **Respawn at spawn point** — you spawn at one of the map's regular player spawns.
+- **End raid** — the raid ends as killed, exactly as it would without the mod.
+
+After respawning, run back to your body and loot your equipment from it. Your corpse stays in the world for the rest of the raid and is not protected in any way.
+
+By default you get one respawn per raid. Once none are left, dying ends the raid normally.
+
+#### Configuration
+
+Configure the mod in-game with the F12 BepInEx configuration manager, or edit `BepInEx/config/com.maschine.Redeploy.cfg`.
+
+| Option | Default | Meaning |
+| --- | --- | --- |
+| `Enabled` | `true` | Master switch. When off, death behaves like vanilla. |
+| `MaxRespawnsPerRaid` | `1` | Respawns allowed per raid; `0` means unlimited. |
+| `RespawnHealthPercent` | `100` | Health the replacement character starts with (1–100). |
+| `RespawnCooldownSeconds` | `5` | Delay between choosing a respawn and actually spawning. |
+| `CorpseSpawnDistanceMeters` | `20` | Distance from your body for *Respawn near corpse*. |
+| `SpawnProtectionSeconds` | `10` | Invulnerability after respawning; `0` disables it. |
+| `RequiredRespawnItem` | `None` | Item that must be carried and is consumed to respawn. |
+
+`RequiredRespawnItem` accepts a defibrillator, a medkit (Grizzly, Salewa, IFAK, AFAK, CMS, Surv12, car first aid kit) or a stimulant (adrenaline, Propital). If the chosen item is not in your inventory when you die, the respawn buttons are hidden and only ending the raid remains.
+
+#### Known limitations
+
+- **Fika co-op is not supported.** The mod disables itself when Fika is installed.
+- **Progress from earlier lives is only partly carried over.** Kills are restored to the end-of-raid screen, but the game starts a fresh statistics session for the replacement character, so session XP and other counters from before the last respawn are lost. This is intentional and keeps repeated respawns from paying off.
+- **Items carried through a respawn lose their found-in-raid status**, the same way they do after an ordinary death.
+- **Scav raids** work the same way, but have seen less testing than PMC raids.
+- The mod changes how your profile is written at the end of a raid. Keep a profile backup while trying it out.
+
+#### Support
+
+Report problems at <https://github.com/maschine34675/Redeploy/issues>.
+
+Please include the exact Redeploy and SPT versions, what you expected and what happened instead, short reproduction steps, and for the affected raid both `BepInEx/LogOutput.log` and the server console output. Also list the other mods you have installed, especially any that affect the camera, the player character or the end-of-raid screen.
+
+#### License and credits
+
+Released under the MIT License; see `LICENSE`.
+
+- The spawn protection and the optional respawn cost were inspired by **PlayerLives** and **RevivalMod** (KaiKiNoodles, gitTerebi), which approach the same problem with a downed state instead of a respawn. No code was taken from either mod.
+- Redeploy contains compatibility code for **DynamicMaps** (mpstark), **Freecam** (Terkoiz) and **KillcamReplay**. None of these are bundled; they remain the property of their authors.
 
 </details>
 

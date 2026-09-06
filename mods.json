@@ -49,6 +49,9 @@
   "UnloadAllMagazinesInventory": {
     "enabled": "false"
   },
+  "ArenaMode": {
+    "enabled": "false"
+  },
   "StashSort": {
     "enabled": "false"
   },
