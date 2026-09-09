@@ -1,6 +1,6 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-09-06 18:23** · 17 mods with download, 3 in development.
+Overview of all mods in beta testing · Last updated: **2026-09-09 16:59** · 14 mods with download, 3 in development.
 
 This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
@@ -19,19 +19,16 @@ Please always include it when reporting issues.
 | [**BangAndClear**](#bangandclear) | `0.9.2+9882bbc` | 2026-08-26 | Client | An SPT 4.0 client mod for tactical door work: crack a door open a few degrees, put a grenade through the gap, close the door, wait for the bang. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.2-9882bbc.zip) |
 | [**BtrTurretControl**](#btrturretcontrol) | `1.0.0+37e08ef` | 2026-08-14 | Client | Client-only SPT mod that lets a seated BTR passenger take direct control of the gun turret. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BtrTurretControl-1.0.0-37e08ef.zip) |
 | [**ClusterGrenade**](#clustergrenade) | `2.6.0+c0f3830` | 2026-08-20 | Client + Server | Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets. Also adds a 40mm cluster round and HE ammunition<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2310/wtt-commonlib">WTT - CommonLib</a></sub> | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.6.0-c0f3830.zip) |
-| [**CombatLog**](#combatlog) | `0.1.0+f314405` | 2026-09-05 | Client | _(description to follow)_ | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatLog-0.1.0-f314405.zip) |
 | [**CombatSlide**](#combatslide) | `2.0.0+c57f2f8` | 2026-08-09 | Client | Press crouch while sprinting to keep sliding at decreasing speed - a "combat slide" like in other shooters. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatSlide-2.0.0-c57f2f8.zip) |
 | [**ConsoleToMonitor**](#consoletomonitor) | `1.0.0+8bef20d` | 2026-08-28 | Client | _(description to follow)_ | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ConsoleToMonitor-1.0.0-8bef20d.zip) |
 | [**CorpseRun**](#corpserun) | `0.9.0+46bed4d` | 2026-08-24 | Client + Server | After dying in a raid, optionally respawn (naked), loot your own corpse and continue the raid; giving up ends the raid normally. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CorpseRun-0.9.0-46bed4d.zip) |
 | [**DoorDash**](#doordash) | `1.2.0+083cd0b` | 2026-08-29 | Client | > Blow open doors without stopping. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/DoorDash-1.2.0-083cd0b.zip) |
 | [**KillAndDamageInfo**](#killanddamageinfo) | `1.0.0+b0ab19c` | 2026-08-24 | Client | KillAndDamageInfo shows the combat information the game keeps to itself: what your kills died to, who killed you and in what state they were, what each hit actually did… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-1.0.0-b0ab19c.zip) |
-| [**KillcamReplay**](#killcamreplay) | `0.9.3+6151e52` | 2026-09-03 | Client | True killcam: on death, the killer's final moments are replayed from their point of view, based on the recorded movement of the last seconds before the kill. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.3-6151e52.zip) |
 | [**LogTools**](#logtools) | `1.3.0+8525b6a` | 2026-09-02 | Client | Three things BepInEx 5 will not do for its own `LogOutput.log`: | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/LogTools-1.3.0-8525b6a.zip) |
-| [**MedicRound**](#medicround) | `0.1.0+97b9031` | 2026-09-06 | Client + Server | **Status: 0.1.0 (single player). Fika co-op support is planned for 0.2.0.** | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/MedicRound-0.1.0-97b9031.zip) |
+| [**LootOutline**](#lootoutline) | `0.1.0+b66c9b5` | 2026-09-08 | Client | Weiße Konturen um Gegenstände, die in Tarkov auf dem Boden liegen — die Optik, die man aus PUBG oder Arena Breakout kennt. Für SPT 4.1. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/LootOutline-0.1.0-b66c9b5.zip) |
 | [**ModSourceDebugger**](#modsourcedebugger) | `2.0.0+7371199` | 2026-08-15 | Client + Server | Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-2.0.0-7371199.zip) |
 | [**QuietBrainLog**](#quietbrainlog) | `1.0.0+e345181` | 2026-09-06 | Client | SPT logs a warning for every PMC that spawns, about something working as intended. QuietBrainLog turns that one line down to Info — or off — and leaves the rest alone. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuietBrainLog-1.0.0-e345181.zip) |
-| [**RaidInfoPanels**](#raidinfopanels) | `1.0.0+76aab7b` | 2026-08-18 | Client | Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x. | <a href="#raidinfopanels"><img src="assets/RaidInfoPanels/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-76aab7b.zip) |
-| [**Redeploy**](#redeploy) | `0.9.0+0cd80ee` | 2026-09-06 | Client + Server | > Formerly **CorpseRun** — renamed in 0.9.x. The old GUID `com.maschine.CorpseRun`, the `user/mods/CorpseRun` server folder and `maschine-CorpseRun.*.dll` files are… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Redeploy-0.9.0-0cd80ee.zip) |
+| [**RaidInfoPanels**](#raidinfopanels) | `1.0.0+adc5abe` | 2026-09-09 | Client | Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x. | <a href="#raidinfopanels"><img src="assets/RaidInfoPanels/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-adc5abe.zip) |
 | [**SurroundAudio**](#surroundaudio) | `1.0.0+f693bc7` | 2026-08-23 | Client | Replaces Tarkov's binaural (headphone) audio with real 5.1/7.1 output, so you can play on a surround speaker system instead of headphones. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-f693bc7.zip) |
 
 ## 🚧 In development – no build yet
@@ -294,14 +291,6 @@ Both are purely server-side (no client logic) and work in any weapon that fires 
 - **Client:** A Harmony postfix on `Grenade.Explosion()` (thrown grenade) or `ClientGameWorld.ShotDelegate()` (40mm impact) spawns sub-grenades via `GrenadeFactory.Create()`
 
 </details>
-
----
-
-## CombatLog
-
-**Type:** Client · **Version:** `0.1.0+f314405` · **Updated:** 2026-09-05 18:09 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatLog-0.1.0-f314405.zip)
-
-_No detailed description yet._
 
 ---
 
@@ -645,193 +634,6 @@ MIT — see [LICENSE](LICENSE).
 
 ---
 
-## KillcamReplay
-
-**Type:** Client · **Version:** `0.9.3+6151e52` · **Updated:** 2026-09-03 19:57 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillcamReplay-0.9.3-6151e52.zip)
-
-**Components:** Client `0.9.3+6151e52` · Client `0.9.3+6151e52`
-
-> **Tester note:** Successor of **Killcam** - do not install both at the same time.
-
-<details><summary><b>Show usage notes</b></summary>
-
-GUID `com.maschine.KillcamReplay`, Assembly `maschine-KillcamReplay` — naming scheme as in
-[EasyMounting](https://github.com/maschine34675/EasyMounting).
-
-A true killcam for SPT: on death, the final action is played back **from the killer's point
-of view** — not a live view of the killer (as in KillAndDamageInfo), but a replay of the
-recorded view direction and position of the last seconds before the kill.
-
-#### How it works
-
-**Recording (during the raid):**
-A `SnapshotRecorder` samples at a fixed rate (default 20 Hz), for every living player/bot,
-the camera position (`Player.CameraPosition`), view direction (`Player.Rotation`, yaw/pitch),
-body pose (`PoseLevel`, `IsInPronePose`) and the world pose of the held weapon
-(`PlayerBones.WeaponRoot.Original`) into a ring buffer (default 15 s). Shots are marked with
-a timestamp via a postfix on `Player.OnMakingShot`. During the replay, a script-free mesh
-copy of the killer's weapon (`WeaponGhost`) travels along its recorded track in front of the
-camera — you can see what he aims with and where; the muzzle flash sits at its muzzle.
-
-**Replay (on death):**
-`Player.OnDead` provides the killer (`LastAggressor`). The window of the last N seconds
-(default 5 s) is extracted from his ring buffer. `LocalGame.Stop()` is deferred (same
-pattern as the KillAndDamageInfo killcam) and the main camera is interpolated along the
-recorded path (position: lerp, yaw/pitch: LerpAngle). The pose is applied in
-`Application.onBeforeRender` — after all `LateUpdate`s, so the still-running
-`PlayerCameraController` (corpse cam) cannot overwrite the rendered image. Deliberately,
-**no** controller is destroyed or created: `PlayerCameraController.Destroy` detaches the
-`EffectsController` from the player, whose death handler then throws NullRefs and aborts the
-end-of-raid sequence (soft lock). The death fade (`EffectsController.method_9`,
-DeathFade + FastBlur) is suppressed via prefix during the replay, otherwise it would sit
-black on top of it.
-
-**Slow motion:**
-The last `SlowMoSeconds` (default 1.5 s) before the kill run in slow motion
-(`SlowMoFactor`, default 0.35×) — purely via the playback clock, no `Time.timeScale`;
-the live world keeps running normally. Smooth transition over 0.4 s when entering the window.
-The deferred-stop delay accounts for the stretched wall-clock time.
-
-**Soft ending (live tail):**
-At the end of the recorded path (the kill moment) the replay does not end abruptly: a short
-fade to black (~0.2 s), under full black the scene switches to the live world (puppet
-removed, hidden bots and your own corpse visible again — only the killer stays hidden),
-fade back, then the camera follows **the killer's eyes live** for `LiveTailSeconds`
-(default 2 s) (`FollowKillerInTail`; fallback: last replay position if he has died in the
-meantime). Afterwards the replay itself fades to black and holds black until the re-invoked
-`LocalGame.Stop` has raised its own blackscreen (detected via
-`DeferStopPatch.StopReinvokedAt` + 1.5 s; emergency timeout 5 s) — so the corpse cam never
-flashes up between replay end and the end-of-raid transition. During the live tail the
-killer himself stays hidden (the camera sits in his eyes), but his **held weapon is shown
-again** (`LivePlayerHider.ShowHeldWeapon`) — it rides on his live hands and reads like a
-natural first-person view; weapon views newly created while reloading also stay visible
-(excluded from the refresh sweep). If `Stop` was not deferred (e.g. because a respawn mod
-intercepted the death), the camera is returned directly after the tail — no black hold,
-which would otherwise cover the respawn prompt. In the F9 debug replay the tail is
-deliberately disabled (the player is alive and would be blind for that long).
-
-**Victim ghost (phase 2/3):**
-During the replay you watch yourself through the killer's eyes. Two representations:
-
-- **Real character model** (`GhostPuppet`, default): The `BoneRecorder` records the
-  complete skeleton of the local player (only the local player — which is what keeps it
-  affordable: ~a few hundred transform reads per tick, flat preallocated arrays, a few MB).
-  On replay the corpse is cloned — `Corpse.CreateCorpse` converts the real, dressed player
-  GameObject in place, so the clone wears clothing + gear. Before stripping, every renderer
-  on the clone is forced to `shadowCastingMode = On` — otherwise head/upper body stay
-  invisible, because EFT renders them on your own player in first person with
-  `ShadowCastingMode.ShadowsOnly` (the corpse conversion never resets that) and a raw clone
-  copies this state along. The obvious route via
-  `PlayerBody.UpdatePlayerRenders(ThirdPerson, ...)` — the game's own method for this — does
-  NOT work on the clone: it iterates `PlayerBody.BodySkins`, which is only populated at
-  runtime (Awake/Equip) and is empty on a clone whose Awake we deliberately never run
-  (silent no-op, no error). The direct renderer sweep bypasses that entirely. The clone is
-  instantiated under an INACTIVE holder (no Awake runs), all scripts/physics/animator are
-  stripped via `DestroyImmediate` (no Awake → no OnDestroy side effects), bones are mapped
-  by hierarchy path and overwritten per frame with the recorded poses — **no animator
-  needed**, exact playback of gait, lean and aiming. The source (corpse or live body) is
-  hidden after cloning so it does not stay visible next to the running ghost.
-- **Silhouette** (`ReplayGhost`, automatic fallback): capsule body with pose-dependent
-  height, head sphere, view-direction bar — in case puppet creation fails or
-  `UseRealModelGhost` is off.
-
-In the F9 debug replay the ghost is your own path (puppet source = living body; your own
-head stays invisible there for FPS reasons): stand in front of a bot, F9, watch yourself.
-
-#### Performance budget
-
-- **Idle cost per frame:** 2 float comparisons (sample not due → early-out).
-- **Per sample tick (20×/s):** per living player 1 transform read + 1 Vector2 read +
-  1 struct write into a preallocated array. With ~30 bots: microsecond range.
-- **No GC allocations in the hot path:** ring buffers are preallocated (structs), the
-  track dictionary only grows when a new player spawns. Extracting the replay window
-  allocates only once, on death.
-- **Memory:** 32 bytes/snapshot × 20 Hz × 15 s ≈ 9.6 KB per player; with 40 players ≈ 385 KB.
-  The bone recorder (local player only) takes a few MB depending on skeleton size
-  (logged at raid start).
-
-#### Configuration (BepInEx F12 / config file)
-
-| Option | Default | Description |
-|---|---|---|
-| Recording.SampleRate | 20 Hz | Recording rate |
-| Recording.BufferSeconds | 15 s | Ring buffer length |
-| Replay.Duration | 10 s | Replay length |
-| Replay.LiveTailSeconds | 5 s | Keep showing live after replay end (0 = off) |
-| Replay.SlowMoSeconds | 1.5 s | Play the last N seconds before the kill in slow motion (0 = off) |
-| Replay.SlowMoFactor | 0.35 | Playback speed inside the slow-motion window |
-| Replay.FollowKillerInTail | true | Follow the killer live during the tail instead of staying static |
-| Replay.HudTopFraction | 0.87 | Vertical position of the killcam HUD (fraction of screen height from the top) |
-| Replay.ShowMuzzleFlashes | true | 3D muzzle flashes at recorded shot timestamps |
-| Replay.ShowKillerWeapon | true | Mesh copy of the killer's weapon travels its recorded track in front of the camera |
-| Replay.DeathReplay | true | Replay on your own death |
-| Replay.ShowVictimGhost | true | Show your own silhouette (ghost) in the replay |
-| Replay.UseRealModelGhost | true | Real character model instead of silhouette (automatic fallback) |
-| Replay.HideLiveBots | true | Hide living bots during the replay |
-| Replay.InvertPitch | false | Invert vertical view direction (in case the camera tilts the wrong way) |
-| Debug.ReplayKey | F9 | Immediately play a replay of the nearest bot (testing without dying) |
-
-#### Known limitations (prototype)
-
-- **The world keeps running live** — living bots (including the killer) are hidden during
-  the replay though (`LivePlayerHider`: `Renderer.enabled`, AI/logic keep running; restored
-  afterwards). Equipment views (weapon, chest rig, backpack, headwear, ...) are pooled
-  objects (`AssetPoolObject`) attached to a bone — not guaranteed to be descendants of
-  `player.gameObject` — so `PlayerBody.SlotViews` (the game's own authoritative list of
-  every currently equipped view) is traversed additionally and its `Renderers` are hidden
-  explicitly. The weapon **in the hands** is NOT a SlotView model (the slot suppresses its
-  body model while the item is held) — it is a separate view object of the hands controller
-  under the `WeaponRoot` bone and is swept separately. A flashlight moreover is not a
-  renderer but a `UnityEngine.Light` component (typically sitting on the hand weapon) that
-  keeps shining when only the mesh is hidden — so all `Light` components (player hierarchy,
-  slots, WeaponRoot) are disabled as well. Your own corpse/live body (the puppet source) is
-  also hidden as soon as the clone is up. Additional actors as ghosts (e.g. the killer in a
-  third-person view) would be a later extension.
-- **Muzzle flash = approximation** — at recorded shot timestamps a point light + stretched
-  glow ellipsoid appears in shot direction for ~70 ms (`ShotFlash`; Unity has no cone
-  primitive): killer shots just in front of/below the camera (his eyes ARE the camera, his
-  weapon is not rendered), own shots at the estimated muzzle of the puppet weapon (furthest
-  +Z extent of the copied meshes). No particle effect, no sound. Can be disabled via
-  `ShowMuzzleFlashes`.
-- **Hidden bots are re-swept every 0.5 s** (`RefreshHidden`): reloading and weapon switching
-  create NEW view objects mid-replay (magazine in the hand, round, different weapon) that
-  did not exist at the initial hide and would otherwise be visible, floating freely.
-- **The Odin NullRef on corpse cloning is no longer logged**: it comes from the item scripts
-  of the slot-view equipment (holster/back weapon), is demonstrably without consequence
-  (the components are stripped right afterwards) — the Unity logger is muted exactly for the
-  synchronous `Instantiate` call.
-- **The "Killed in Action" panel** appears as a UI overlay on top of the replay (as with the
-  KillAndDamageInfo killcam).
-- **Weapon on the puppet = pure mesh copy**: the Odin/Sirenix deserialization of the weapon
-  item throws an (internally caught) NullReferenceException on raw cloning and leaves the
-  weapon mesh empty. So the weapon is not cloned at all; its meshes are copied individually
-  (`AttachWeaponMeshes`: new GameObjects with sharedMesh + sharedMaterials, without any
-  scripts) and attached to the puppet's mapped WeaponRoot bone — they ride on the recorded
-  hand animation. Skinned meshes (e.g. straps) are skipped; moving weapon parts (bolt etc.)
-  are static in the copy.
-- **Coexistence with KillAndDamageInfo:** its live killcam also owns the death sequence
-  (deferred stop + camera takeover). If that mod is loaded, the death replay disables itself
-  automatically (log warning); the F9 debug replay still works. To test the death replay,
-  temporarily remove the KillAndDamageInfo DLL from `BepInEx/plugins`.
-- **Respawn compatibility (e.g. Redeploy):** recording is deliberately NOT stopped
-  permanently on your own death (only during the ~10 s a replay actively occupies the
-  screen) — otherwise recording would end for good after the first death and every further
-  replay in the same round would fail with "Killer track too short". The `BoneRecorder`
-  detects a character switch (new player GameObject after respawn) and reinitializes itself
-  automatically. Verified in-game with Redeploy (multiple deaths/replays in one round).
-
-#### Build
-
-```
-dotnet build -c Debug
-```
-
-Automatically copies DLL + PDB to `C:\SPT\BepInEx\plugins\`.
-
-</details>
-
----
-
 ## LogTools
 
 **Type:** Client · **Version:** `1.3.0+8525b6a` · **Updated:** 2026-09-02 07:22 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/LogTools-1.3.0-8525b6a.zip)
@@ -988,118 +790,115 @@ as if this mod were not installed.
 
 ---
 
-## MedicRound
+## LootOutline
 
-**Type:** Client + Server · **Version:** `0.1.0+97b9031` · **Updated:** 2026-09-06 18:16 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/MedicRound-0.1.0-97b9031.zip)
-
-**Components:** Client `0.1.0+97b9031` · Client `0.1.0+97b9031` · Server `0.1.0+97b9031`
+**Type:** Client · **Version:** `0.1.0+b66c9b5` · **Updated:** 2026-09-08 19:34 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/LootOutline-0.1.0-b66c9b5.zip)
 
 <details><summary><b>Show usage notes</b></summary>
 
-**Status: 0.1.0 (single player). Fika co-op support is planned for 0.2.0.**
+Weiße Konturen um Gegenstände, die in Tarkov auf dem Boden liegen — die Optik, die man aus PUBG
+oder Arena Breakout kennt. Für SPT 4.1.
 
-A 9x19mm cartridge for SPT that heals instead of hurting: shoot a **teammate** with the **9x19mm Medic** round and the hit body part gains 25 HP and stops bleeding. Hit anyone else and nothing happens at all.
+Status: **M0 im Spiel bestätigt** (SPT 4.1, 2560×1440, DeferredShading — Material kam aus dem
+Spiel-Material `Hidden_HighLightMesh`, 5 Passes). Leichen sind dazugekommen und noch ungetestet.
 
-#### Features
+#### Wie es funktioniert
 
-- **9x19mm Medic (MED)**: a clone of the 9x19mm GT with zero damage, zero penetration and a green tracer. Fits every 9x19 weapon and magazine, sold by Therapist at loyalty level 1 (1000 RUB, unlimited stock).
-- **Heals the body part you hit**: 25 HP per round on the hit body part (never above its maximum), and light and heavy bleeding on that body part stop. Aim at the injured limb; the surplus does not move elsewhere unless you enable `SpilloverToWorstPart`.
-- **Blacked-out limbs**: a destroyed body part cannot take health, so by default a hit on it heals nothing (grey marker). With `SpilloverToWorstPart` on, the full amount of such a hit passes to the body part with the most missing HP instead. Restoring the limb itself stays optional via `RestoreDestroyedLimbs` (arms, legs and stomach only, with a max-HP penalty like a field surgery).
-- **Shooter feedback**: a green hitmarker and a floating "+N" at the hit point tell you how much the hit healed ("+limb" when a limb was restored). A grey marker without a number means the hit had no effect: the body part was already full, the limb is blacked out without spillover, or the hit fell into the duplicate cooldown.
-- **Bot thanks**: a healed bot answers with its heal voice line, at most every 8 seconds per bot.
-- **No side effects on teammates**: the healed teammate does not flinch, bleed, grunt, lose armor durability, turn hostile or shout "Friendly fire!".
-- **Inert on everyone else**: enemies, strangers, ricochet fragments and yourself get a plain flesh impact and nothing more, no damage, no armor wear, no aggro, no Scav karma. A `Vanilla` mode (regular zero-damage bullet with the usual reactions) is available as a config option.
-- **Teammate** means: same non-empty group as the shooter. That covers PitFireTeam followers in single player and, with the planned Fika satellite, human co-op players.
-- Configurable through the BepInEx F12 menu only: no hotkeys, no JSON next to the DLL.
+EFT bringt den passenden Shader selbst mit: `Hidden/HighLightMesh`, samt fertig konfiguriertem
+Material `Hidden_HighLightMesh`. Das Spiel benutzt ihn für das Hideout-Bereichs-Highlight und den
+Item-Inspektionsbildschirm (siehe `HighLightMesh` im Dekompilat). Das Verfahren:
 
-#### Requirements and compatibility
+1. Eine einkanalige Maske (`R8`) leeren.
+2. Alle Silhouetten per `CommandBuffer.DrawRenderer` hineinzeichnen — Pass 3, der zeichnet ohne
+   Tiefentest, die Kontur ist also durch Wände sichtbar.
+3. Eigene Hände und Waffe schwarz darüberstempeln, damit die Kontur nicht über die eigene Waffe läuft.
+4. Das Kamerabild durch Pass 4 blitten. Der findet die Kanten der Maske und färbt sie ein.
 
-- SPT: 4.1.x. Built against SPT 4.1 in single player.
-- Components: combined client (BepInEx plugin) and server mod. Both parts must be installed.
-- Dependencies: [WTT-ServerCommonLib](https://github.com/WelcomeToTarkov/WTT-CommonLib) (`com.wtt.commonlib`) is required on the server.
-- **Single player needs a companion mod.** The round only heals members of the shooter's group. Vanilla SPT never assigns a group, so solo single player without a companion mod (PitFireTeam, for example) heals nobody. The round is still harmless.
-- **Fika (co-op): not yet supported.** Fika support is planned as a separate satellite DLL (`maschine-MedicRound.Client.Fika.dll`) and will ship as 0.2.0 after it has been tested. Until then the mod is inert under Fika: the round is a zero-damage bullet, nothing crashes, nobody is healed. Under Fika every human counts as a teammate.
+Weil die Kante im Bildraum gefunden wird, ist die Linienbreite in **Pixeln** angegeben und schrumpft
+nicht mit der Entfernung. Genau das macht weit entfernte Beute lesbar.
 
-#### Installation
+Der Einhängepunkt ist `CameraEvent.AfterImageEffectsOpaque` an `CameraManager.Instance.Camera` — die
+Stelle, die das Spiel für denselben Effekt selbst benutzt.
 
-1. Extract the release ZIP into your SPT installation directory.
-2. Verify that `BepInEx/plugins/maschine-MedicRound.Client.dll` and `SPT_Runtime/user/mods/MedicRound/maschine-MedicRound.Server.dll` exist. The 0.1.0 ZIP does not contain the Fika satellite (`maschine-MedicRound.Client.Fika.dll`); it ships with 0.2.0 once tested.
-3. Start the server, then the game; the round appears at Therapist (LL1).
+**Der Shader kommt vom Spiel, deshalb braucht diese Mod kein eigenes AssetBundle.** Das ist der
+entscheidende Unterschied zu früheren Anläufen: `loot-outline` (SPT 4.0, nie released) hatte eine
+vollständige eigene Shader-Pipeline, aber das Bundle dazu wurde nie gebaut — real lief dort nur ein
+`GL`-Fallback, der Drahtgitter-Quader statt Silhouetten zeichnet.
 
-#### Updating
+Als Render-Blaupause diente `SPT-PitFireTeam`, das dieselbe Maschinerie erwiesenermaßen unter 4.1
+für Squad-Mitglieder betreibt.
 
-Extract the new ZIP over the old files; nothing needs to be removed. Rounds already in your stash keep working because the item ID is stable.
+#### Was ausgewählt wird
 
-#### Usage
+- **Lose Beute** über `GameWorld.LootItems` — die Registry, durch die jedes Loot-Objekt läuft. Kein
+  Szenen-Scan. Renderer kommen aus `LootItem._renderers`, das die Klasse ohnehin für sich pflegt.
+- **Container** über `GameWorld.LootList`, gefiltert auf `LootableContainer`. Die führen keine
+  Renderer-Liste, werden also einmalig gescannt und zwischengespeichert.
+- **Leichen** über dieselbe Registry — `Corpse` erbt von `LootItem`. Deren `CacheComponents` ist leer
+  überschrieben, die Renderer kommen also aus `PlayerBody.GetRenderersNonAlloc`. Das liefert Körper
+  **und** getragene Ausrüstung, die Silhouette zeigt also Helm, Rig und Rucksack mit.
 
-- Buy **9x19mm Medic** from Therapist (LL1, 1000 RUB each) and load it into any 9x19 magazine.
-- Shoot your teammate on the body part that needs it. Every hit heals that body part by 25 HP and stops bleeding there; the green tracer shows where your first aid went, the green hitmarker and the floating "+25" confirm that it arrived.
-- Hits on anyone else, on yourself, or by ricochet fragments do nothing.
-- **Use dedicated medic magazines.** The Medic round uses the same model and icon as the 9x19mm GT; inside a magazine the two are indistinguishable. Keep medic ammunition in its own magazines (a medic sidearm such as a PL-15 works well) or mixed magazines will surprise you.
-- Every shot is a normal, unsuppressed 9x19 report and alerts bots like any other shot; a suppressor and subsonic habits are the matching kit.
-- Therapist does not buy ammunition back; sell surplus rounds to Skier, Mechanic or Prapor.
+Gefiltert wird über Entfernung, Höhe, Mindestgröße und eine Obergrenze auf die nächsten N Objekte.
 
-#### Configuration
+Leichen weichen an drei Stellen ab, jeweils aus einem Grund:
+- **Eigene Reichweite** (15 m statt 8 m). Eine Leiche aus der Distanz zu finden ist der Zweck.
+- **Kein Höhen-Cull.** Der Filter existiert für die hunderte Bodenitems; bei Leichen bringt er nichts
+  und würde bei 15 m alles verstecken, was hangabwärts oder eine Etage tiefer liegt.
+- **Position aus `TrackableTransform` (dem Becken), nicht aus dem Root-Transform.** Die
+  `Corpse`-Komponente hängt am GameObject des toten Spielers; dessen Root bleibt stehen, während das
+  Ragdoll wegrollt. Das Spiel überschreibt `TrackableTransform` genau deshalb
+  ([`InteractableObject.cs:18`](../\_decompiled/EFT.Interactive/InteractableObject.cs) →
+  [`Corpse.cs:101`](../\_decompiled/EFT.Interactive/Corpse.cs)). Die feine Entfernungsmessung nimmt
+  danach die Renderer-Bounds.
+- Der LOD-Filter wird auf Leichen **nicht** angewandt: was `PlayerBody` herausgibt, ist der Satz, mit
+  dem das Spiel die Leiche selbst zeichnet — daran herumzufiltern riskiert, den ganzen Körper
+  wegzuwerfen.
 
-`BepInEx/config/com.maschine.MedicRound.cfg` (also live in the F12 menu):
+#### Konfiguration
 
-| Setting | Default | Description |
-|-------------|----------|--------------|
-| `General.Enabled` | `true` | Master switch; off makes the round a plain vanilla zero-damage bullet (heal hooks, hitmarker and flinch suppression all off) |
-| `General.HealTemplateIds` | `67d4f0c8a1b2e30123457101` | Comma-separated template IDs (24 hex characters each) treated as medic rounds; must match the server item. An empty or invalid list acts like `Enabled = false` with one warning |
-| `General.TargetMode` | `TeammatesOnly` | Who can be healed: `TeammatesOnly` (same non-empty group as the shooter) or `Everyone` (any player hit, test or fun mode) |
-| `General.NonTeammateMode` | `Inert` | Hit on a non-teammate: `Inert` (flesh impact, nothing else) or `Vanilla` (zero-damage bullet with the usual flinch, aggro and armor wear) |
-| `General.AllowAiShooter` | `false` | Let bot shooters (followers with looted rounds) heal instead of being treated like non-teammates |
-| `General.HealWhenShooterUnknown` | `false` | Heal even when the shooter cannot be resolved (dead or extracted while the round was in flight) |
-| `Heal.HealPerHit` | `25` | HP restored on the hit body part, clamped at its maximum (5-100) |
-| `Heal.SpilloverToWorstPart` | `false` | Surplus HP goes once to the body part with the most missing HP; a hit on a blacked-out limb passes its full amount there |
-| `Heal.StopLightBleeding` | `true` | Stop light bleeding on the hit body part |
-| `Heal.StopHeavyBleeding` | `true` | Stop heavy bleeding on the hit body part |
-| `Heal.RestoreDestroyedLimbs` | `false` | Restore blacked-out arms, legs and stomach (never head or chest) before healing them |
-| `Heal.RestoreLimbHealthFraction` | `0.6` | Max-HP fraction that *remains* after a limb restore, 1.0 = no penalty (0.3-1.0) |
-| `Heal.CooldownSeconds` | `0.3` | Duplicate-hit guard per target, not a rate limiter: further heal hits on the same player within this window are ignored (0-5) |
-| `Feedback.ShooterHitmarker` | `true` | Hitmarker for the local shooter: green when the hit healed or restored a limb, grey when it had no effect (full part, blacked-out limb, cooldown) |
-| `Feedback.ShooterHealNumbers` | `true` | Floating "+N" at the hit point for the local shooter ("+limb" on a limb restore); a grey marker never shows a number |
-| `Feedback.TeammateImpactVfx` | `None` | Impact effect on a healed teammate: `None` shows no impact at all, `SilentBody` shows the flesh impact without the impact sound, `Body` shows the vanilla flesh impact with sound. `SilentBody`/`Body` are the fallback in case `None` still renders an effect on your installation |
-| `Feedback.BotThanksVoice` | `true` | A healed bot says its heal voice line, at most every 8 s per bot |
-| `Feedback.TargetHealthPanelPulse` | `true` | Your health panel opens briefly when a teammate heals you (Fika, 0.2.0+; in single player only reachable via `Debug.SelfTestHeal`) |
-| `Feedback.SuppressTeammateFlinch` | `true` | No flinch and no blood decal on a teammate hit by a heal round. Redundant in single player, where the heal hook already skips both; under Fika it applies on every peer that replays the shot |
-| `Debug.LogHeals` | `false` | One Info-level log line per heal or inert hit with hook origin, both group IDs, direct and spilled amounts and the part's HP afterwards |
-| `Debug.SelfTestHeal` | `false` | Developer self-test: set to true once in a raid to heal your own `SelfTestBodyPart`, bypassing the team rule; resets itself. Shows the healed-human feedback (panel pulse, "+N", toast) |
-| `Debug.SelfTestBodyPart` | `LeftArm` | Body part for the self-test (any except `Common`) |
+Alles über das F12-Menü, wirkt sofort. Die wichtigsten:
 
-#### Known limitations
+| Einstellung | Default | Wirkung |
+|---|---|---|
+| `Detection Range` | 8 m | Ab wann eine Kontur erscheint |
+| `Interact Hide Distance` | 1.4 m | Kontur aus, sobald man nah genug zum Aufheben ist |
+| `Outline Width` | 1.5 px | Linienstärke, entfernungsunabhängig |
+| `Max Outlined Objects` | 60 | Obergrenze, bewusst nicht 0 |
+| `Outline Containers` | an | Kisten, Taschen, Spinde |
+| `Outline Corpses` | an | Leichen samt getragener Ausrüstung |
+| `Corpse Detection Range` | 15 m | Eigene Reichweite für Leichen |
+| `Verbose Logging` | aus | Erste Anlaufstelle, wenn keine Kontur erscheint |
 
-- No revive: dead (or Fika downed) players cannot be brought back.
-- Solo single player without a companion mod that assigns a group (PitFireTeam or similar) heals nobody.
-- MED and GT share model and icon; use dedicated medic magazines (see Usage).
-- Mixed squads of PitFireTeam followers and MiyakoCarryService bots can carry two different group IDs; part of such a squad is then not healable.
-- Bots that loot medic rounds cannot heal unless `AllowAiShooter` is on.
-- Under Fika, "teammate" means every human plus every companion bot of every human, also in friendly-fire lobbies. PitFireTeam together with Fika is not supported.
-- Under Fika a client shooter gets no hitmarker and no "+N". In 0.1.0 nothing is healed under Fika at all; with the 0.2.0 satellite the heal runs on the target's machine, where the shooter is only an observed copy, so only a human host healing a FikaBot sees the marker. A predicted marker for client shooters is planned for a later version.
-- In single player nobody shoots the player with medic rounds, so the healed-human feedback (health panel pulse, "Treatment - Healed" toast) is only reachable via `Debug.SelfTestHeal`.
-- Full-auto fire at the default `CooldownSeconds` of 0.3 s ignores roughly every second hit on the same target (grey marker, no heal): the cooldown is a duplicate guard, not a rate limiter. Fire single shots or short bursts, or lower `CooldownSeconds`.
-- `NonTeammateMode = Vanilla` is not "no effect": non-teammates then take a regular zero-damage bullet with the usual flinch, blood decal, pain grunt, bot aggro, Scav-karma marking and at least one point of armor durability per armored hit, only without HP loss. Only `Inert` (the default) suppresses all of that.
-- `spt give` refuses the item because it is blacklisted from loot and Fence; buy it at Therapist instead.
-- `RestoreDestroyedLimbs` replaces the limb's health value and thereby drops a Redeploy spawn protection on that limb. It is off by default.
-- Fika co-op is not supported in 0.1.0 (see Requirements and compatibility).
+#### Bekannte Grenzen und nächste Schritte
 
-#### Support
+- **M1 — Budget.** Frustum-Test fehlt noch: Objekte hinter dem Rücken kosten aktuell Draw-Calls, bis
+  die Obergrenze greift. Dazu Messung in Interchange/Resort und in einer Arena-Runde mit vielen
+  Leichen. `Max Outlined Objects` ist zusätzlich renderer-begrenzt (das Achtfache des Objektwerts),
+  weil eine Leiche ein bis zwei Größenordnungen mehr Renderer mitbringt als ein Item; wie oft das
+  greift, steht im Verbose-Log unter „dropped by the cap".
+- **M2 — Lebenszyklus.** Mehrere Raids hintereinander, Kamerawechsel, Auflösungswechsel, Fika-Headless.
+- **M3 — Optik.** Die Kontur läuft derzeit noch durch die Post-Processing-Kette und wird von TAA
+  gejittert. `AfterImageEffectsOpaque` gegen `AfterEverything` und gegen eine eigene
+  `OnRenderImage`-Komponente vergleichen. Alpha-Fade über Distanz.
+- **M4 — Sichtlinien-Modus** (optional). Die Occlusion-Passes des Shaders sind undokumentiert; das
+  kann ein eigenes Shader-Bundle erzwingen und hat deshalb ein hartes Abbruchkriterium.
+- **M5 — Container-Feinschliff.** Leere Container ausblenden, Türzustand berücksichtigen.
+- **Leichen-Nachlese.** Der Renderer-Satz einer Leiche hat kein billiges Änderungssignal, deshalb
+  wird er alle 10 s neu aufgelöst. Falls sich zeigt, dass Ausplündern (Rucksack weg) sichtbar
+  nachhinkt, muss das an ein Event statt an einen Timer.
 
-Report issues on the [GitHub issue tracker](https://github.com/maschine34675/MedicRound/issues). Include the exact mod and SPT versions, expected and actual behavior, short reproduction steps, and your complete `BepInEx/LogOutput.log` rather than pasted excerpts.
+**Konflikt im Blick behalten:** pitFireTeam hängt einen CommandBuffer an dieselbe Kamera und denselben
+`CameraEvent` und blittet ebenfalls vollflächig. Ein Regressionstest mit ausgelöstem Squad-Ping gehört
+dazu.
 
-#### License and credits
+#### Bauen
 
-MIT License (see `LICENSE`). Item loading via [WTT-ServerCommonLib](https://github.com/WelcomeToTarkov/WTT-CommonLib). Hitmarker and heal-number geometry adapted from DragonDen.Hitmarker (MIT, (c) 2025 Drexira).
-
-#### Build
-
-```powershell
-cd D:\SPT41\Development\MedicRound
-dotnet build .\MedicRound.slnx -c Release
+```
+dotnet build -c Release
 ```
 
-With `-p:DeployToSpt=true` (default) the client DLL and the Fika satellite DLL go to `BepInEx/plugins/` and the server DLL plus item JSON to `SPT_Runtime/user/mods/MedicRound/`. The satellite compiles against `Fika.Core.dll` (2.4.x); the build looks for it in a Fika installation next to the SPT root (`..\SPT41Fika\BepInEx\plugins\Fika\`), in the SPT root itself, or on `Z:\`, or pass `-p:FikaPluginDir=<dir>\`. `scripts\New-ReleasePackage.ps1` builds both projects and stages the release ZIP under `artifacts/`; the satellite DLL is only staged with `-IncludeFikaSatellite` (0.2.0+).
+Kopiert die DLL selbst nach `..\..\BepInEx\plugins`. Für eine andere Installation:
+`-p:SptRoot=D:\SPT41\` mit abschließendem Backslash.
 
 </details>
 
@@ -1329,7 +1128,7 @@ The post-build step copies the DLL to `BepInEx/plugins/`.
 
 ## RaidInfoPanels
 
-**Type:** Client · **Version:** `1.0.0+76aab7b` · **Updated:** 2026-08-18 09:52 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-76aab7b.zip)
+**Type:** Client · **Version:** `1.0.0+adc5abe` · **Updated:** 2026-09-09 09:35 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-adc5abe.zip)
 
 <img src="assets/RaidInfoPanels/preview.png" width="440">
 
@@ -1367,112 +1166,6 @@ The DLL is automatically copied to `BepInEx/plugins/maschine-RaidInfoPanels.dll`
 
 - Hit, kill, grenade and compass panels as separate modules
 - Configuration via ConfigurationManager
-
-</details>
-
----
-
-## Redeploy
-
-**Type:** Client + Server · **Version:** `0.9.0+0cd80ee` · **Updated:** 2026-09-06 18:23 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/Redeploy-0.9.0-0cd80ee.zip)
-
-**Components:** Client `0.9.0+0cd80ee` · Client `0.9.0+58abf58` · Server `0.9.0+0cd80ee`
-
-<details><summary><b>Show usage notes</b></summary>
-
-> Formerly **CorpseRun** — renamed in 0.9.x. The old GUID `com.maschine.CorpseRun`, the `user/mods/CorpseRun` server folder and `maschine-CorpseRun.*.dll` files are obsolete; remove them when updating. The respawn engine now lives in the shared library `maschine-Redeploy.Core.dll` (deployed next to the client plugin), which other mods (e.g. ArenaMode) build on.
-
-Dying no longer ends your raid: respawn without gear, fight your way back to your own corpse, and take your equipment back.
-
-#### Features
-
-- **Choose what happens when you die.** A prompt offers a respawn near your corpse, a respawn at a regular player spawn, or ending the raid as usual.
-- **Your gear stays on your corpse.** The replacement character spawns with nothing; everything you carried is lootable from your body — if you make it back.
-- **What you would normally keep, you keep.** Secure container, melee weapon, armband and pocket special slots move to the replacement character, because corpses never hand those back.
-- **Spawn protection.** A short invulnerability window covers the way back. It ends the moment you draw a weapon, and its last seconds are announced on screen.
-- **Optional respawn cost.** Require a medical item to be in your inventory; it is consumed when you respawn.
-- **Insurance keeps working.** Gear left behind on a corpse is reported as lost at the end of the raid, so insurance returns it as usual.
-- **Kills are carried over.** Kills you scored before respawning still appear on the end-of-raid screen.
-- **Fails safe.** When the server component is missing, the mod stays inactive and death behaves exactly like vanilla.
-
-#### Requirements and compatibility
-
-- **SPT:** 4.1.x. The server component declares `~4.1.0`; the client is built against game build `0.16.9.40743`.
-- **Components:** Client **and** server. Both are required — see the warning under Installation.
-- **Dependencies:** None.
-- **Optional integrations**, each installed separately and none of them required:
-  - **DynamicMaps** — your position marker follows the replacement character.
-  - **Freecam** (Terkoiz) — the free camera keeps working after a respawn.
-  - **KillcamReplay** — the death replay stays visible behind the respawn prompt.
-- **Confirmed incompatibility: Fika.** A replacement character cannot be synchronised to other co-op clients, so Redeploy disables itself when Fika is installed and says so at raid start.
-
-#### Installation
-
-1. Extract the release ZIP into your SPT installation directory.
-2. Verify that both files exist:
-   - `BepInEx/plugins/maschine-Redeploy.Client.dll`
-   - `SPT_Runtime/user/mods/Redeploy/maschine-Redeploy.Server.dll`
-3. Start the SPT server once and confirm that `Redeploy` appears among the loaded mods.
-
-Both components belong to the same installation. Installing only the client DLL would corrupt your profile at the end of a raid, so in that case Redeploy refuses to do anything and shows a warning when a raid starts.
-
-#### Updating
-
-Overwrite both files with the new versions. Your configuration file is kept.
-
-If you ran an early internal build, delete these leftovers first — otherwise an obsolete copy of the mod loads alongside the current one:
-
-- `BepInEx/plugins/maschine-Redeploy.dll` (the old name, without `.Client`)
-- `SPT/user/mods/Redeploy/` (the SPT 4.0 server path; SPT 4.1 uses `SPT_Runtime/`)
-
-#### Usage
-
-There are no hotkeys. When you die, the raid keeps running and a window opens with the mouse cursor released:
-
-- **Respawn near corpse** — you spawn a configurable distance from your body.
-- **Respawn at spawn point** — you spawn at one of the map's regular player spawns.
-- **End raid** — the raid ends as killed, exactly as it would without the mod.
-
-After respawning, run back to your body and loot your equipment from it. Your corpse stays in the world for the rest of the raid and is not protected in any way.
-
-By default you get one respawn per raid. Once none are left, dying ends the raid normally.
-
-#### Configuration
-
-Configure the mod in-game with the F12 BepInEx configuration manager, or edit `BepInEx/config/com.maschine.Redeploy.cfg`.
-
-| Option | Default | Meaning |
-| --- | --- | --- |
-| `Enabled` | `true` | Master switch. When off, death behaves like vanilla. |
-| `MaxRespawnsPerRaid` | `1` | Respawns allowed per raid; `0` means unlimited. |
-| `RespawnHealthPercent` | `100` | Health the replacement character starts with (1–100). |
-| `RespawnCooldownSeconds` | `5` | Delay between choosing a respawn and actually spawning. |
-| `CorpseSpawnDistanceMeters` | `20` | Distance from your body for *Respawn near corpse*. |
-| `SpawnProtectionSeconds` | `10` | Invulnerability after respawning; `0` disables it. |
-| `RequiredRespawnItem` | `None` | Item that must be carried and is consumed to respawn. |
-
-`RequiredRespawnItem` accepts a defibrillator, a medkit (Grizzly, Salewa, IFAK, AFAK, CMS, Surv12, car first aid kit) or a stimulant (adrenaline, Propital). If the chosen item is not in your inventory when you die, the respawn buttons are hidden and only ending the raid remains.
-
-#### Known limitations
-
-- **Fika co-op is not supported.** The mod disables itself when Fika is installed.
-- **Progress from earlier lives is only partly carried over.** Kills are restored to the end-of-raid screen, but the game starts a fresh statistics session for the replacement character, so session XP and other counters from before the last respawn are lost. This is intentional and keeps repeated respawns from paying off.
-- **Items carried through a respawn lose their found-in-raid status**, the same way they do after an ordinary death.
-- **Scav raids** work the same way, but have seen less testing than PMC raids.
-- The mod changes how your profile is written at the end of a raid. Keep a profile backup while trying it out.
-
-#### Support
-
-Report problems at <https://github.com/maschine34675/Redeploy/issues>.
-
-Please include the exact Redeploy and SPT versions, what you expected and what happened instead, short reproduction steps, and for the affected raid both `BepInEx/LogOutput.log` and the server console output. Also list the other mods you have installed, especially any that affect the camera, the player character or the end-of-raid screen.
-
-#### License and credits
-
-Released under the MIT License; see `LICENSE`.
-
-- The spawn protection and the optional respawn cost were inspired by **PlayerLives** and **RevivalMod** (KaiKiNoodles, gitTerebi), which approach the same problem with a downed state instead of a respawn. No code was taken from either mod.
-- Redeploy contains compatibility code for **DynamicMaps** (mpstark), **Freecam** (Terkoiz) and **KillcamReplay**. None of these are bundled; they remain the property of their authors.
 
 </details>
 

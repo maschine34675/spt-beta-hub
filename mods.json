@@ -55,6 +55,18 @@
   "StashSort": {
     "enabled": "false"
   },
+  "CombatLog": {
+    "enabled": "false"
+  },
+  "KillcamReplay": {
+    "enabled": "false"
+  },
+  "MedicRound": {
+    "enabled": "false"
+  },
+  "Redeploy": {
+    "enabled": "false"
+  },
   "SurroundAudio": {
     "description": "Replaces Tarkov's binaural (headphone) audio with real 5.1/7.1 output, so you can play on a surround speaker system instead of headphones.",
     "notes": "**Beta - feedback wanted.** Requires your Windows output device to be configured for the same layout (Configure Speakers > 5.1) with Windows Sonic/Atmos **off**.\n\nWhen reporting, please include your speaker layout and how it is connected (HDMI to receiver / analog), plus the `maschine-SurroundAudio` lines from the BepInEx console. To verify your channels, bind `ChannelTestKey` in the F12 config menu and run the test.\n\nKnown: vertical cues (enemy above/below) are weaker than with binaural headphones - that is inherent to speaker playback, not a bug."
