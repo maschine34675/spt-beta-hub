@@ -1,6 +1,6 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-09-09 16:59** · 14 mods with download, 3 in development.
+Overview of all mods in beta testing · Last updated: **2026-09-12 20:31** · 13 mods with download, 5 in development.
 
 This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
@@ -22,13 +22,12 @@ Please always include it when reporting issues.
 | [**CombatSlide**](#combatslide) | `2.0.0+c57f2f8` | 2026-08-09 | Client | Press crouch while sprinting to keep sliding at decreasing speed - a "combat slide" like in other shooters. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CombatSlide-2.0.0-c57f2f8.zip) |
 | [**ConsoleToMonitor**](#consoletomonitor) | `1.0.0+8bef20d` | 2026-08-28 | Client | _(description to follow)_ | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ConsoleToMonitor-1.0.0-8bef20d.zip) |
 | [**CorpseRun**](#corpserun) | `0.9.0+46bed4d` | 2026-08-24 | Client + Server | After dying in a raid, optionally respawn (naked), loot your own corpse and continue the raid; giving up ends the raid normally. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/CorpseRun-0.9.0-46bed4d.zip) |
-| [**DoorDash**](#doordash) | `1.2.0+083cd0b` | 2026-08-29 | Client | > Blow open doors without stopping. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/DoorDash-1.2.0-083cd0b.zip) |
+| [**DoorDash**](#doordash) | `1.2.0+9735133` | 2026-09-12 | Client | > Blow open doors without stopping. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/DoorDash-1.2.0-9735133.zip) |
 | [**KillAndDamageInfo**](#killanddamageinfo) | `1.0.0+b0ab19c` | 2026-08-24 | Client | KillAndDamageInfo shows the combat information the game keeps to itself: what your kills died to, who killed you and in what state they were, what each hit actually did… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-1.0.0-b0ab19c.zip) |
-| [**LogTools**](#logtools) | `1.3.0+8525b6a` | 2026-09-02 | Client | Three things BepInEx 5 will not do for its own `LogOutput.log`: | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/LogTools-1.3.0-8525b6a.zip) |
+| [**LogTools**](#logtools) | `1.4.0+2cd4b8e` | 2026-09-09 | Client | Four things BepInEx 5 will not do for its own `LogOutput.log`: | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/LogTools-1.4.0-2cd4b8e.zip) |
 | [**LootOutline**](#lootoutline) | `0.1.0+b66c9b5` | 2026-09-08 | Client | Weiße Konturen um Gegenstände, die in Tarkov auf dem Boden liegen — die Optik, die man aus PUBG oder Arena Breakout kennt. Für SPT 4.1. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/LootOutline-0.1.0-b66c9b5.zip) |
 | [**ModSourceDebugger**](#modsourcedebugger) | `2.0.0+7371199` | 2026-08-15 | Client + Server | Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-2.0.0-7371199.zip) |
 | [**QuietBrainLog**](#quietbrainlog) | `1.0.0+e345181` | 2026-09-06 | Client | SPT logs a warning for every PMC that spawns, about something working as intended. QuietBrainLog turns that one line down to Info — or off — and leaves the rest alone. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuietBrainLog-1.0.0-e345181.zip) |
-| [**RaidInfoPanels**](#raidinfopanels) | `1.0.0+adc5abe` | 2026-09-09 | Client | Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x. | <a href="#raidinfopanels"><img src="assets/RaidInfoPanels/preview.png" height="60"></a> | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-adc5abe.zip) |
 | [**SurroundAudio**](#surroundaudio) | `1.0.0+f693bc7` | 2026-08-23 | Client | Replaces Tarkov's binaural (headphone) audio with real 5.1/7.1 output, so you can play on a surround speaker system instead of headphones. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-f693bc7.zip) |
 
 ## 🚧 In development – no build yet
@@ -37,6 +36,8 @@ Please always include it when reporting issues.
 |---|---|---|
 | **AdaptiveArsenal** | Server | Adaptive Arsenal is an SPT 4.0 C# server mod prototype that tracks equipment usage after raids. |
 | **AiStoryQuests** | Client + Server | Experiment: AI-generated story quests (providers: OpenAI/Anthropic/Ollama, own API key required). |
+| **ArenaMode-HitmarkerAudio** | Client + Server | – |
+| **ArenaMode-NativeHud** | Client + Server | – |
 | **AutoWishlist** | Client + Server | – |
 
 ---
@@ -416,7 +417,7 @@ Released under the MIT License; see `LICENSE`.
 
 ## DoorDash
 
-**Type:** Client · **Version:** `1.2.0+083cd0b` · **Updated:** 2026-08-29 15:57 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/DoorDash-1.2.0-083cd0b.zip)
+**Type:** Client · **Version:** `1.2.0+9735133` · **Updated:** 2026-09-12 18:56 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/DoorDash-1.2.0-9735133.zip)
 
 <details><summary><b>Show usage notes</b></summary>
 
@@ -636,18 +637,19 @@ MIT — see [LICENSE](LICENSE).
 
 ## LogTools
 
-**Type:** Client · **Version:** `1.3.0+8525b6a` · **Updated:** 2026-09-02 07:22 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/LogTools-1.3.0-8525b6a.zip)
+**Type:** Client · **Version:** `1.4.0+2cd4b8e` · **Updated:** 2026-09-09 21:53 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/LogTools-1.4.0-2cd4b8e.zip)
 
 <details><summary><b>Show usage notes</b></summary>
 
-Three things BepInEx 5 will not do for its own `LogOutput.log`:
+Four things BepInEx 5 will not do for its own `LogOutput.log`:
 
 1. **Timestamps** on every line.
 2. **One log file per session**, instead of one file that either gets thrown
    away on every start or grows without limit.
 3. **A list of what is installed**, at the top of the file.
+4. **Which machine it ran on**, for when there is more than one test system.
 
-All three are done from a **preloader patcher** rather than a plugin — by the time
+All four are done from a **preloader patcher** rather than a plugin — by the time
 plugins load, most of the interesting lines are already written and the log file
 is long since open.
 
@@ -758,6 +760,41 @@ version.
 Cost is one pass over the plugin folder at startup — around 200 ms cold, 25 ms
 warm for 59 DLLs.
 
+#### Hardware
+
+Which of several test systems a log came from, in one block near the top:
+
+```
+System: WIN-1VMJCF66AHH — Windows Server 2025 Standard 24H2 (build 26100.33296), 64-bit process
+  CPU   AMD EPYC 4465P 12-Core Processor (12 logical processors)
+  RAM   20 GB total, 7.1 GB free (64% in use), page file 23 GB
+  GPU   Microsoft Hyper-V Video, driver 10.0.26100.1150
+  GPU   Microsoft Remote Display Adapter, driver 10.0.26100.7309 (×5)
+  Disk  D:\ 400 GB total, 128.1 GB free — game at D:\SPT41
+```
+
+Unity's `SystemInfo` would be the obvious source and is deliberately **not**
+used. This runs in the preloader, where `UnityEngine.CoreModule` has not been
+patched yet; touching a Unity type here risks loading that assembly before
+BepInEx rewrites it, which would leave the chainloader uninjected and the game
+running with no mods at all. A GPU line is not worth that trade.
+
+So everything comes from mscorlib, one `GlobalMemoryStatusEx` call and the
+registry — the last of those reached by reflection, because the mod targets
+netstandard2.1 while the game's Mono keeps `Microsoft.Win32.Registry` inside its
+own mscorlib with no facade to bridge the two. A direct reference would compile
+and then fail to resolve *inside the preloader*, where a failure takes the game
+with it. Every field is optional and silently omitted when it cannot be read.
+
+Notes:
+
+- `ProductName` still reads "Windows 10" on Windows 11 — Microsoft never updated
+  it — so the build number decides which name is printed.
+- All display adapters are listed, not a guessed primary: switchable graphics
+  and virtual display drivers both look wrong when only one is reported.
+  Identical entries are collapsed with a count.
+- No user name, no serial numbers, no network addresses.
+
 #### Config
 
 `BepInEx/config/maschine-LogTools.cfg`
@@ -771,6 +808,7 @@ warm for 59 DLLs.
 | `Rotation` | `MaxArchivedFiles` | `10` | How many archives to keep; `0` = unlimited |
 | `Rotation` | `MaxArchivedMegabytes` | `200` | Ceiling for `BepInEx/logs` as a whole; `0` = unlimited |
 | `Manifest` | `Enabled` | `true` | List every installed DLL near the top of the log |
+| `Hardware` | `Enabled` | `true` | Log machine name, OS, CPU, RAM, GPUs and free disk space |
 
 An invalid `Format` falls back to the default instead of throwing once per log
 line.
@@ -1121,51 +1159,6 @@ dotnet build -c Release
 ```
 
 The post-build step copies the DLL to `BepInEx/plugins/`.
-
-</details>
-
----
-
-## RaidInfoPanels
-
-**Type:** Client · **Version:** `1.0.0+adc5abe` · **Updated:** 2026-09-09 09:35 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidInfoPanels-1.0.0-adc5abe.zip)
-
-<img src="assets/RaidInfoPanels/preview.png" width="440">
-
-<details><summary><b>Show usage notes</b></summary>
-
-Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x.
-
-#### Why a rewrite instead of a fork?
-
-The original mod [GamePanelHUD](https://github.com/kmyuhkyuk/GamePanelHUD) depends on [KmyTarkovApi](https://github.com/kmyuhkyuk/KmyTarkovApi), which among other things patches `GameWorld` and `TriggerWithId`. Interventions like that can cause side effects (users report broken airdrops, for example). This mod only reads game state and draws UI — **no Harmony patches**.
-
-#### Panels
-
-| Panel | Content |
-|---|---|
-| **Weapon** (bottom right) | Weapon name, magazine + round, caliber, fire mode |
-| **Health** (bottom left) | HP, hydration, energy incl. regeneration rate |
-
-#### Configuration
-
-BepInEx config: `BepInEx/config/com.maschine.RaidInfoPanels.cfg`
-
-- General: master switch, update interval
-- Weapon/Health: enable individually, position, colors, warning thresholds
-
-#### Build
-
-```powershell
-dotnet build Development/RaidInfoPanels/RaidInfoPanels.csproj -c Release
-```
-
-The DLL is automatically copied to `BepInEx/plugins/maschine-RaidInfoPanels.dll`.
-
-#### Planned
-
-- Hit, kill, grenade and compass panels as separate modules
-- Configuration via ConfigurationManager
 
 </details>
 
