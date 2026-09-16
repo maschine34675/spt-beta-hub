@@ -1,9 +1,14 @@
 {
-  "_note": "Optional per-mod overrides. Keys: enabled (false = never list; true = list even when the Forge API reports the mod as published), description (short text for the table), notes (extra hint for testers, Markdown), screenshots (paths relative to the mod folder; replaces the automatic selection), dependencies (array; either a Forge GUID string like 'com.anvil.weboverlay' - name and link are resolved via the Forge API - or an object {\"name\": ..., \"url\": ...} for dependencies not on Forge). Published detection: one query against https://sp-mod.com/api/v0/mods?filter[guid]=... using each mod's BepInPlugin GUID; result cached in forge-published.json.",
+  "_note": "Whitelist: only mods with an entry here are listed (key = folder name in the dev root, case-sensitive; use {} when there is nothing to override). Keys starting with _ are comments. Optional keys: enabled (false = parked: the entry and its metadata stay, the mod is not listed; true = list even when the Forge API reports the mod as published - otherwise such an entry is skipped with a warning), description (short text for the table), notes (extra hint for testers, Markdown), screenshots (paths relative to the mod folder; replaces the automatic selection), dependencies (array; either a Forge GUID string like 'com.anvil.weboverlay' - name and link are resolved via the Forge API - or an object {\"name\": ..., \"url\": ...} for dependencies not on Forge). Published detection: one query against https://sp-mod.com/api/v0/mods?filter[guid]=... using each mod's BepInPlugin GUID; result cached in forge-published.json.",
 
+  "AdaptiveArsenal": {},
   "AiStoryQuests": {
     "description": "Experiment: AI-generated story quests (providers: OpenAI/Anthropic/Ollama, own API key required)."
   },
+  "ArenaMode-VoiceLines": {},
+  "AutoWishlist": {},
+  "BangAndClear": {},
+  "BotDropDiag": {},
   "BtrTurretControl": {
     "notes": "You still have to pay for the taxi service to not get thrown out on departure"
   },
@@ -11,60 +16,44 @@
     "description": "Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets. Also adds a 40mm cluster round and HE ammunition",
     "dependencies": ["com.wtt.commonlib"]
   },
-  "CombatSlide": {
-    "description": "Press crouch while sprinting to keep sliding at decreasing speed - a \"combat slide\" like in other shooters.",
-    "enabled": "false"
-  },
-  "CorpseRun": {
-    "description": "After dying in a raid, optionally respawn (naked), loot your own corpse and continue the raid; giving up ends the raid normally.",
-    "enabled": "false"
-  },
-  "Killcam": {
-    "description": "\"Killcam light\": on death the camera switches to the killer's first-person view for about 6 seconds; the death panel shows the killer's name and remaining HP.",
-    "notes": "Predecessor of **KillcamReplay** - do not install both at the same time.",
-    "enabled": "false"
-  },
-  "KillcamReplay": {
-    "description": "True killcam: on death, the killer's final moments are replayed from their point of view, based on the recorded movement of the last seconds before the kill.",
-    "notes": "Successor of **Killcam** - do not install both at the same time.",
-    "enabled": "false"
-  },
-  "ModProfiler": {
-    "description": "In-game profiler modeled after Dubs Performance Analyzer (RimWorld): shows live how much CPU time each installed client mod costs per frame – find the cause of performance drops without disabling mods one by one.",
-    "screenshots": ["preview.png"],
-    "dependencies": ["com.anvil.weboverlay"]
-  },
+  "ConsoleToMonitor": {},
+  "DoorDash": {},
+  "KillAndDamageInfo": {},
+  "LogTools": {},
+  "LootOutline": {},
+  "LowAmmoCue": {},
   "ModSourceDebugger": {
     "description": "Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector)."
   },
-  "RaidInfoPanels": {
-    "description": "Stable replacement for the GamePanelHUD weapon/health panels on SPT 4.x.",
-    "screenshots": ["preview.png"],
-    "enabled": "false"
-  },
-  "UnloadAllMagazinesInventory": {
-    "enabled": "false"
-  },
-  "ArenaMode": {
-    "enabled": "false"
-  },
-  "StashSort": {
-    "enabled": "false"
-  },
-  "CombatLog": {
-    "enabled": "false"
-  },
-  "KillcamReplay": {
-    "enabled": "false"
-  },
-  "MedicRound": {
-    "enabled": "false"
-  },
-  "Redeploy": {
-    "enabled": "false"
-  },
+  "QuietBrainLog": {},
   "SurroundAudio": {
     "description": "Replaces Tarkov's binaural (headphone) audio with real 5.1/7.1 output, so you can play on a surround speaker system instead of headphones.",
     "notes": "**Beta - feedback wanted.** Requires your Windows output device to be configured for the same layout (Configure Speakers > 5.1) with Windows Sonic/Atmos **off**.\n\nWhen reporting, please include your speaker layout and how it is connected (HDMI to receiver / analog), plus the `maschine-SurroundAudio` lines from the BepInEx console. To verify your channels, bind `ChannelTestKey` in the F12 config menu and run the test.\n\nKnown: vertical cues (enemy above/below) are weaker than with binaural headphones - that is inherent to speaker playback, not a bug."
-}
+  },
+
+  "_parked": "Parked entries (enabled: false): not listed, metadata kept. Remove \"enabled\" to list the mod again.",
+  "CombatSlide": {
+    "enabled": false,
+    "description": "Press crouch while sprinting to keep sliding at decreasing speed - a \"combat slide\" like in other shooters."
+  },
+  "CorpseRun": {
+    "enabled": false,
+    "description": "After dying in a raid, optionally respawn (naked), loot your own corpse and continue the raid; giving up ends the raid normally."
+  },
+  "Killcam": {
+    "enabled": false,
+    "description": "\"Killcam light\": on death the camera switches to the killer's first-person view for about 6 seconds; the death panel shows the killer's name and remaining HP.",
+    "notes": "Predecessor of **KillcamReplay** - do not install both at the same time."
+  },
+  "KillcamReplay": {
+    "enabled": false,
+    "description": "True killcam: on death, the killer's final moments are replayed from their point of view, based on the recorded movement of the last seconds before the kill.",
+    "notes": "Successor of **Killcam** - do not install both at the same time."
+  },
+  "ModProfiler": {
+    "enabled": false,
+    "description": "In-game profiler modeled after Dubs Performance Analyzer (RimWorld): shows live how much CPU time each installed client mod costs per frame – find the cause of performance drops without disabling mods one by one.",
+    "screenshots": ["preview.png"],
+    "dependencies": ["com.anvil.weboverlay"]
+  }
 }

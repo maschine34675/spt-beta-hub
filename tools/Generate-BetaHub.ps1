@@ -8,8 +8,13 @@
     pwsh tools/Generate-BetaHub.ps1          # nur generieren
     pwsh tools/Generate-BetaHub.ps1 -Push    # generieren + commit + push
 
-  Forge-Filter: Mods, die bereits auf Forge (https://sp-mod.com) veroeffentlicht sind,
-  werden automatisch NICHT gelistet. Erkennung per Forge-API: pro Mod werden die
+  Whitelist: Gelistet werden NUR Mods mit einem Eintrag in mods.json (Schluessel =
+  Ordnername in DevRoot, Gross-/Kleinschreibung beachten). Alle anderen Ordner werden
+  ignoriert. Ein Eintrag ohne Overrides ist einfach {}. Schluessel mit _ sind Kommentare.
+
+  Forge-Filter (Sicherheitsnetz): Whitelist-Mods, die bereits auf Forge (https://sp-mod.com)
+  veroeffentlicht sind, werden NICHT gelistet und als Warnung gemeldet - der Eintrag ist
+  dann veraltet. Erkennung per Forge-API: pro Mod werden die
   Plugin-GUIDs aus dem Quellcode gezogen ([BepInPlugin("com.maschine....")], Fallback
   com.maschine.<ordnername>) und in EINER Abfrage gegen
   GET /api/v0/mods?filter[guid]=... geprueft. Das Ergebnis wird in
@@ -17,10 +22,11 @@
   Ohne API UND ohne Cache bricht das Skript ab (lieber kein Update als
   veroeffentlichte Mods zu listen).
 
-  Optionale Overrides pro Mod in mods.json (alle Schluessel optional):
+  Optionale Schluessel pro Eintrag:
     "ModName": {
-      "enabled":     false,                  # false = nie listen; true = listen, auch
-                                             # wenn als veroeffentlicht erkannt
+      "enabled":     false,                  # false = geparkt: Metadaten bleiben, Mod wird
+                                             # nicht gelistet; true = listen, auch wenn auf
+                                             # Forge veroeffentlicht
       "dependencies": ["com.anvil.weboverlay"]  # Forge-GUIDs (Name+Link werden per API
                                              # aufgeloest) oder {name,url}-Objekte
       "description": "Kurztext fuer die Tabelle",
@@ -55,6 +61,8 @@ function Cfg([string]$mod, [string]$key) {
     }
     return $null
 }
+# enabled-Flag tolerant auswerten: Boolean (false) und String ("false") gleichermassen
+function Test-CfgFlag($value, [string]$expected) { return ([string]$value) -eq $expected }
 
 # ---------------------------------------------------------------- Hilfsfunktionen
 function Get-AlnumLower([string]$s) { return (($s -replace '[^A-Za-z0-9]', '')).ToLower() }
@@ -236,9 +244,25 @@ $SkipProjectPattern = '(?i)(\.|^)(Tests?|DevTool|DebugServer|WebViewProbe|Demo)$
 # ---------------------------------------------------------------- Mods einsammeln
 $built     = [System.Collections.Generic.List[object]]::new()
 $unbuilt   = [System.Collections.Generic.List[object]]::new()
-$published = [System.Collections.Generic.List[string]]::new()
+$parked    = [System.Collections.Generic.List[string]]::new()
 
-$modDirs = Get-ChildItem $DevRoot -Directory | Where-Object { $_.Name -notmatch '^[_.]' } | Sort-Object Name
+# Whitelist: nur Ordner mit Eintrag in mods.json. Case-sensitiv, weil auch die
+# Overrides case-sensitiv nachgeschlagen werden - ein Tippfehler faellt so als Warnung auf.
+$whitelist = @($config.Keys | Where-Object { $_ -notmatch '^_' })
+if (-not $whitelist.Count) {
+    throw "mods.json fehlt oder enthaelt keine Mods - Whitelist leer, Abbruch (sonst wuerden alle Downloads entfernt)."
+}
+$allDirs = @(Get-ChildItem $DevRoot -Directory | Where-Object { $_.Name -notmatch '^[_.]' })
+foreach ($name in $whitelist) {
+    if (-not ($allDirs | Where-Object Name -CEQ $name)) {
+        Warn "mods.json: '$name' hat keinen Ordner in $DevRoot (Tippfehler oder Gross-/Kleinschreibung?) - uebersprungen"
+    }
+}
+$modDirs = @($allDirs | Where-Object { $_.Name -cin $whitelist } | Sort-Object Name)
+if (-not $modDirs.Count) {
+    throw "Keiner der $($whitelist.Count) Whitelist-Eintraege hat einen Ordner in $DevRoot - Abbruch (Pfad falsch oder Sync unvollstaendig?)."
+}
+Write-Host "Whitelist: $($modDirs.Count) Mods aus mods.json, $($allDirs.Count - $modDirs.Count) weitere Ordner ignoriert"
 
 # ---- Forge-Abgleich: welche Mods sind bereits veroeffentlicht?
 # (Dependency-GUIDs aus mods.json werden mit abgefragt, um Name+Link aufzuloesen.)
@@ -262,16 +286,19 @@ Write-Host "Forge-Abgleich ($($forge.Source)): $($forge.Mods.Count) der abgefrag
 foreach ($dir in $modDirs) {
     $modName = $dir.Name
     $modDir  = $dir.FullName
+    $enabledCfg = Cfg $modName 'enabled'
+    if (Test-CfgFlag $enabledCfg 'false') { $parked.Add($modName); continue }
+    if (-not (Test-CfgFlag $enabledCfg 'true')) {
+        $pubHit = @($modGuids[$modName] | Where-Object { $forge.Mods.ContainsKey($_) })
+        if ($pubHit.Count) {
+            Warn "$modName : steht in mods.json, ist aber auf Forge veroeffentlicht ($($pubHit[0])) - nicht gelistet; Eintrag entfernen oder enabled: true setzen"
+            continue
+        }
+    }
+
     $csprojs = @(Get-ChildItem $modDir -Recurse -Depth 3 -Filter *.csproj -File -ErrorAction SilentlyContinue |
         Where-Object { $_.FullName -notmatch '\\(obj|bin|artifacts|dist|packages|node_modules|\.git)\\' })
-    if (-not $csprojs) { continue }
-
-    $enabledCfg = Cfg $modName 'enabled'
-    if ($enabledCfg -eq $false) { Write-Host "  $modName : per mods.json deaktiviert"; continue }
-    if ($enabledCfg -ne $true) {
-        $pubHit = @($modGuids[$modName] | Where-Object { $forge.Mods.ContainsKey($_) })
-        if ($pubHit.Count) { $published.Add("$modName ($($pubHit[0]))"); continue }
-    }
+    if (-not $csprojs) { Warn "$modName : kein .csproj gefunden - uebersprungen"; continue }
 
     # ---- Projekte klassifizieren
     $parts = [System.Collections.Generic.List[object]]::new()
@@ -574,9 +601,8 @@ Get-ChildItem $downloadsDir -Filter *.zip -File | Where-Object { $_.Name -notin 
 # ---------------------------------------------------------------- Abschluss
 Write-Host ''
 Write-Host "Fertig: $($built.Count) Mods paketiert, $($unbuilt.Count) ohne Build." -ForegroundColor Green
-if ($published.Count) {
-    Write-Host "Auf Forge veroeffentlicht, daher nicht gelistet ($($published.Count)):" -ForegroundColor Cyan
-    $published | ForEach-Object { Write-Host "  - $_" }
+if ($parked.Count) {
+    Write-Host "Geparkt per enabled: false ($($parked.Count)): $($parked -join ', ')" -ForegroundColor Cyan
 }
 if ($warnings.Count) {
     Write-Host "$($warnings.Count) Warnung(en) – siehe oben." -ForegroundColor Yellow
