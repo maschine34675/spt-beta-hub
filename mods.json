@@ -5,10 +5,8 @@
   "AiStoryQuests": {
     "description": "Experiment: AI-generated story quests (providers: OpenAI/Anthropic/Ollama, own API key required)."
   },
-  "ArenaMode-VoiceLines": {},
   "AutoWishlist": {},
   "BangAndClear": {},
-  "BotDropDiag": {},
   "BtrTurretControl": {
     "notes": "You still have to pay for the taxi service to not get thrown out on departure"
   },
@@ -21,7 +19,6 @@
   "KillAndDamageInfo": {},
   "LogTools": {},
   "LootOutline": {},
-  "LowAmmoCue": {},
   "ModSourceDebugger": {
     "description": "Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector)."
   },

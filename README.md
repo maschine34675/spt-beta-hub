@@ -1,6 +1,6 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-09-14 07:50** · 13 mods with download, 3 in development.
+Overview of all mods in beta testing · Last updated: **2026-09-16 22:38** · 11 mods with download, 3 in development.
 
 This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
@@ -17,7 +17,6 @@ Please always include it when reporting issues.
 | Mod | Version | Updated | Type | Description | Preview | Download |
 |---|---|---|---|---|---|---|
 | [**BangAndClear**](#bangandclear) | `0.9.2+9882bbc` | 2026-08-26 | Client | An SPT 4.0 client mod for tactical door work: crack a door open a few degrees, put a grenade through the gap, close the door, wait for the bang. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.2-9882bbc.zip) |
-| [**BotDropDiag**](#botdropdiag) | `0.1.0+04d5794` | 2026-09-13 | Client | Diagnostic plugin, not a mod: it logs, with the calling stack, when a bot throws an item to the ground, when a bot starts a surgical-kit operation and when any meds… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BotDropDiag-0.1.0-04d5794.zip) |
 | [**BtrTurretControl**](#btrturretcontrol) | `1.0.0+37e08ef` | 2026-08-14 | Client | Client-only SPT mod that lets a seated BTR passenger take direct control of the gun turret. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BtrTurretControl-1.0.0-37e08ef.zip) |
 | [**ClusterGrenade**](#clustergrenade) | `2.6.0+c0f3830` | 2026-08-20 | Client + Server | Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets. Also adds a 40mm cluster round and HE ammunition<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2310/wtt-commonlib">WTT - CommonLib</a></sub> | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.6.0-c0f3830.zip) |
 | [**ConsoleToMonitor**](#consoletomonitor) | `1.0.0+8bef20d` | 2026-08-28 | Client | _(description to follow)_ | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ConsoleToMonitor-1.0.0-8bef20d.zip) |
@@ -27,7 +26,6 @@ Please always include it when reporting issues.
 | [**LootOutline**](#lootoutline) | `0.1.0+b66c9b5` | 2026-09-08 | Client | Weiße Konturen um Gegenstände, die in Tarkov auf dem Boden liegen — die Optik, die man aus PUBG oder Arena Breakout kennt. Für SPT 4.1. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/LootOutline-0.1.0-b66c9b5.zip) |
 | [**ModSourceDebugger**](#modsourcedebugger) | `2.0.0+7371199` | 2026-08-15 | Client + Server | Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-2.0.0-7371199.zip) |
 | [**QuietBrainLog**](#quietbrainlog) | `1.0.0+e345181` | 2026-09-06 | Client | SPT logs a warning for every PMC that spawns, about something working as intended. QuietBrainLog turns that one line down to Info — or off — and leaves the rest alone. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/QuietBrainLog-1.0.0-e345181.zip) |
-| [**RaidReviewOverlay**](#raidreviewoverlay) | `1.0.1+ba1eaa8` | 2026-08-28 | Client | Opens [Raid Review](https://sp-mod.com/mod/1479/raid-review)'s web interface **in a window over the game** instead of an external browser tab — same page, same features,… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidReviewOverlay-1.0.1-ba1eaa8.zip) |
 | [**SurroundAudio**](#surroundaudio) | `1.0.0+f693bc7` | 2026-08-23 | Client | Replaces Tarkov's binaural (headphone) audio with real 5.1/7.1 output, so you can play on a surround speaker system instead of headphones. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-f693bc7.zip) |
 
 ## 🚧 In development – no build yet
@@ -99,44 +97,6 @@ and hand animation, and the throw is the vanilla underhand toss.
 #### Install
 
 Drop `maschine-BangAndClear.dll` into `BepInEx/plugins/`.
-
-</details>
-
----
-
-## BotDropDiag
-
-**Type:** Client · **Version:** `0.1.0+04d5794` · **Updated:** 2026-09-13 08:42 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BotDropDiag-0.1.0-04d5794.zip)
-
-<details><summary><b>Show usage notes</b></summary>
-
-Diagnostic plugin, not a mod: it logs, with the calling stack, when a bot throws an item to
-the ground, when a bot starts a surgical-kit operation and when any meds operation on a bot
-ends. Written to attribute "a bot started a Surv12, stopped, and it lies on the ground" to the
-code path that actually did it. It changes nothing in the game. Remove the DLL when done.
-
-Lines (source `maschine-BotDropDiag`, level Info):
-
-- `THROW bot=<nick>(<role>) item=<name>{<template>} … from=<container path> stack=…`
-  — every `PlayerInventoryController.ThrowItem`. The path is printed root first
-  (`<inventory>/SecuredContainer > <container>/main`). A path through `SecuredContainer`
-  with `BotRandomPlanItemDropper.OnStartPeacefulMove` in the stack is the vanilla item
-  exchange on a peaceful gesture between two nearby bots (any side — the pairing is not
-  team-aware), which draws only from the secure container — where SPT
-  (`pmc.json: forceHealingItemsIntoSecure`) and APBS put PMC healing items. It fires on the
-  first gesture after spawn: the 60 s grace period in `BotRandomPlanItemDropper` compares
-  against a field the game never assigns.
-- `DROPPER …` — `BotItemDropper.TryDoDrop` with a planned item; the stack names the planner.
-- `SURGERY-START … part=<part> … CH.CancelRequested=<flag>` — `BotSurgicalKit.ApplyToCurrentPart`.
-- `MEDS-FINISH … queue=<n> state=<state> CH.CancelRequested=<flag> stack=…` — the first
-  `MedsInHandsOperation.Finish` per operation. `CH_EndHeal_Patch.Prefix` in the stack with
-  the flag `True` means ContinuousHealing 1.6.3 ended the bot's operation: its static
-  `CancelRequested` (set by the local player's own heal cancel) is applied to every player
-  before its `IsYourPlayer` check.
-
-F12: `Enabled`, `Only Bots`, `Log Stacks`, `Stack Frames`.
-
-Build: `dotnet build -c Release` deploys to `BepInEx/plugins/maschine-BotDropDiag.dll`.
 
 </details>
 
@@ -1083,158 +1043,6 @@ dotnet build -c Release
 ```
 
 The post-build step copies the DLL to `BepInEx/plugins/`.
-
-</details>
-
----
-
-## RaidReviewOverlay
-
-**Type:** Client · **Version:** `1.0.1+ba1eaa8` · **Updated:** 2026-08-28 16:40 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/RaidReviewOverlay-1.0.1-ba1eaa8.zip)
-
-<details><summary><b>Show usage notes</b></summary>
-
-Opens [Raid Review](https://sp-mod.com/mod/1479/raid-review)'s web interface **in a
-window over the game** instead of an external browser tab — same page, same features,
-without alt-tabbing out of EFT.
-
-This is a small addon, not a fork: Raid Review does all the work (recording, the
-server, the web client). All this does is put its page in an
-[Anvil-WebOverlay](https://github.com/maschine34675/WebOverlay) window and redirect
-the two places Raid Review opens it from.
-
-![The RAID REVIEW button in the bottom menu bar](assets/preview.png)
-
-#### Requirements
-
-- **Raid Review** (`ekky.raidreview`) — the addon stays inactive without it and says so
-  once in the log.
-- **Anvil-WebOverlay 1.7.0 or newer** — optional. Without it (or without a WebView2
-  runtime) everything falls back to the external browser, exactly like Raid Review on
-  its own, so the addon is never worse than not having it.
-
-#### Usage
-
-- **F5** (configurable): opens or closes Raid Review over the game. This is Raid
-  Review's own key — the addon takes it over, so the press you are used to now shows
-  the window instead of a browser tab.
-- **Shift+F5**: forces the page into your external browser, ignoring the window.
-- **RAID REVIEW** in the bottom menu bar: same as the hotkey.
-- **Escape** or the same hotkey closes the window while it has focus.
-
-The window is movable and resizable and remembers its position and size. While it has
-focus it takes mouse and keyboard itself; one click into the game gives both back.
-
-#### Settings
-
-BepInEx configuration manager (F12), section `RaidReviewOverlay`:
-
-| Setting | Default | What it does |
-| --- | --- | --- |
-| `Main / Open overlay` | F5 | Shows or hides Raid Review over the game. |
-| `Main / Open in browser` | Shift+F5 | Forces the external browser. |
-| `Main / Menu bar button` | on | Adds the RAID REVIEW button to the bottom menu bar, and suppresses Raid Review's own one for the session so there is only one. |
-| `Integration / Take over the Raid Review hotkey` | on | Stops Raid Review from opening a browser tab on its own key. Off means both work: its key opens the browser, this addon's key the window. |
-| `Overlay / Use overlay` | on | Off sends every trigger to the external browser. |
-| `Overlay / Window frame` | on | Title bar to drag and resize. Frameless is cleaner but can only be moved from inside the page. Read when the window is first created. |
-
-#### What it changes about Raid Review
-
-Both of Raid Review's triggers end in `Application.OpenURL`, which is an internal call
-with no IL body — Harmony cannot intercept it at the call site. So the redirect happens
-at the triggers instead, and only in memory:
-
-- Its `Open Webpage Keybind` is set to unbound for the session, and this addon adopts
-  the key. Raid Review polls that key five times a second and answers every poll with a
-  browser tab; taking the key out of the poll is the one place to stop it.
-- Its `Insert Menu Item` setting is turned off for the session while this addon's own
-  menu button is enabled, so there is one RAID REVIEW button, not two that behave
-  differently.
-
-**Raid Review's own config file is never written to.** Both values are restored when the
-game closes, and BepInEx's save-on-set is suppressed while they are changed, so
-uninstalling this addon leaves Raid Review exactly as it was. Turning either setting off
-in the configuration manager restores the corresponding value immediately.
-
-The address comes from Raid Review itself (`RAID_REVIEW_HTTP_Server`), read fresh on
-every press, so a custom server IP, port or TLS setting in its config is honoured. If
-that field is missing, the same address is assembled from the config entries Raid Review
-builds it from, and only then does a default apply.
-
-**A server on another machine works without configuring anything.** Raid Review's web
-server is part of its *server* mod, so it runs wherever the SPT server runs — but its
-address defaults to `127.0.0.1`, which on a remote setup points at the player's own PC,
-where nothing is listening. When the configured address is loopback and this client
-talks to a remote SPT server, the overlay substitutes that server's host, keeps scheme
-and port, and says so once in the log. It never rewrites in the other direction: an
-address deliberately pointed somewhere else is used exactly as configured.
-
-Everything about Raid Review is reached through reflection: this plugin is not built
-against `RAID_REVIEW.dll`, so a missing, renamed or newer Raid Review costs a log line,
-not a crash.
-
-#### When the window is not used
-
-The external browser takes over, with a line in the log, when:
-
-- `Overlay / Use overlay` is off, or Shift+F5 was pressed;
-- Anvil-WebOverlay is missing or older than 1.7.0;
-- the game runs in **exclusive fullscreen** (a window over it would minimise the game —
-  borderless works);
-- no WebView2 runtime is installed, or the browser process failed. A failure during the
-  first press still opens the browser for that press, so no press is lost.
-
-#### Building
-
-```
-dotnet build RaidReviewOverlay.csproj -c Release
-```
-
-Assembly references are relative to the SPT installation two directories up
-(`..\..\EscapeFromTarkov_Data\Managed`, `..\..\BepInEx`), so the repository is expected
-to live in `<SPT>\Development\RaidReviewOverlay`. The build deploys to
-`<SPT>\BepInEx\plugins` as a single DLL; `-p:DeployToSpt=false` skips that.
-
-`scripts\Test-SoftDependency.ps1` verifies the Anvil-WebOverlay soft dependency (rule 5
-of the library's `docs/SOFT-DEPENDENCY.md`): no field, base type, interface, generic
-argument or method signature may name a library type, and only the gate class may use
-them in method bodies.
-
-`scripts\Test-ConfigKeys.ps1` runs every `Config.Bind` section and key name through
-BepInEx's own `ConfigDefinition` constructor. BepInEx rejects `= \n \t \ " ' [ ]` there
-and throws out of `Awake`, so one apostrophe in a key name keeps the whole plugin from
-loading — invisible to the compiler, and only visible on a real game start.
-
-`scripts\New-ReleasePackage.ps1` builds, runs both checks and writes the release archive
-to `artifacts\`.
-
-`scripts\Test-RaidReviewFields.ps1` checks a `RAID_REVIEW.dll` for the three static
-members this addon reflects on — worth running against a new Raid Review release before
-assuming this addon still redirects it.
-
-#### The button icon
-
-A hexagon with three rising bars, matching the shape and muted gold of the glyphs the
-bottom bar already has. `tools\build-icon.py` draws it to `assets\task-bar-icon.png`
-(needs Pillow) and the build embeds that PNG in the assembly.
-
-Three details in there were paid for in the game rather than in a preview, and the
-script keeps them:
-
-- **Hexagon, not circle.** A ring reads as visibly ragged at the ~24 px the bar gives an
-  icon, because a curve that size is all antialiasing.
-- **The colour is baked into the PNG.** The button's animator writes `Image.color` every
-  frame, so tinting a white glyph from code loses and the icon shows up plain white.
-- **The sprite is scaled to the one it replaces.** An `Image` reports its preferred size
-  as `sprite.rect.width / sprite.pixelsPerUnit`, so a sprite at the default 100
-  pixels-per-unit asks the layout for a much larger glyph — which grows the button and
-  leaves the icon floating in the space that opened up.
-
-The icon is this project's own work — no third-party artwork ships with it.
-
-#### License
-
-MIT — see [LICENSE](LICENSE).
 
 </details>
 
