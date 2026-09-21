@@ -1,6 +1,6 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-09-18 11:35** · 8 mods with download, 3 in development.
+Overview of all mods in beta testing · Last updated: **2026-09-21 10:57** · 6 mods with download, 3 in development.
 
 This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
@@ -19,10 +19,8 @@ Please always include it when reporting issues.
 | [**BangAndClear**](#bangandclear) | `0.9.2+9882bbc` | 2026-08-26 | Client | An SPT 4.0 client mod for tactical door work: crack a door open a few degrees, put a grenade through the gap, close the door, wait for the bang. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BangAndClear-0.9.2-9882bbc.zip) |
 | [**BtrTurretControl**](#btrturretcontrol) | `1.0.0+37e08ef` | 2026-08-14 | Client | Client-only SPT mod that lets a seated BTR passenger take direct control of the gun turret. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/BtrTurretControl-1.0.0-37e08ef.zip) |
 | [**ClusterGrenade**](#clustergrenade) | `2.6.0+c0f3830` | 2026-08-20 | Client + Server | Cluster grenade for SPT: instead of shrapnel, the explosion releases several impact bomblets. Also adds a 40mm cluster round and HE ammunition<br><sub>🔌 requires <a href="https://sp-mod.com/mod/2310/wtt-commonlib">WTT - CommonLib</a></sub> | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ClusterGrenade-2.6.0-c0f3830.zip) |
-| [**DoorDash**](#doordash) | `1.2.0+9735133` | 2026-09-12 | Client | > Blow open doors without stopping. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/DoorDash-1.2.0-9735133.zip) |
-| [**KillAndDamageInfo**](#killanddamageinfo) | `1.0.0+b0ab19c` | 2026-08-24 | Client | KillAndDamageInfo shows the combat information the game keeps to itself: what your kills died to, who killed you and in what state they were, what each hit actually did… | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-1.0.0-b0ab19c.zip) |
+| [**DoorDash**](#doordash) | `1.2.0+2b6915d` | 2026-09-21 | Client | > Blow open doors without stopping. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/DoorDash-1.2.0-2b6915d.zip) |
 | [**LootOutline**](#lootoutline) | `0.1.0+b66c9b5` | 2026-09-08 | Client | Weiße Konturen um Gegenstände, die in Tarkov auf dem Boden liegen — die Optik, die man aus PUBG oder Arena Breakout kennt. Für SPT 4.1. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/LootOutline-0.1.0-b66c9b5.zip) |
-| [**ModSourceDebugger**](#modsourcedebugger) | `2.0.0+7371199` | 2026-08-15 | Client + Server | Debugging tool: traces item templates and UI elements back to the mod that added them (tooltips + UI inspector). | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-2.0.0-7371199.zip) |
 | [**SurroundAudio**](#surroundaudio) | `1.0.0+f693bc7` | 2026-08-23 | Client | Replaces Tarkov's binaural (headphone) audio with real 5.1/7.1 output, so you can play on a surround speaker system instead of headphones. | – | [⬇ ZIP](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/SurroundAudio-1.0.0-f693bc7.zip) |
 
 ## 🚧 In development – no build yet
@@ -290,7 +288,7 @@ Both are purely server-side (no client logic) and work in any weapon that fires 
 
 ## DoorDash
 
-**Type:** Client · **Version:** `1.2.0+9735133` · **Updated:** 2026-09-12 18:56 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/DoorDash-1.2.0-9735133.zip)
+**Type:** Client · **Version:** `1.2.0+2b6915d` · **Updated:** 2026-09-21 10:18 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/DoorDash-1.2.0-2b6915d.zip)
 
 <details><summary><b>Show usage notes</b></summary>
 
@@ -298,13 +296,14 @@ Both are purely server-side (no client logic) and work in any weapon that fires 
 
 > Blow open doors without stopping.
 
-Sprint into a door and ram it open — no interaction prompt, no stopping. Occasionally the door is
-knocked clean off its frame and tumbles through the room as a physics object.
+Sprint into a door and ram it open — no interaction prompt, no stopping. Optionally, a breached door
+can be knocked clean off its frame and tumble through the room as a physics object.
 
 **This is a port of [tarkin](https://sp-mod.com/mod/2214/doordash)'s DoorDash to SPT 4.1.** The
 original mod targets SPT 4.0 and does not run on 4.1. All credit for the mod itself goes to tarkin;
-this port only updates the renamed game APIs and fixes a handful of pre-existing bugs. Plugin GUID,
-config keys, file name and install path are unchanged, so it drops in over an existing install.
+this port updates the renamed game APIs, fixes a handful of pre-existing bugs, and turns the
+physical-door effect off by default. Plugin GUID, config keys, file name and install path are
+unchanged, so it drops in over an existing install.
 
 - Original mod: https://sp-mod.com/mod/2214/doordash
 - Original source: https://github.com/bmpq/spt-doordash
@@ -325,13 +324,17 @@ If you are upgrading from the 4.0 version, this overwrites the old file in place
 #### Configuration
 
 Everything is under `BepInEx/config/com.tarkin.doordash.cfg` and in the F12 menu (most entries are
-marked advanced). Existing config files from the 4.0 version keep working; the two entries below are
-the only additions.
+marked advanced). Existing config files from the 4.0 version keep working; the entries below are new.
 
 | Setting | Section | Default | Description |
 |---------|---------|---------|-------------|
+| `Enable Physical Doors` | Physical Door | `false` | Occasionally knock a breached door off its frame as a physics object |
 | `Impact Damage Per Speed` | Physical Door | `8` | Damage a flying door deals per m/s of its speed |
 | `Impact Damage Max` | Physical Door | `120` | Upper limit for a single door impact |
+
+**Upgrading from the 4.0 version:** physical doors are now off even if your config file still
+contains `Chance To Dislodge On Breach`. Set `Enable Physical Doors` to `true` to get the original
+behavior back; the chance and force settings then apply exactly as before.
 
 #### Compatibility
 
@@ -339,9 +342,9 @@ the only additions.
   That mod hooks DoorDash reflectively to allow sprint rams from both sides of a door; this port
   keeps the exact type, method, parameter and field names it binds to, and keeps the ram committing
   in the same frame as the door query, which its key handling relies on.
-- **Fika** — untested and not supported, same as the original. The dislodge roll and the resulting
-  door physics are computed independently on each machine, so a knocked-out door will behave
-  differently for each player.
+- **Fika** — untested and not supported, same as the original. With physical doors enabled, the
+  dislodge roll and the resulting door physics are computed independently on each machine, so a
+  knocked-out door will behave differently for each player.
 
 ---
 
@@ -353,6 +356,11 @@ Three renamed game types, nothing else in the mod's API surface moved:
 `LayerMaskClass` → `LayersMaskController`, `DamageInfoStruct` → `EFT.Ballistics.DamageInfo`,
 `ShotIdStruct` → `EFT.Ballistics.ShotId`. The project now builds against the game's own assemblies
 (`netstandard2.1`, direct references) instead of NuGet packages and a `$(SPTPath)` variable.
+
+##### Physical doors are off by default
+
+A door knocked off its frame usually ends up lying in the doorway and blocks the way it was just
+rammed open. The effect is now opt-in through `Enable Physical Doors`.
 
 ##### Bugs fixed along the way
 
@@ -377,132 +385,6 @@ Three renamed game types, nothing else in the mod's API surface moved:
 - A failing Harmony patch no longer silently disables the whole mod.
 - The mod no longer throws on a Fika headless host, which has no local player. (It still does nothing
   useful there — see Compatibility.)
-
-</details>
-
----
-
-## KillAndDamageInfo
-
-**Type:** Client · **Version:** `1.0.0+b0ab19c` · **Updated:** 2026-08-24 13:56 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/KillAndDamageInfo-1.0.0-b0ab19c.zip)
-
-<details><summary><b>Show usage notes</b></summary>
-
-KillAndDamageInfo shows the combat information the game keeps to itself: what
-your kills died to, who killed you and in what state they were, what each hit
-actually did — and a full per-raid statistics window on a hotkey.
-
-#### Features
-
-**Raid-end kill list**
-
-- Every kill entry additionally shows the ammunition used.
-- Targets you damaged but did not kill get their own **Damaged** entries with
-  total damage, hit count and armor penetrations — so an almost-kill no longer
-  looks like a miss.
-
-**Death screen**
-
-- The "killed by" line is extended with the killer's weapon, ammunition and
-  distance.
-- The killer's **remaining HP** is shown next to their name — see how close
-  the fight really was.
-- The 3D character model shows **the killer with their equipment** instead of
-  your own character, including their level badge (hidden for Scavs, as in the
-  vanilla kill list).
-
-**Post-raid treatment screen**
-
-- Body-part damage tooltips additionally show the weapon and the distance of
-  the hits.
-
-**Raid analysis overlay** (default key: F10, rebindable)
-
-- **Heatmap** — a body silhouette with color-coded zones showing where you got
-  hit and where you hit others, with hit counts and damage per zone.
-- **Ammo** — per ammunition type: shots fired, hits, accuracy, armor
-  penetration rate, average and total damage.
-- **Weapons** — per weapon: shots, hits, accuracy, damage and kills.
-- **Distance** — a bar chart of your hits grouped by engagement range.
-- **Overview** — totals for both directions, damage your armor absorbed,
-  bullets that ricocheted off you (including helmet ricochets — in the vanilla
-  game those are nearly indistinguishable from a near miss), accuracy,
-  headshot rate, penetration rates, and what the raid cost you: the handbook
-  value of every round you fired, and that value per kill.
-- **Records** — per-raid highlights: longest hit, hardest hit dealt and
-  taken, most hits on one target.
-- Everything is shown separately for damage **received** and **dealt**.
-
-Every feature group can be disabled individually in the configuration.
-
-#### Requirements and compatibility
-
-- SPT 4.1.x (developed and tested on 4.1.1).
-- Client-only BepInEx plugin — no server component, no profile changes.
-- No dependencies beyond a standard SPT install.
-- Statistics cover the whole raid even when another mod lets you die and
-  respawn more than once per raid.
-- Fika: the raid analysis overlay does not work. Fika replaces the game's
-  damage handling, so no hits are recorded and the window stays empty. The
-  kill list and death screen additions still work, except that the killer's
-  weapon is missing when the shot came in over the network. This is based on
-  source analysis, not on a live coop test.
-
-#### Installation
-
-Extract the release ZIP into your SPT installation directory. The plugin ends
-up at:
-
-`BepInEx/plugins/maschine-KillAndDamageInfo.dll`
-
-To remove the mod, delete that file.
-
-#### Usage
-
-- Play normally — the kill list, death screen and treatment screen additions
-  appear automatically after a raid.
-- Press **F10** (rebindable) during or after a raid to open the raid analysis
-  window. Statistics reset when the next raid starts.
-- **During a raid the window only reads.** It asks for no mouse cursor, so you
-  keep playing with it open - and nothing it draws can swallow your fire. The
-  price is that the tabs, the **Received**/**Dealt** switch, the scroll areas
-  and dragging the window all need a cursor, so they wait until the raid is
-  over. Afterwards, on the menu screens, the game shows its own cursor and the
-  window is fully interactive.
-- Options live in `BepInEx/config/com.maschine.KillAndDamageInfo.cfg` and can
-  also be changed in-game with a configuration manager: the overlay key and
-  one on/off switch per feature group (kill list ammo, damaged targets, death
-  screen details, killer 3D model, damage tooltips, analysis overlay).
-
-#### Known limitations
-
-- Statistics are per raid only; there is no career/long-term aggregation.
-- Accuracy counts individual projectiles, so every shotgun pellet counts as
-  one shot. Melee and grenade hits carry no ballistics data and are excluded
-  from shot counts and accuracy (shown as "—").
-- Penetration rate only counts hits where armor was actually involved; pure
-  flesh hits do not distort the number.
-- Ammunition cost uses handbook base prices, not flea market values, and only
-  covers rounds fired from firearms. Ammunition without a handbook entry is
-  left out of the total.
-- "Shots" and "Hits" come from two different game systems; in rare cases (for
-  example one bullet passing through two body parts) the columns can disagree
-  by a hit while the accuracy percentage stays consistent.
-- Deaths without an attacker (falls, bleed-outs, mines) show the vanilla death
-  screen — there is no killer to display.
-
-#### Support
-
-Please report problems with:
-
-- exact KillAndDamageInfo and SPT versions;
-- what you expected and what happened instead;
-- short reproduction steps (which screen, which tab);
-- your `BepInEx/LogOutput.log` from the session.
-
-#### License
-
-MIT — see [LICENSE](LICENSE).
 
 </details>
 
@@ -617,78 +499,6 @@ dotnet build -c Release
 
 Kopiert die DLL selbst nach `..\..\BepInEx\plugins`. Für eine andere Installation:
 `-p:SptRoot=D:\SPT41\` mit abschließendem Backslash.
-
-</details>
-
----
-
-## ModSourceDebugger
-
-**Type:** Client + Server · **Version:** `2.0.0+7371199` · **Updated:** 2026-08-15 22:05 · [⬇ Download](https://github.com/maschine34675/spt-beta-hub/raw/main/downloads/ModSourceDebugger-2.0.0-7371199.zip)
-
-**Components:** Client `2.0.0+7371199` · Server `2.0.0+7371199`
-
-<details><summary><b>Show usage notes</b></summary>
-
-### ModSourceDebugger — Technical Summary
-
-A two-part SPT debugging tool that traces **item template origins** and **UI element ownership** back to the mod that added them.
-
-#### Architecture
-
-| Component | Type | Role |
-|---|---|---|
-| `maschine-ModSourceDebugger.Client.dll` | BepInEx client mod | Tooltips, UI inspector, reads manifest |
-| `maschine-ModSourceDebugger.Server.dll` | SPT 4.x server mod | Builds authoritative item manifest after all mods load |
-
-Both share the same SPT install root (`Application.dataPath` on client, server working directory on server).
-
----
-
-#### Item Source Tracking
-
-##### Server (authoritative)
-
-Runs at `PostSptModLoader + 100`, after all DB mods finish:
-
-1. Loads vanilla template IDs from `SPT_Data/database/templates/items.json`
-2. Recursively scans `user/mods/**/*.json` for item IDs (`newId`, `_id`, `_tpl`, top-level keys, etc.)
-3. Diff against live DB via `DatabaseService.GetItems()` — anything non-vanilla not found in JSON → `source: database`
-4. Writes `SPT/user/sptappdata/mod-source-manifest.json`
-
-##### Client (display + fallback)
-
-1. Loads server manifest if present
-2. Falls back to local JSON scan for entries not in manifest
-3. All IDs normalized to lowercase (fixes Massivesoft-style mixed-case hex IDs)
-4. Harmony postfix on `SimpleTooltip.Show` appends mod/file/source when hovering items
-5. `ItemView.OnPointerEnter/Exit` tracks the currently hovered item
-
----
-
-#### UI Source Tracking
-
-UI mods often clone vanilla elements (`GameObject.Instantiate`) without mod-specific names — so name matching alone fails.
-
-##### Three detection layers, scored by priority
-
-1. **Instantiate tagging** — Harmony postfix on `Object.Instantiate`; stack trace identifies calling plugin assembly; adds `ModUiSourceMarker` to UI `RectTransform`s
-2. **Scored resolution** (`UiPluginResolver`) — collects candidates from:
-   - `ModUiSourceMarker` on self/ancestors
-   - GameObject name hints (`UnloadAllMagazinesButton` → `UnloadAllMagazines`)
-   - `Button.onClick` listener delegate assembly (via reflection on `UnityEventBase.m_Calls`)
-   - `MonoBehaviour` component assembly (walk up hierarchy)
-   - Infrastructure components (e.g. `DrawMultiSelect` from Tyfon.UIFixes) are deprioritized
-3. **Alt + hover** — raycasts UI under cursor, shows path + best-scoring plugin match in tooltip
-
----
-
-#### Limitations
-
-- Items added purely via C# with no JSON definition → `Unknown server mod` (DB-only)
-- Vanilla item overrides (same template ID, changed stats) → not distinguishable from vanilla
-- UI patched via Harmony only (no `Instantiate`, no custom components) → hard to attribute
-- Instantiate tags only apply to objects created after the mod loads (stash must be reopened)
 
 </details>
 
