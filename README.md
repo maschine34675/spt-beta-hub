@@ -1,6 +1,6 @@
 # SPT 4.1 – Beta Mods
 
-Overview of all mods in beta testing · Last updated: **2026-09-21 10:57** · 6 mods with download, 3 in development.
+Overview of all mods in beta testing · Last updated: **2026-09-22 09:19** · 6 mods with download, 1 in development.
 
 This page only lists mods that are **not (yet) released on [Forge](https://sp-mod.com/)** — released mods get their updates there.
 
@@ -27,9 +27,7 @@ Please always include it when reporting issues.
 
 | Mod | Type | Description |
 |---|---|---|
-| **AdaptiveArsenal** | Server | Adaptive Arsenal is an SPT 4.0 C# server mod prototype that tracks equipment usage after raids. |
 | **AiStoryQuests** | Client + Server | Experiment: AI-generated story quests (providers: OpenAI/Anthropic/Ollama, own API key required). |
-| **AutoWishlist** | Client + Server | – |
 
 ---
 
